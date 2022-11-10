@@ -5,18 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
+    <style>
+		label{
+			color:red;
+			display:inline-block;
+			width:100px;
+			text-align: left;
+		}
+		h1{
+			color:blue;
+		}
+	</style>
+
 </head>
 <body> <!--two main attributes action="a.php" and method="get/push"-->
+   
+   <h1>My First Form</h1>
     <form>
         <label for="name">Name:</label>
         <input type="text" id="name" name="username" maxlength="16" size="10" value="Full Name">
         <br><br>
-        Password: <input type="password">
+        <label for="date">Date:</label>
+        <input type="date">
         <br><br>
-        <label for="email">Email</label>
+        <label for="email">Email:</label>
         <input type="email" name="email" id="email" >
         <br><br>
-        <label for="desc">Description</label>
+        <label for="password">Password:</label>
+        <input type="password">
+        <br><br>
+        <label for="desc">Description:</label>
         <textarea rows="2" cols="10" value="Enter Summary">Enter Summary</textarea>
         <br><br>
         <label for="skills">Skills:</label>
@@ -35,8 +53,16 @@
             <option value="america">America</option>
         </select>
         <br><br>
-        <input type="submit" value="Register">
+        <label for="file">Upload File:</label>
+        <input type="file">
+        <br><br>
+        <input type="submit" value="register">
+        <input type="reset" value="reset">
+        <input type="button" value="click me" alert>
 
     </form> <!--The <label> tag along with the id in the specified cell allows me to add css after the content has been defined.-->
+    <hr>
+    <h1></h1>
+    
 </body>
 </html>
