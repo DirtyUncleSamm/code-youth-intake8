@@ -7,17 +7,35 @@
     <title>Icons</title>
     <script src="https://kit.fontawesome.com/0e602e445e.js" crossorigin="anonymous"></script>
     <style>
+        table {
+
+            border-color: white;
+        }
+
         #signin {
-            font: lighter;
+            font-family:sans-serif;
             text-align: center;
             padding: 50px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
         }
+        
         #signup {
-            font: lighter;
+            font-family:sans-serif;
             background-color:rgba(12, 192, 192, 0.645);
             color:white;
             text-align: center;
             padding: 50px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+
+        }
+        #buttons {
+            background-color:rgba(12, 192, 192, 0.645);
+            color:white;
+            border-color: white;
+            border-radius: 25%;
         }
 
     </style>
@@ -36,12 +54,15 @@
                <label for="password"></label>
                <input type="password" value="Password">
                <br>
-               <a href="#"><p>Forgot your password?</p></a
+               <a href="#"><p>Forgot your password?</p></a>
                <br>
-               <input type="submit" value="SIGN IN">
+               <a href="#"><input type="submit" value="SIGN IN" id="buttons"></a>
             </td>
-            <td id="signup"><h1>Sign UP</h1></td>
-            <p>Sign up hereif you don't have an account?</p>
+
+            <td id="signup"><h1>Sign UP</h1>
+            <p>Sign up here if you don't have an account.</p>
+            <a href="#"><input type="submit" value="SIGN UP" id="buttons"></a>
+            </td>
         </tr>
     </table>
 </body>
