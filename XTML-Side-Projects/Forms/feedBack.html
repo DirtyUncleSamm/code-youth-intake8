@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My Feedback Form</h1>
+    <form>
+        <ul>
+         <li><label for="name">Name:</label>
+         <input type="text" id="name" name="name" size="20"></li>
+         <br>
+         <li><label for="email">Email:</label>
+         <input type="text" id="email" name="email" size="20"></li>
+         <br>
+         <li><label for="password">Password:</label>
+         <input type="password" id="password"  size="20"></li>
+         <br>
+         <li><label for="emotions">Please check all the emotions that apply to you:</label></li>
+         <br>
+          <ul>
+             <li><input type="checkbox" id="emotions"  name="emotion1" value="angry">Angry</input></li>
+             <br>
+             <li><input type="checkbox" id="emotions" name="emotion2" value="sad">Sad</input></li>
+             <br>
+             <li><input type="checkbox" id="emotions" name="emotion3" value="happy">Happy</input></li>
+             <br>
+             <li><input type="checkbox" name="emotion4" value="ambivalent">Ambivalent</input></li>
+          </ul>
+         <br>
+         <li><label for="satisfaction">How satisfied were you with our service?</label></li>
+         <br>
+         <ul>
+             <li> <input type="radio" name="satisfaction" id="radio1" value="very satisfied">Very Satisfied</input>
+             </li>
+             <br>
+             <li> <input type="radio" name="satisfaction" id="radio2" value="satisfied">Satisfied</input>
+             </li>
+             <br>
+             <li> <input type="radio" name="satisfaction" id="radio3" value="didn't care">Didn't Care</input>
+             </li>
+             <br>
+             <li> <input type="radio" name="satisfaction" id="radio4" value="dissatisfied">Dissatisfied</input>
+             </li>
+             <br>
+             <li> <input type="radio" name="satisfaction" id="radio5" value="very dissatisfied">Very Dissatisfied</input>
+             </li>
+             <br>
+         </ul>
+         <li><label for="desc">Further Comments:</label>
+         <textarea rows="2" cols="10"></textarea></li>
+         <li><label for="file">Bio Photo:</label>
+         <input type="file"></input></li> <!--need a url box-->
+         <li><label for="location">Location Visited:</label>
+            <select name="location" id="country">
+                <option value="">Select Location</option>
+                <option value="ottawa">Ottawa</option>
+                <option value="toronto">Toronto</option>
+                <option value="kingston">Kingston</option>
+            </select></li>
+            <li><input type="submit" value="submit"></li>
+
+
+        </ul>
+    </form>
+</body>
+</html>
