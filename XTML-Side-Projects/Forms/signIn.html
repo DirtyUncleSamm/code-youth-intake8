@@ -4,15 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Icons</title>
+    <script src="https://kit.fontawesome.com/0e602e445e.js" crossorigin="anonymous"></script>
     <style>
+        #signin {
+            font: lighter;
+            text-align: center;
+            padding: 50px;
+        }
+        #signup {
+            font: lighter;
+            background-color:rgba(12, 192, 192, 0.645);
+            color:white;
+            text-align: center;
+            padding: 50px;
+        }
+
     </style>
 </head>
 <body>
     <table border="1" cellspacing="0" cellpadding="5">
         <tr>
-            <td><h1>Sign in</h1></td>
-            <td><h1>Sign up</h1></td>
+            <td id="signin"><h1>Sign in</h1>
+               <a href="#"><i class="fa-brands fa-facebook"></i></a>
+               <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+               <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+               <br>
+               <label for="email"></label>
+               <input type="email" value="Email">
+               <br>
+               <label for="password"></label>
+               <input type="password" value="Password">
+               <br>
+               <a href="#"><p>Forgot your password?</p></a
+               <br>
+               <input type="submit" value="SIGN IN">
+            </td>
+            <td id="signup"><h1>Sign UP</h1></td>
+            <p>Sign up hereif you don't have an account?</p>
         </tr>
     </table>
 </body>
