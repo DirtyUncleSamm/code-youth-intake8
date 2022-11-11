@@ -4,9 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Booking Form</title>
+    <style>
+        #required {
+            color:red;
+        }
+        #box {
+            width:150px;
+        }
+        #cell {
+            padding:10px;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1 style="text-align:center; position: relative; right:10rem" >Booking Form</h1>
+
+    <table>
+        <tr>
+            <td id="cell">
+                
+                <label for="date">Departure Date <span id="required">*</span></label>
+                <br>
+                <input type="date" name="departure date" id="box" required>
+            </td>
+            <td id="cell">
+                <label for="time">Departure Time<span id="required">*</span></label>
+                <br>
+                <input type="time" name="departure time" id="box" required>
+            </td>
+        </tr>
+        <tr>
+            <td id="cell">
+
+                <label for="return date">Return Date<span id="required">*</span></label>
+                <br>
+                <input type="date" name="return date" id="box" required>
+            </td>
+            <td id="cell">
+                <label for="time">Return Time<span id="required">*</span></label>
+                <br>
+                <input type="time" name="return time" id="box" required>
+            </td>
+        </tr>
+        <tr>
+            <td id="cell">
+                <label for="number of passengers">Number of guests/passengers<span id="required">*</span></label>
+                <br>
+                <select id="box">
+                    <option value="">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </td>
+            <td id="cell">
+                <label for="ticketroom">Type of room/ticket<span id="required">*</span></label>
+                <br>
+                <input type="radio" name="type" value="economy" id="economy">Economy</input>
+                <input type="radio" name="type" value="premium" id="premium">Premium</input>
+                <br>
+                <input type="radio" name="type" value="business" id="business">Business</input>
+                <input type="radio" name="type" value="deluxe" id="deluxe">Deluxe</input>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d738107.7155699091!2d-80.09779771941226!3d43.72648085488641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34cdfb4fdf25%3A0xc9942d3aa5337bd!2sHilton%20Toronto!5e0!3m2!1sen!2sca!4v1668185059535!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </body>
 </html>
