@@ -5,18 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Details</title>
+    <style>
+        title {
+
+        }
+    </style>
 </head>
 <body>
     <table>
+        <tr colspan="2">
+            <p>PERSONAL DETAILS</p>
+        </tr>
+        <tr>
+           <td> 
+                <p>First Name</p>
+                <label for="first name"></label>
+                <input type="text" Value="First Name">
+            </td>
+            <td>
+                <p>Lastname</p>
+                <label for="last name"></label>
+                <input type="text" Value="Last Name">
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2">
+                <p>Address</p>
+                <label for="address"></label>
+                <input type="text" id="address">
+            </td>
+            <td>
+                <p>Country</p>
+                <select name="country" id="country">
+                    <option value="canada">Canada</option>
+                    <option value="america">America</option>
+                </select>
+            </td>
+        </tr>
         <tr>
             <td>
-                <h2>PERSONAL DETAILS</h2>
-                <br><br>
-                <label for="first name"></label>
-                <i class="fa-solid fa-user"><input type="text" Value="Name">
+                <p>Email</p>
+                <label for="email"></label>
+                <input type="text" Value="example@">
             </td>
-            <td></td>
         </tr>
+        <tr>
+            <td>
+                <p>Password</p>
+                <label for="password"></label>
+                <input type="Password" id="password">
+            </td>
+            <td>
+                <p>Confirm Password</p>
+                <label for="address"></label>
+                <input type="text" id="password">
+            </td>
+        </tr>
+        <tr>
+        </td>
+
+        </tr>
+
+
+
+
+ 
+
+
+           
+
+       
     </table>
 </body>
 </html>
