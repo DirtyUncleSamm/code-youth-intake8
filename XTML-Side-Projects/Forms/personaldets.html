@@ -5,37 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Details</title>
+    <script src="https://kit.fontawesome.com/0e602e445e.js" crossorigin="anonymous"></script>
     <style>
-        title {
+        table {
+            width: 500px;
+            height: auto;
+            padding: 10px;
+            border: 1px;
+        }
+        #title {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            font-size: 14px;
+            left: 20px;
+        }
+        #icon {
+            position: relative;
+            size: 14px;
+            top: 29px;
 
         }
+
     </style>
 </head>
 <body>
     <table>
         <tr colspan="2">
-            <p>PERSONAL DETAILS</p>
+            <p style="text-align:center; position: relative; right:9rem;">PERSONAL DETAILS</p>
         </tr>
         <tr>
            <td> 
-                <p>First Name</p>
+                <i class="fa-solid fa-user" id="icon"></i>
+                <p id="title">First Name</p>
                 <label for="first name"></label>
                 <input type="text" id="fname" name="first name" Value="First Name">
             </td>
             <td>
-                <p>Lastname</p>
+                <p id="title">Lastname</p>
                 <label for="last name"></label>
                 <input type="text" id="lName" name="last name" Value="Last Name">
             </td>
         </tr>
         <tr>
             <td rowspan="2">
-                <p>Address</p>
+                <i class="fa-sharp fa-solid fa-house" id="icon"></i>
+                <p id="title">Address</p>
                 <label for="address"></label>
                 <input type="text" id="address" id="address"  name="address" style="width:90%; height:90px;">
             </td>
             <td>
-                <p>Country</p>
+                <i class="fa-sharp fa-solid fa-flag" id="icon"></i>
+                <p id="title">Country</p>
                 <select name="country" id="country">
                     <option value="canada">Canada</option>
                     <option value="america">America</option>
@@ -44,46 +64,40 @@
         </tr>
         <tr>
             <td>
-                <p>Email</p>
+                <i class="fa-regular fa-at" id="icon"></i>
+                <p id="title">Email</p>
                 <label for="email"></label>
                 <input type="email" Value="example@mail.com">
             </td>
         </tr>
         <tr>
             <td>
-                <p>Password</p>
+                <i class="fa-sharp fa-solid fa-lock" id="icon"></i>
+                <p id="title">Password</p>
                 <label for="password"></label>
                 <input type="Password" id="password">
             </td>
             <td>
-                <p>Confirm Password</p>
+                <i class="fa-solid fa-rotate-left" id="icon"></i>
+                <p id="title">Confirm Password</p>
                 <label for="password"></label>
-                <input type="text" id="password">
+                <input type="password" id="password">
             </td>
         </tr>
         <tr>
             <td>
-                <p>Pincode</p>
+                <i class="fa-sharp fa-solid fa-thumbtack" id="icon"></i>
+                <p id="title">Pincode</p>
                 <label for="pincode"></label>
                 <input type="password" id="pincode"> 
             </td>
             <td>
-                <p>Contact Number</p>
+                <i class="fa-solid fa-mobile" id="icon"></i>
+                <p id="title">Contact Number</p>
                 <label for="contact number"></label>
                 <input type="number" id="contact number">
             </td>
-
         </tr>
-
-
-
-
- 
-
-
-           
-
-       
     </table>
 </body>
 </html>
