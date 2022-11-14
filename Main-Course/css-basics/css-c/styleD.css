@@ -1,0 +1,41 @@
+.tl{
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+}
+.tm{
+    border-top: 2px solid black;
+}
+.tr{
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+}
+.r{
+    border-right: 2px solid black;
+}
+.br{
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+.bm{
+    border-bottom: 2px solid black;
+}
+.bl{
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+.l{
+    border-left: 2px solid black;
+}
+body{
+    margin:.5rem;
+}
+th {
+    width:200px;
+    height:150px;
+    padding:20px 0px 20px 0px;
+}
+img {
+    width:200px;
+    height:145px;
+    object-fit: cover;
+}
