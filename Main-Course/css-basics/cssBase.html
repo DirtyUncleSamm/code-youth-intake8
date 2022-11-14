@@ -9,7 +9,7 @@
   
     <!--This is internal css and has global properties depending on the positioning of the external and the internal links. i.e. If the internal is above the external link it will take presedence, and vise-versa. -->
     <style>
-        
+        /*type selectors, applies to tags*/
         h1 {
             color:blue;
             text-align:center;
@@ -17,6 +17,25 @@
         p {
             color:red;
         }
+        /*class selectors*/
+        .selector{}
+        /*id selector*/
+        #selector{}
+
+
+        /*Group selector examples. If you want to format listed elements seprated by a , all the same.*/
+        a,ul{
+
+        }
+        /*selector that applies to all elements*/
+        *{}
+        /*Desceendant selector*/
+
+        div p {}
+
+        /*child selector*/
+        div>p{}
+        
 
     </style>
         
@@ -32,5 +51,21 @@
     <p>Lorem ipsum dolor sit amet. Et minima totam vel consequatur facere et repudiandae laborum id autem galisum. At soluta pariatur eum veniam beatae non sequi distinctio. Id galisum maxime qui aspernatur molestiae ut corporis fugit ab dolor dolores? Id corporis dolorem ab quia quia quo sapiente magnam quo amet corporis qui quas ipsum ut galisum ducimus quo aliquam aliquam.</p>
     <p class="p3">Lorem ipsum dolor sit amet. Et minima totam vel consequatur facere et repudiandae laborum id autem galisum. At soluta pariatur eum veniam beatae non sequi distinctio. Id galisum maxime qui aspernatur molestiae ut corporis fugit ab dolor dolores? Id corporis dolorem ab quia quia quo sapiente magnam quo amet corporis qui quas ipsum ut galisum ducimus quo aliquam aliquam.</p>
     <p>Lorem ipsum dolor sit amet. Et minima totam vel consequatur facere et repudiandae laborum id autem galisum. At soluta pariatur eum veniam beatae non sequi distinctio. Id galisum maxime qui aspernatur molestiae ut corporis fugit ab dolor dolores? Id corporis dolorem ab quia quia quo sapiente magnam quo amet corporis qui quas ipsum ut galisum ducimus quo aliquam aliquam.</p>
+    <a href="#">link</a>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+    </ul>
+    <div>
+        <h2>New Paragraph</h2>
+        <p>Example of child selector</p>
+        <div>
+            <p>example of descendant selector</p>
+        </div>
+    </div>
+    <section>
+        <input type="checkbox">
+        
+    </section>
 </body>
 </html>
