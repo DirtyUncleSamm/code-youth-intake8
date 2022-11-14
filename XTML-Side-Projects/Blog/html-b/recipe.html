@@ -13,49 +13,54 @@
             margin-top: 5rem;
             font-size: 52px;
         }
-        #img {
+        .img {
             width:100%;
             height:auto;
             border-radius: 8px;
+            margine: 8rem;
         }
-        #srv {
-            width: 10rem;
+        .srv {
+            width: 15rem;
             height: 18rem;
-            padding:15px;
+            margin: 3rem;
+            padding:35px 20px 35px 20px;
             border-radius: 9px;
-            background-color: #dddada;
+            background-color: #ffffff;
             box-shadow: 0 3px 10px rgb(0 0 0 / 0.7);
+            
+            
         }
-        #ing {
+        .mstr {
             display:flex;
+            padding: 0px 4rem 0px 4rem;
         }
         #t {
             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             color:#817e7e;
             text-align:right;
-            font-size: .5em;
-
+            font-size: .7em;    
+            padding-top:10px;
 
         }
         #s {
             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             color:#313131;
             text-align: right;
-            font-size: .5em;
+            font-size: .7em;
+            padding-bottom: 10px;
+            
         }
         #icon {
             width:6vw;
             height:auto;
-            border-radius: 10px;
+            border-radius: 6px;
         }
         #icon1 {
             width:4vw;
             height:auto;
+            align-items: right;
         }
-        #inst {
-            
 
-        }
 
     </style>
 </head>
@@ -63,50 +68,67 @@
     <section>
         <h2>Classic Cheesecake Recipe</h2>
         <p>Look no further for a creamy and ultra smooth classic cheesecake recipe! Paired with a buttery graham cracker crust, no one can deny its simple decadence. For the best result, bake in a water bath.</p>
-        <img src="/XTML-Side-Projects/Blog/img-b/cheesecake.jpg" alt="cheesecake" id="img">
+        <img src="/XTML-Side-Projects/Blog/img-b/cheesecake.jpg" alt="cheesecake" class="img">
     </section>
-    <section>
-         <h3 id="title">Ingredients</h3>
-         <div id="chk">
-             <label for="ingredients"><i>Graham Cracker Crust</i></label>
-             <br><br>
-             <input type="checkbox" id="ingredients"  name="ingredients1" value="graham cracker crumbs">1 and 1/2 cups<b> graham cracker crumbs</b> (about 10 full sheet graham crackers)</input>
-             <br>
-             <input type="checkbox" id="ingredients"  name="ingredients2" value="unsalted butter">5 Tablespoons<b>unsalted butter</b>, melted</input>
-             <br>
-             <input type="checkbox" id="ingredients"  name="ingredients3" value="granulated sugar">1/4 cup (50g)<b> granulated sugar</b></input>
-         </div>
-         <br>
-         <div id="chk">
-             <label for="ingredients"><i>Cheesecake</i></label>
-             <br><br>
-             <input type="checkbox" id="ingredients"  name="ingredients4" value="cream cheese">four 8-ounce blocks (904g) full-fat <b>cream cheese</b></input>
-             <br>
-             <input type="checkbox" id="ingredients"  name="ingredients5" value="granulated sugar">1 cup (200g)<b>granulated sugar</b></input>
-             <br>
-             <input type="checkbox" id="ingredients"  name="ingredients6" value="sour cream">1 cup (240g)full-fat<b>sour cream</b>, at room temperature</input>
-             <br>
-             <input type="checkbox" id="ingredients"  name="ingredients7" value="pure vanilla extract">1 tsp<b> pure vanilla extract</b></input>
-             <br>
-             <input type="checkbox" id="ingredients"  name="ingredients8" value="fresh lemon juice">2 tsp<b>  fresh lemon juice</b>(optional, but recommended)</input>
-             <br>
-             <input type="checkbox" id="ingredients"  name="ingredients9" value="eggs">3 large<b> eggs</b>, at room temperature</input>
-             <br>
-             <input type="checkbox" id="ingredients"  name="ingredients10" value="suggested toppings">topping suggestions: salted caramel, lemon curd, strawberry topping, chocolate ganache, red wine chocolate ganache, fresh fruit,, whipped cream, or raspberry sauce (recipe in notes)</input>
-         </div>
-         <div id="srv">
-             <img src="/XTML-Side-Projects/Blog/img-b/cutlr.png" id="icon1">
-             <p id="t">YIELDS</p><p id="s" style="color: #DD7A06;">12 servings</p>
-
-             <img src="/XTML-Side-Projects/Blog/img-b/clck.png" id="icon1"> 
-             <p id="t">PREP TIME</p><p id="s">45 minutes</p>
-
-             <img src="/XTML-Side-Projects/Blog/img-b/clck.png" id="icon1"> 
-             <p id="t">COOK TIME</p><p id="s">1 hour</p>
-                        
-             <img src="/XTML-Side-Projects/Blog/img-b/clck.png" id="icon1"> 
-             <p id="t">TOTAL TIME</p><p id="s">105 minutes</p>
-         </div>
+    <section class="mstr">
+        <br>
+        <div id="chk">
+            <h3>Ingredients</h3>
+            <label for="ingredients" ><i>Graham Cracker Crust</i></label>
+            <br><br>
+            <input type="checkbox" id="ingredients"  name="ingredients1" value="graham cracker crumbs">1 and 1/2 cups<b> graham cracker crumbs</b> (about 10 full sheet graham crackers)</input>
+            <br>
+            <input type="checkbox" id="ingredients"  name="ingredients2" value="unsalted butter">5 Tablespoons<b>unsalted butter</b>, melted</input>
+            <br>
+            <input type="checkbox" id="ingredients"  name="ingredients3" value="granulated sugar">1/4 cup (50g)<b> granulated sugar</b></input>
+            <br><br>
+            <label for="ingredients"><i>Cheesecake</i></label>
+            <br><br>
+            <input type="checkbox" id="ingredients"  name="ingredients4" value="cream cheese">four 8-ounce blocks (904g) full-fat <b>cream cheese</b></input>
+            <br>
+            <input type="checkbox" id="ingredients"  name="ingredients5" value="granulated sugar">1 cup (200g)<b>granulated sugar</b></input>
+            <br>
+            <input type="checkbox" id="ingredients"  name="ingredients6" value="sour cream">1 cup (240g)full-fat<b>sour cream</b>, at room temperature</input>
+            <br>
+            <input type="checkbox" id="ingredients"  name="ingredients7" value="pure vanilla extract">1 tsp<b> pure vanilla extract</b></input>
+            <br>
+            <input type="checkbox" id="ingredients"  name="ingredients8" value="fresh lemon juice">2 tsp<b>  fresh lemon juice</b>(optional, but recommended)</input>
+            <br>
+            <input type="checkbox" id="ingredients"  name="ingredients9" value="eggs">3 large<b> eggs</b>, at room temperature</input>
+            <br>
+            <input type="checkbox" id="ingredients"  name="ingredients10" value="suggested toppings">topping suggestions: salted caramel, lemon curd, strawberry topping, chocolate ganache, red wine chocolate ganache, fresh fruit,, whipped cream, or raspberry sauce (recipe in notes)</input>
+        </div>
+        <table class="srv" cellspacing="0">
+            <tr>
+                <td rowspan="2"><img src="/XTML-Side-Projects/Blog/img-b/cutlr.png" id="icon1"></td>
+                <td id="t">YIELDS</td>
+            </tr>
+            <tr >
+                <td id="s"style="color: #DD7A06;">12 servings</td>
+            </tr>
+            <tr>
+                <td rowspan="2"><img src="/XTML-Side-Projects/Blog/img-b/clck.png" id="icon1"> </td>
+                <td id="t">PREP TIME</td>
+            </tr>
+            <tr>
+                <td id="s">45 minutes</td>
+            </tr>
+            <tr>
+                <td rowspan="2"><img src="/XTML-Side-Projects/Blog/img-b/clck.png" id="icon1"></td>
+                <td id="t">COOK TIME</td>
+            </tr>
+            <tr>
+                <td id="s">1 hour</td>
+            </tr>
+            <tr>
+                <td rowspan="2"><img src="/XTML-Side-Projects/Blog/img-b/clck.png" id="icon1"></td>
+                <td id="t">TOTAL TIME</td>
+            </tr>
+            <tr>
+                <td id="s">105 minutes</td>
+            </tr>
+        </table>
+                            
     </section>
     
     <h3 id="title">Instructions</h3>
