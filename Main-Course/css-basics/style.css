@@ -1,4 +1,4 @@
-/*this is externally linked css has global properties*/
+/*this is externally linked css has global properties. Internally linked css will always over-ride externally linked*/
 
 h1{
     color:blue;
@@ -6,4 +6,20 @@ h1{
 }
 p{
     color:red;
+}
+/*The id element should be used once*/
+#p2{
+    color:purple;
+    text-align: center;
+}
+/*applies to multiple element*/
+.p3{
+    background-color: rgb(65, 65, 29);
+    color:aliceblue;
+}
+p#p2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p.p3{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }

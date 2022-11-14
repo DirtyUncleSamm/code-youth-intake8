@@ -1,0 +1,21 @@
+body{
+    background-color:rgb(111, 209, 224);
+}
+
+h1{
+    color:darkblue;
+    text-align:center;
+
+}
+.q{
+    background-color:pink;
+    color:red;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/*# quotations page
+backgrouns: light blue;
+heading: centered and dark blue;
+quotation:centered, red, font-family:arial, background:pink;
+external css*/
