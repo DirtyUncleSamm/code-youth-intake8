@@ -4,19 +4,21 @@ nav{
 a{
     color:white;
     text-decoration:none;
+    
 }
 .subnav{
-
+    margin: 3px 10px 3px 10px;
+    text-transform: capitalize;
 }
 .subnav:hover{
     text-decoration:underline;
 }
 #new{
-
+    text-transform:uppercase;
 }
 #top{
-
+    text-transform: capitalize;
 }
 #mor{
-
+    text-transform: capitalize;
 }
