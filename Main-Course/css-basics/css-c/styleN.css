@@ -1,0 +1,80 @@
+.main{
+    margin:auto;
+    padding:10px 3px 10px 3px; 
+    border-top:3px solid rgb(75, 75, 75);
+    border-bottom:3px solid rgb(75, 75, 75);
+    width:800px;
+    height:270px;
+    
+}
+.subnav a{
+    margin:1rem;
+}
+img{
+    width:35%;
+    height:auto;
+    margin-top:5px;
+    display:inline-block;
+}
+
+ul {
+    margin:13px;
+    list-style: square; 
+    font-size:14px;
+    display:inline-block;
+    line-height: 2;
+}
+
+  
+ul li::marker {  
+    color: red; 
+    text-align:justify
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+}
+
+#title{
+    margin:0rem 1.5rem 0rem 0rem;
+    color:red;
+    text-transform:uppercase;
+    text-decoration: none;
+    font-size:25px;
+}
+#title:hover{
+    color:black;
+    background-color: white;
+}
+a{
+    padding:5px; 
+    color:black;
+    text-transform:uppercase;
+    text-decoration:none;
+    font-size:12px;
+}
+a:link{
+    padding:5px; 
+    color:black;
+}
+a:hover{   
+    padding:5px; 
+    color:white;
+    background-color:red;
+    border-radius:3px ;
+}
+.button{
+    width:400px;
+    height:10px;
+    padding:2px 100px 2px 100px;
+    text-align:center;
+    position:relative;
+    right:80px;
+    color:white;
+    background-color:rgb(173, 172, 172);
+    border-radius: 5px;
+    float:right;
+}
+.button:hover{
+    background-color:red;
+}
+
