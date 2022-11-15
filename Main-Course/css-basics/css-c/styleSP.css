@@ -4,8 +4,7 @@
     border-top:3px solid rgb(75, 75, 75);
     border-bottom:3px solid rgb(75, 75, 75);
     width:800px;
-    height:270px;
-    
+    height:270px;   
 }
 .subnav a{
     margin:1rem;
@@ -28,7 +27,7 @@ ul {
   
 ul li::marker {  
     color: red; 
-    text-align:justify
+    text-align:justify;
     display: inline-block; 
     width: 1em; 
     margin-left: -1em; 
