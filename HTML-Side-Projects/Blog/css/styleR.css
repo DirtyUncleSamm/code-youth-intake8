@@ -1,5 +1,5 @@
 body{
-    margin:1rem;
+    margin:3rem 6rem 3rem 6rem;
 }
 h1 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -7,10 +7,14 @@ h1 {
     margin-top: 5rem;
     font-size: 52px;
 }
+p {
+    font-size:.8vw;
+}
 #img {
-    width:100%;
+    width:80%;
     height:auto;
     border-radius: 8px;
+    align-self: center;
     margine: 8rem;
 }
 #mstr{
@@ -47,12 +51,12 @@ h1 {
     
 }
 .icon {
-    width:6vw;
+    width:2vw;
     height:auto;
     border-radius: 6px;
 }
 .icon1 {
-    width:7vw;
+    width:1.5vw;
     height:auto;
     align-items: right;
 }
