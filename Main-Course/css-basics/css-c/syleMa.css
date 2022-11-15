@@ -1,0 +1,21 @@
+div {
+    border:1px solid blue;
+    width: 30%;
+    margin:auto;
+    padding:20px;
+    float:left;
+}
+/*margin:auto; will position elements to center*/
+#div1{
+    margin:10px;
+    border:1px solid black;
+    padding:20px; 
+    font-size:12px;
+}
+#div2{
+
+}
+#div3{
+
+}
+
