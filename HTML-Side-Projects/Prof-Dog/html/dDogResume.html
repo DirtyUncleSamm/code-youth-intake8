@@ -9,24 +9,66 @@
 </head>
 <body>
     <h1>Dog D. Dog</h1>
+    <img src="/HTML-Side-Projects/Prof-Dog/img/IMG_20200220_211416.jpg">
     <h2>about</h2>
-    <p>Woof woof!<br>Hi, I'm Dog. I love <span>User Interface Design</span>.</p>
+    <p>Woof woof!<br><br>Hi, I'm Dog. I love <span id="uid">User Interface Design</span>.</p>
     <h2>courses</h2>
     <p>Here are some courses I've taken:</p>
     <table>
-        <tr>
+        <thead>
+            <tr>
             <th>course number</th>
             <th>course title</th>
             <th>semester taken</th>
         </tr>
         <tr>
-            <th>for credit</th>
+            <th colspan="3">for credit</th>
         </tr>
-        <tr>
-            
-        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>6.813</td>
+                <td>user interface design</td>
+                <td>spring 2014</td>
+            </tr>
+            <tr>
+                <td>6.034</td>
+                <td>artificial intelligence</td>
+                <td>fall 2013</td>
+            </tr>
+            <tr>
+                <td>6.006</td>
+                <td>introduction to algorithms</td>
+                <td>fall 2013</td>
+            </tr>
+            <tr>
+                <th colspan="3">listener</th>
+            </tr>
+        </tbody>
+        <tfoot>        
+            <tr>
+                <td>6.867</td>
+                <td>machine learning</td>
+                <td>fall 2013</td>
+            </tr>
+            <tr>
+                <td>6.830</td>
+                <td>database systems</td>
+                <td>fall 2012</td>
+            </tr>
+
+        </tfoot>
+
+
+
     </table>
     <h2>interest</h2>
+    <p id="interest">I am interested <span id="hci">hci,</span> memes, and youtube videos.</p>
     <h2>submit pet information</h2>
+    <p>Would love to know what kinds of pets you 'own' (you'll never own me). Submit below!</p>
+    <p>Name: <input type="text"  name="username" maxlength="16" size="10" required></p>
+    <p>Gender: <input type="text"  name="gender" maxlength="16" size="10" require></p>
+    <p>Phylum: <input type="text"  name="phylum" maxlength="16" size="10" required></p>
+    <input type="submit" value="submit" id="submit">
 </body>
 </html>
