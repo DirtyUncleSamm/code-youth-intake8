@@ -8,27 +8,31 @@ a{
     color:white;
     text-decoration:none;
 }
-.subnav{
+ul{
+    list-style-type:none;
+}
+li{
     margin: .1vw 2vw .1vw 2vw;
+    font-size:1.5vw;
+    font-family:Arial, Helvetica, sans-serif;
+    display:inline-block;
+}
+
+.subnav{
+    margin: .1vw 1vw .1vw 1vw;
     font-size:1.5vw;
     font-family:Arial, Helvetica, sans-serif;
     color:white;
     text-transform: capitalize;
-    position:inherit; 
 }
 .subnav:hover{
-    margin: .1vw 2vw .1vw 2vw;
-    font-size:1.5vw;
     text-decoration:underline;
     color:white;
 }
-
 .subnav:active{
-    margin: .1vw 2vw .1vw 2vw;
-    font-size:1.5vw;
     color:red;
     background-color:white;
-    font-size:2vw;
+    border:1px solid white;
 }
 
 #menu{
@@ -40,24 +44,14 @@ a{
 
 }
 #new{
-    margin:22px;
-    font-family:Arial, Helvetica, sans-serif;/*stright thin and sleek*/
     font-size:3vw;
     text-transform:uppercase;
-    position:relative;
-    top:.5rem;
 }
 
 #mor{    
-    margin:2vw;
-    padding:2px;
-    font-size:2vw;
-    font-family:Arial, Helvetica, sans-serif;
+    padding:2.5px;
     text-transform: capitalize;
     border:1px solid white;
-    position:relative;
-    top:.5rem;
-    left:1rem;
 }
 #mor:hover{
     color:red;
