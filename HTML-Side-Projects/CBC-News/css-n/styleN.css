@@ -17,7 +17,20 @@ li{
     font-family:Arial, Helvetica, sans-serif;
     display:inline-block;
 }
-
+p{
+    font-size:1.8vw;
+}
+h3{
+    font-size:1.5;
+}
+.lead{
+    font-size:3vw;
+}
+.anal{
+    color:red;
+    font-size:1.5vw;
+    text-transform:uppercase;
+}
 .subnav{
     margin: .1vw 1vw .1vw 1vw;
     font-size:1.5vw;
@@ -61,5 +74,45 @@ li{
     width:6rem;
     height:auto;
     border-right:1px solid red;
-
 }
+#update{
+    color:gray;
+    font-size:1.1vw;
+    font-family:sans-serif;
+    text-transform: capitalize;
+    display:inline;
+}
+#arti{
+    margin:1rem;
+    padding: 0rem 0rem 3rem 0rem;
+    width:60%;
+    height:auto;
+    text-align:left;
+    border-bottom: 1px solid rgb(161, 160, 160);
+}
+#imgM{
+    width:100%;
+}
+a{
+    margin:1rem;
+    padding: 0rem 1rem 0rem 2rem;
+    width:60%;
+    height:auto;
+    text-align:left;
+    border-bottom: 1px solid rgb(161, 160, 160);
+}
+a:hover{
+    border:3px solid red;
+}
+#wrd{
+    width:60%;
+    height:auto;
+}
+#fs{
+    width:15vw;
+    height:8vw;
+    position:relative;
+    bottom:12rem;
+    left:28rem;
+}
+
