@@ -12,12 +12,21 @@ a{
 .subnav{
     margin: .1vw 2vw .1vw 2vw;
     font-size:2vw;
+    font-family:Arial, Helvetica, sans-serif;
     text-transform: capitalize;
     position:relative;
     top:.5rem;
 }
 .subnav:hover{
     text-decoration:underline;
+}
+#menu{
+    font-color:red;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#menu:hover{
+    font-color:black;
+
 }
 #new{
     margin:22px;
@@ -33,6 +42,7 @@ a{
     color:red;
     background-color:white;
     font-size:2vw;
+    font-family:Arial, Helvetica, sans-serif;
     text-transform: capitalize;
     position:relative;
     top:.5rem;
@@ -41,11 +51,16 @@ a{
     margin: 2vw;
     padding:2px;
     font-size:2vw;
+    font-family:Arial, Helvetica, sans-serif;
     text-transform: capitalize;
     border:1px solid white;
     position:relative;
     top:.5rem;
     left:1rem;
+}
+#mor:hover{
+    color:red;
+    background-color:white;
 }
 #logo{
     width:6rem;
