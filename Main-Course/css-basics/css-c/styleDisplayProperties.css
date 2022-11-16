@@ -1,0 +1,12 @@
+span{
+    background-color:yellow;
+} /*this is an in-line element*/
+#inline{
+    display:inline;
+} /*this can make elements fall inline on the same row*/
+#block{
+    display: block;
+} /*to specify width and height*/
+#inline-block{
+    display: inline-block;
+} /*to specify width and height in-line*/

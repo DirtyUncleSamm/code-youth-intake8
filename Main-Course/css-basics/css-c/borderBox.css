@@ -1,3 +1,38 @@
+*{
+    box-sizing: border-box;
+}
 div{
-    width
+    width:200px;
+    height:100px;
+    margin: 3px;
+}
+#one{
+    border: 1px solid black;
+}
+#two{
+    border: 1px solid rgb(48, 16, 16);
+}
+#three{
+    border: 2px solid rgb(15, 44, 10);
+}
+table,th,td{
+    border:1px solid black;
+    border-collapse: collapse;
+    background-color:grey;
+}
+th,td{
+    padding:5px;
+}
+tr:nth-child(even){
+    color:white;
+}
+thead{
+    background-color:cornsilk;
+    column-span:2; 
+}
+tbody{
+    background-color:white;
+}
+tfoot{
+
 }
