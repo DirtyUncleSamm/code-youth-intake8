@@ -1,7 +1,7 @@
 nav{
     margin:auto;
     width:auto;
-    height:3vw;
+    height:4vw;
     background-color:rgb(223, 2, 2);  
 }
 a{
@@ -15,18 +15,22 @@ a{
     color:white;
     text-transform: capitalize;
     position:inherit; 
-
 }
 .subnav:hover{
+    margin: .1vw 2vw .1vw 2vw;
+    font-size:1.5vw;
     text-decoration:underline;
-}
-.subnav:visited{
-    margin: 2vw;
-    padding:.2rem;
     color:white;
+}
+
+.subnav:active{
+    margin: .1vw 2vw .1vw 2vw;
+    font-size:1.5vw;
+    color:red;
     background-color:white;
     font-size:2vw;
 }
+
 #menu{
     font-color:red;
     font-family:Arial, Helvetica, sans-serif;
