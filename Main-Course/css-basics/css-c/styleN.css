@@ -1,6 +1,8 @@
 nav{
     margin:auto;
-    background-color:rgb(223, 2, 2);
+    width:auto;
+    height:3rem;
+    background-color:rgb(223, 2, 2);  
 }
 a{
     color:white;
@@ -8,9 +10,11 @@ a{
     
 }
 .subnav{
-    margin: 20px 45px 20px 45px;
-    font-size:20px;
+    margin: .1vw 2vw .1vw 2vw;
+    font-size:2vw;
     text-transform: capitalize;
+    position:relative;
+    top:.5rem;
 }
 .subnav:hover{
     text-decoration:underline;
@@ -18,19 +22,34 @@ a{
 #new{
     margin:22px;
     font-family:Arial, Helvetica, sans-serif;/*stright thin and sleek*/
-    font-size:30px;
+    font-size:3vw;
     text-transform:uppercase;
+    position:relative;
+    top:.5rem;
 }
 #top{
+    margin: 2vw;
+    padding:.2rem;
+    color:red;
+    background-color:white;
+    font-size:2vw;
     text-transform: capitalize;
-    margin: 20px 45px 20px 45px;
-    font-size:20px;
+    position:relative;
+    top:.5rem;
 }
 #mor{    
-    margin: 20px 50px 23px 50px;
+    margin: 2vw;
     padding:2px;
-    font-size:20px;
+    font-size:2vw;
     text-transform: capitalize;
     border:1px solid white;
+    position:relative;
+    top:.5rem;
+    left:1rem;
+}
+#logo{
+    width:6rem;
+    height:auto;
+    border-right:1px solid red;
 
 }
