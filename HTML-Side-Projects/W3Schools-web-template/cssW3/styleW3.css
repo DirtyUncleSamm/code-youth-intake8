@@ -1,0 +1,49 @@
+header{
+
+}
+nav{
+    width:100%;
+    height:auto;
+    background-color: black;
+    
+}
+ul{
+    list-style-type:none;
+}
+li{
+    display:inline;
+}
+main{
+    width:60%;
+    height:100rem;
+    background-color:blueviolet;
+    position:reletive
+}
+i{
+    margin:0px;
+}
+#w3{
+    width:3rem;
+    height:auto;
+}
+#conL{
+    width:10%;
+    height:100rem;
+    background-color:aqua;
+    float:left;
+}
+#conR{
+    width:10%;
+    height:100rem;
+    background-color:brown;
+    float:right;
+}
+.subnav{
+    font-size: 14px;
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.m{
+    display:inline;
+}
