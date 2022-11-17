@@ -1,0 +1,29 @@
+body{
+    height:1000px;
+}
+#static{
+    position:static;
+    left:10px;
+    top:20px;
+}
+#relative{
+    position:relative;
+    left:10px;
+    top:20px;
+    border: 1px solid black;
+}
+#fixed{
+    position:fixed;
+    border:1px solid blue;
+}
+#absolute{
+    position:absolute;
+    left:10px;
+    top:20px;
+    border: 1px solid black;
+    background-color: bisque;
+}/*relative to the parent element, which would be the body unless the parent element has a defined position property*/
+#parent{
+    position:relative;
+    border:1px solid green;
+}

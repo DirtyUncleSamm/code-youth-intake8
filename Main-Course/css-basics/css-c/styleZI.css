@@ -1,0 +1,28 @@
+div{
+    position: relative;
+    text-align: center;
+    border-radius: 50px;
+}
+#one{
+    background-color:aquamarine;
+    width: 5rem;
+    height: 5rem;
+    top: 20px;
+    z-index: three;
+}
+#two{
+    background-color: blue;
+    width: 5rem;
+    height: 5rem;
+    top: 5px;
+    left: 10px;
+    z-index: one;
+}
+#three{
+    background-color:brown;
+    width: 5rem;
+    height: 5rem;
+    bottom:20px;
+    left:20px;
+    z-index: two;
+}
