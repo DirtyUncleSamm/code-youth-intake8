@@ -1,0 +1,41 @@
+body{
+    background-image: url(/HTML-Side-Projects/Online-code-editor/img-o/bkgrnd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ul{
+    list-style-type:none;
+}
+li{
+    margin: 0px 5px 0px 5px;
+    padding:1px 4px 1px 4px;
+    border:1px solid rgb(1, 194, 133);
+    border-radius: 2px;
+    display:inline;
+
+}
+#card{
+    margin:2rem;
+    padding:2rem;
+    color:rgb(0, 154, 105);
+    background-color:rgb(4, 63, 66);
+    border-radius: 5px;
+    
+}
+#free{
+    margin:5px;
+    padding:1px 4px 1px 4px;
+    width: 60px;
+    text-align: center;
+    color:rgb(4, 63, 66);
+    text-transform:uppercase;
+    background-color:rgb(0, 154, 105);
+    border-radius:2px;
+}
+
+#inf{
+    display: inline;
+}
+#skill{
+
+}
