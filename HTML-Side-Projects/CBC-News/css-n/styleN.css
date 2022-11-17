@@ -3,6 +3,7 @@ nav{
     width:auto;
     height:4vw;
     background-color:rgb(223, 2, 2);  
+    
 }
 a{
     color:white;
@@ -12,10 +13,8 @@ ul{
     list-style-type:none;
 }
 li{
-    margin: .1vw 2vw .1vw 2vw;
-    font-size:1.5vw;
-    font-family:Arial, Helvetica, sans-serif;
-    display:inline-block;
+    
+    display: inline;
 }
 p{
     font-size:1.8vw;
@@ -32,11 +31,12 @@ h3{
     text-transform:uppercase;
 }
 .subnav{
-    margin: .1vw 1vw .1vw 1vw;
-    font-size:1.5vw;
+    font-size:.5rem;
     font-family:Arial, Helvetica, sans-serif;
     color:white;
     text-transform: capitalize;
+    display:inline;
+    
 }
 .subnav:hover{
     text-decoration:underline;
@@ -57,7 +57,6 @@ h3{
 
 }
 #new{
-    font-size:3vw;
     text-transform:uppercase;
 }
 
@@ -93,26 +92,29 @@ h3{
 #imgM{
     width:100%;
 }
-a{
-    margin:1rem;
-    padding: 0rem 1rem 0rem 2rem;
-    width:60%;
+.artii{
+    padding-left:2rem;
+    width:18.1rem;
     height:auto;
     text-align:left;
+    border: 3px solid rgba(0, 0, 0, 0);
     border-bottom: 1px solid rgb(161, 160, 160);
+    display:flex;
 }
-a:hover{
+.artii:hover{
     border:3px solid red;
 }
 #wrd{
-    width:60%;
-    height:auto;
+    color:black;
+    font-size: 12px;
+    flex-direction: column;
 }
+
 #fs{
+    margin-top:1rem;
     width:15vw;
     height:8vw;
-    position:relative;
-    bottom:12rem;
-    left:28rem;
+    flex-direction:column;
+
 }
 
