@@ -15,7 +15,12 @@ nav{
     height:auto;
     overflow: hidden;
     background-color: #333;
-    
+    position:fixed;
+}
+@media@media screen and (max-width:600px){
+    body{
+        font-size:;
+    }
 }
 ul{
     list-style-type:none;
@@ -28,7 +33,7 @@ ul{
 #columInd {
    padding: 15px 2px; 
    width: 20%;
-   height: fit-content;
+   height: 10000px;
    text-align:left;
    background-color: rgb(168, 201, 209);
    float: left;

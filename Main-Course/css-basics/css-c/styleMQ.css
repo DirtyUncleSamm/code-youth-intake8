@@ -11,3 +11,13 @@ body{
         background-color:rgb(128, 75, 0);
     }
 }
+@media screen and (max-height:520px){
+    body{
+        background-color:rgb(143, 137, 13);
+    }
+}
+@media screen and (max-height:500px){
+    body{
+        background-color:rgb(128, 0, 124);
+    }
+}
