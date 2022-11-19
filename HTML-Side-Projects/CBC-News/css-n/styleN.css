@@ -6,113 +6,45 @@ body{
 }
 main{
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
 }
-nav{
+header{
+    padding:.5rem 1.5rem;
     width:100%;
-    height:auto;
-    background-color:rgb(223, 2, 2);  
+    height: 4rem;
     display:flex;
 }
+nav{
+    margin-top:4rem;
+    width:100%;
+    height:auto;
+    overflow: hidden;
+    background-color: rgb(170, 9, 9);
+    position:fixed;
+    
+}
+
+#nav{
+    list-style-type:none;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;   
+}
+
 nav a{
     margin: 0px 8px;
     font-size: 14px;
     font-family:sans-serif;
-    color:white;
+    color:rgb(255, 255, 255);
     text-decoration: none;
     text-transform: uppercase;
 }
-#nav {
-    width:100%;
-    list-style-type:none;
-    display:flex;
-    flex-direction:row;
-    align-content: center;
-}
 nav a:hover{
-    text-decoration:underline;
-    color:white;
+    padding: 15px 8px;
+    background-color:rgb(8, 11, 10);
 }
-p{
-    font-size:1.8vw;
-    text-decoration:none;
-}
-h3{
-    font-size:1.5;
-}
-.lead{
-    font-size:3vw;
-}
-.anal{
-    color:red;
-    font-size:1.5vw;
-    text-transform:uppercase;
-}
-
-
-
-
-#menu{
-    font-color:red;
-    font-family:Arial, Helvetica, sans-serif;
-}
-#menu:hover{
-    font-color:black;
-
-}
-#new{
-    text-transform:uppercase;
-}
-
-#mor{    
-    padding:2.5px;
-    text-transform: capitalize;
-    border:1px solid white;
-}
-#mor:hover{
-    color:red;
-    background-color:white;
-}
-#logo{
-    width:6rem;
-    height:auto;
-    border-right:1px solid red;
-}
-#update{
-    color:gray;
-    font-size:1.1vw;
-    font-family:sans-serif;
-    text-transform: capitalize;
-    display:inline;
-}
-#arti{
-    margin:1rem;
-    padding: 0rem 0rem 3rem 0rem;
+#arti>img{
     width:60%;
-    height:auto;
-    text-align:left;
-    border-bottom: 1px solid rgb(161, 160, 160);
-}
-#imgM{
-    width:100%;
-}
-.artii{
-    padding-left:2rem;
-    width:18.1rem;
-    height:auto;
-    text-align:left;
-    border: 3px solid rgba(0, 0, 0, 0);
-    border-bottom: 1px solid rgb(161, 160, 160);
-    display:flex;
-}
-.artii:hover{
-    border:3px solid red;
-}
-
-
-.fs{
-    margin-top:1rem;
-    width:15vw;
-    height:8vw;
+    
 }
 
