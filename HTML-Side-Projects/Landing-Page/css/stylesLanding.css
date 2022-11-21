@@ -7,24 +7,128 @@ nav{
     font-size:25px;
     color:white;
     font-family: 'Chakra Petch', sans-serif;
-    background-color: rgb(0, 0, 48);
+    background-color:rgb(10,10,35);
+    align-items: center;
     display:flex;
     flex-direction:row;
+    position:fixed;
 }
 nav input{
     margin: 1px 20px;
-    background-color:rgb(75, 75, 109);
+    width:450px;
+    height:30px;
+    background-color:rgb(10,10,35);
     font-size: 20px;
     color:white;
 }
+
 .dropdown{
+    position: relative;
+    display: inline-block;
+    float:right;
+}
+.dropbtn{
+    background-color: rgb(10,10,35);
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid white;
+}
+.dropbtn:hover{
+    color:rgb(10,10,35);
+    background-color:white;
+}
+.dropdown-content{
+    padding: 10px;
+    font-family:sans-serif;
+    display: flex;
+    flex-direction:column;
+    position: absolute;
+    background-color: rgb(10,10,35);
+    min-width: 260px;
+    box-shadow: 0px 8px 16px 0px rgb(10,10,35));
+    z-index: 1;
+    text-decoration: none;
+}
+.dropdown-content a{
+    color: white;
+    text-transform:capitalize;
+    text-decoration: none;
+}
+.dropdown-content a:hover {
+    color:rgb(0, 0, 48);
+    background-color:white;
+
+}
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction:column;
+}
+.signout:hover{
+    color:red;
+    background-color:rgb(248, 142, 142);
 
 }
 
 
-main{
-
+nav img{
+    width:auto;
+    height:40px;
+    float:right;
 }
+
+#welcome{
+    padding:100px 300px ;
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+}
+#welcome h1{
+    font-size: 40px;
+    text-align:left;
+}
+#welcome p{
+    font-size: 24px;
+    text-align:left;
+}
+
+.brandCons{
+    margin: 20px;
+    display:flex;
+    flex-direction:row;
+}
+#welcome i{
+    width:1000px;
+    height:auto;
+}
+button{
+    margin: 5px 80px;
+    padding: 10px 5px;
+    width: 70%;
+    font-size:26px;
+    letter-spacing: 2px;;
+    background-image: linear-gradient(to top, rgb(199, 159, 38), rgb(238, 200, 84));
+    border: 3px solid rgb(199, 159, 38);
+}
+#welcome img{
+    margin:20px 10px;
+    width:80%;
+}
+#banner{
+    padding:30px;
+    color: white;
+    font-size: 40px;
+    background-color:rgb(59,59,79);
+    text-align:center;
+}
+
+#coCons{}
+#alumni{}
+.alumniCards{}
+#curriculum{}
+.cuCards{}
+#cuBtn{}
+
 footer{
 
 }
