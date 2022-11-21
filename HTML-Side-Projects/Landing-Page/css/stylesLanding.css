@@ -46,7 +46,7 @@ nav input{
     position: absolute;
     background-color: rgb(10,10,35);
     min-width: 260px;
-    box-shadow: 0px 8px 16px 0px rgb(10,10,35));
+    box-shadow: 0px 8px 16px 0px rgb(10,10,35);
     z-index: 1;
     text-decoration: none;
 }
@@ -101,7 +101,7 @@ nav img{
     width:1000px;
     height:auto;
 }
-button{
+main button{
     margin: 5px 80px;
     padding: 10px 5px;
     width: 70%;
@@ -123,8 +123,32 @@ button{
 }
 
 #coCons{}
-#alumni{}
-.alumniCards{}
+
+#alumni{
+   padding:10px 40px;
+    align-items: center;
+    display:flex;
+    flex-direction:column;
+}
+#alumni h1{
+
+}
+.alumniCards{
+    padding: 80px 0px;
+    width: 90%;
+    height:auto;
+    display:flex;
+    flex-direction: row;
+    box-shadow:0px 0px 10px #080707 ;
+}
+.alumnicards img{
+    width:auto;
+    height:510px;
+}
+.alumnicards .textbox{
+
+    text-align:center;
+}
 #curriculum{}
 .cuCards{}
 #cuBtn{}
