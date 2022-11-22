@@ -149,10 +149,37 @@ main button{
 
     text-align:center;
 }
-#curriculum{}
+#curriculum{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
 .cuCards{}
 #cuBtn{}
 
 footer{
+    background-color:rgb(208,208,213);
+}
+.missionStatement{
+    display:flex;
+    flex-direction:column;
+}
+.missionStatement a{
+    text-decoration: none;
+    color:black;
+
+}
+.missionStatement span{
+    text-decoration: underline;
+}
+footer ul{
+    list-style-type: none;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+footer li a{
+    text-decoration:none;
+    color:black;
 
 }
