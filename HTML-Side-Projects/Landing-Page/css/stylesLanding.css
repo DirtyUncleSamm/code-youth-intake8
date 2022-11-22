@@ -11,9 +11,11 @@ nav{
     align-items: center;
     display:flex;
     flex-direction:row;
+    justify-content:space-between;
     position:fixed;
 }
-nav input{
+
+input{
     margin: 1px 20px;
     width:450px;
     height:30px;
@@ -21,27 +23,20 @@ nav input{
     font-size: 20px;
     color:white;
 }
-
+.dropbtn{
+    padding:5px 10px;
+    background-color: rgb(10,10,35);
+    color: white;
+    font-size: 16px;
+    border: 1px solid white;
+}
 .dropdown{
     position: relative;
     display: inline-block;
 }
-.dropbtn{
-    background-color: rgb(10,10,35);
-    color: white;
-    padding: 5px 10px;
-    font-size: 16px;
-    border: 1px solid white;
-}
-.dropbtn:hover{
-    color:rgb(10,10,35);
-    background-color:white;
-}
 .dropdown-content{
-    padding: 10px;
     font-family:sans-serif;
-    display: flex;
-    flex-direction:column;
+    display: none;
     position: absolute;
     background-color: rgb(10,10,35);
     min-width: 260px;
@@ -49,6 +44,11 @@ nav input{
     z-index: 1;
     text-decoration: none;
 }
+.dropbtn:hover{
+    color:rgb(10,10,35);
+    background-color:white;
+}
+
 .dropdown-content a{
     color: white;
     text-transform:capitalize;
@@ -68,51 +68,53 @@ nav input{
     background-color:rgb(248, 142, 142);
 
 }
-
-
 nav img{
     width:auto;
-    height:40px;
-    float:right;
+    height:30px;
+    display:flex;
+    justify-content: end;
 }
 
 #welcome{
-    padding:100px 300px ;
+    margin:0px 100px;
+    padding:50px 300px ;
     display:flex;
     flex-direction:column;
-    text-align: center;
+    align-items: center;
+    border:1px solid black;
 }
-#welcome h1{
-    font-size: 40px;
-    text-align:left;
+h1{
+    font-size: 50px;
 }
 #welcome p{
     font-size: 24px;
     text-align:left;
 }
 
-.brandCons{
-    margin: 20px;
+#welcome div{
+    margin: 25px;
+    padding: 0px 25px;
+    width:fit-content;
     display:flex;
     flex-direction:row;
+    border:1px solid black;
+    contain: content;
 }
-#welcome i{
-    width:1000px;
-    height:auto;
+
+#welcome img{
+    margin:40px 10px;
+    width:80%;
 }
 main button{
-    margin: 5px 80px;
+    margin: 40px 70px;
     padding: 10px 5px;
-    width: 70%;
+    width: 80%;
     font-size:26px;
     letter-spacing: 2px;;
     background-image: linear-gradient(to top, rgb(199, 159, 38), rgb(238, 200, 84));
     border: 3px solid rgb(199, 159, 38);
 }
-#welcome img{
-    margin:20px 10px;
-    width:80%;
-}
+
 #banner{
     padding:30px;
     color: white;
@@ -121,7 +123,10 @@ main button{
     text-align:center;
 }
 
-#coCons{}
+#banner img{
+    width:150px;
+    height:auto;
+}
 
 #alumni{
    padding:10px 40px;
@@ -129,32 +134,47 @@ main button{
     display:flex;
     flex-direction:column;
 }
-#alumni h1{
 
-}
 .alumniCards{
-    padding: 80px 0px;
-    width: 90%;
+    margin: 40px 0px;
+    width: 50%;
     height:auto;
     display:flex;
     flex-direction: row;
-    box-shadow:0px 0px 10px #080707 ;
+    box-shadow:0px 0px 20px #080707 ;
 }
 .alumnicards img{
     width:auto;
     height:510px;
 }
 .alumnicards .textbox{
-
     text-align:center;
 }
 #curriculum{
+    margin:20px 100px;
+    padding:40px; 
     display:flex;
     flex-direction:column;
     align-items: center;
+    border:1px solid black;
 }
-.cuCards{}
-#cuBtn{}
+.cuCards{
+    margin:20px 0px;
+    padding: 20px;
+    font-size: 20px;
+    color:rgb(10,10,35);
+    border: 1px solid rgb(10,10,35);
+    text-decoration: none;
+    text-transform:capitalize;
+    align-items: center;
+}
+.fa-brands{
+    padding: 3px 100px;
+    height: 20px;
+}
+#curriculum>button{
+    width: 20%;
+}
 
 footer{
     margin-top: 50px;
