@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="/HTML-Side-Projects/Landing-Page/css/stylesLanding.css">
     <script src="https://kit.fontawesome.com/0e602e445e.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
         <input type="text" placeholder="Search 9,000+ tutorials" name="search">
         <div class="logo">freeCodeCamp(<i class="fa-solid fa-fire-flame-curved"></i>)</div>
+        <div id="right">        
             <div class="dropdown">
                 <button  class="dropbtn">Menu</button> 
                 <div class="dropdown-content"> 
@@ -31,7 +33,8 @@
                     <a  href="#" class="signout">sign out</a>
                 </div>
             </div>
-        <img src="/HTML-Side-Projects/Landing-Page/img/freeCodeCampuserIcon.png" class="profile">
+            <button type="button" onclick="location.href='https://auth.freecodecamp.org/login?state=hKFo2SAtVmt2ZXg5WWRwU1EtT0hRSlpGZENpVjFXcGZwT3pXWqFupWxvZ2luo3RpZNkgQzZrSkptWUNFYzZLVEEyVUFIbEIwV0h0RDNOOWYwYm-jY2lk2SBhVUR2OWpWcVRmeEJSRTFsNjBOQTVBZjd5VENHRTRjeQ&client=aUDv9jVqTfxBRE1l60NA5Af7yTCGE4cy&protocol=oauth2&response_type=code&redirect_uri=https%3A%2F%2Fapi.freecodecamp.org%2Fauth%2Fauth0%2Fcallback&scope=openid%20profile%20email'" id="signIn">Sign in</button>
+        </div>    
     </nav>
     
     <main>
@@ -45,11 +48,14 @@
                 <i class="fa-brands fa-spotify"></i>
                 <i class="fa-brands fa-amazon"></i>
             </div>
-            <button>Get Started (it's free)</button>
-            <img src="/HTML-Side-Projects/Landing-Page/img/welcomePicture.png">
-            <figcaption>freeCodeCamp students at a local study group in South Korea.</figcaption>
+            <button type="button" onclick="location.href='https://www.freecodecamp.org/learn/'">Get Started (it's free)</button>
+            <figure>
+                <img src="/HTML-Side-Projects/Landing-Page/img/welcomePicture.png">
+                <figcaption>freeCodeCamp students at a local study group in South Korea.</figcaption>  
+            </figure>
+
         </section>
-        <section id="banner"><!--Resize coCons and space. We also need to put media queries to make everything fit at 600px-->
+        <section id="banner">
             <h1>As seen in:</h1>
             <div>
                 <img src="/HTML-Side-Projects/Landing-Page/img/wired.png">
@@ -65,47 +71,47 @@
                 <img src="/HTML-Side-Projects/Landing-Page/img/bbc.png">
             </div>
         </section>
-        <section id="alumni">
+        <section id="testimonials">
             <h1>Here is what our alumni say about freeCodeCamp:</h1>
             <div class="alumniCards">
                 <img src="/HTML-Side-Projects/Landing-Page/img/alumni1.png">
                 <div class="textbox">
-                    <h1><strong>Shawn Wang</strong> in Signapore<br>Software Engineer at <strong>Amazon</strong></h1>
-                    <blockquote>"It's scary to change careers. I only gained confidence that I could code by<br> working through the gundreds of hours of free lessons on freeCodeCamp.<br>Within a year I had a six-figure job as a Software Engineer. <strong>freeCodeCamp changed my life.</strong>"</blockquote>
+                    <h2><strong>Shawn Wang</strong> in Signapore<br><br>Software Engineer at <strong>Amazon</strong></h2>
+                    <p>"It's scary to change careers. I only gained confidence that I could code by working through the gundreds of hours of free lessons on freeCodeCamp.Within a year I had a six-figure job as a Software Engineer. <strong>freeCodeCamp changed my life.</strong>"</p>
                 </div>
             </div>
             <br>
             <div class="alumniCards">
                 <img src="/HTML-Side-Projects/Landing-Page/img/alumni2.png">
                 <div class="textbox">
-                    <h1><strong>Sarah Chima</strong>in Nigeria<br>Software Engineer at <strong>ChatDesk</strong></h1>
-                    <blockquote>"<strong>freeCodeCamp was the gateway to my career</strong> as a softeare developer. The<br>well-structured curriculum took my coding knowledge from a total beginner<br>level to a very confident level. It was everything I needed to land my first dev job<br>at an amazing company."</blockquote>
+                    <h2><strong>Sarah Chima</strong>in Nigeria<br>Software Engineer at <strong>ChatDesk</strong></h2>
+                    <p>"<strong>freeCodeCamp was the gateway to my career</strong> as a softeare developer. The well-structured curriculum took my coding knowledge from a total beginner level to a very confident level. It was everything I needed to land my first dev job at an amazing company."</p>
                 </div>
             </div>
             <br>
             <div class="alumniCards">
                 <img src="/HTML-Side-Projects/Landing-Page/img/alumni3.png">
                 <div class="textbox">
-                    <h1><strong>Emma Bostian</strong> in Sweden<br>Software Engineer at <strong>Spotify</strong></h1>
-                    <blockquote>"I've always struggled with learning JavaScript. I've taken many courses but<br> freeCodeCamp's course was the one which stuck. Studying JavaScript as well as<br>data structures and algorithms on <strong>freeCodeCamp gave me the skills</strong> and <br>confidence I needed to land my dream job as a software engineer at Spotify."</blockquote>
+                    <h2><strong>Emma Bostian</strong> in Sweden<br>Software Engineer at <strong>Spotify</strong></h2>
+                    <p>"I've always struggled with learning JavaScript. I've taken many courses but freeCodeCamp's course was the one which stuck. Studying JavaScript as well as data structures and algorithms on <strong>freeCodeCamp gave me the skills</strong> and confidence I needed to land my dream job as a software engineer at Spotify."</p>
                 </div>
             </div>
         </section>
-        <section id="curriculum">
+        <section id="certification">
             <h1>Earn free verified cerifications in:</h1>
-            <a href="" class="cuCards"><i  class="fa-solid fa-laptop"></i>(new) responsive web design certification<img src="/HTML-Side-Projects/Landing-Page/img/arrow.png"></a>
-            <a href="" class="cuCards"><i class="fa-brands fa-js"></i> javascript algorithms and data structures certification</a>
-            <a href="" class="cuCards"><i class="fa-brands fa-react"></i> front end development libraries certification</a>
-            <a href="" class="cuCards"><i class="fa-regular fa-eye"></i>data visualization certification</a>
-            <a href="" class="cuCards"><i class="fa-solid fa-database"></i>relational database (beta) certification</a>
-            <a href="" class="cuCards"><i class="fa-solid fa-server"></i>back end development and APIs certification</a>
-            <a href="" class="cuCards"><i class="fa-solid fa-clipboard"></i>quality assurance certification</a>
-            <a href="" class="cuCards"><i class="fa-brands fa-python"></i>scientific computing with python certification</a>
-            <a href="" class="cuCards"><i class="fa-solid fa-chart-simple"></i>data analysis with python certification</a>
-            <a href="" class="cuCards"><i class="fa-solid fa-shield"></i>information security cerification</a>
-            <a href="" class="cuCards"><i class="fa-solid fa-robot"></i>machine learning with python certification</a>
+            <a href="" class="cuCards"><i  class="fa-solid fa-laptop"></i><p>(New) Responsive Web Design Cerification</p></a>
+            <a href="" class="cuCards"><i class="fa-brands fa-js"></i><p>JavaScript Algorithms and Data Structures Certification</p></a>
+            <a href="" class="cuCards"><i class="fa-brands fa-react"></i> <p>Front End Development Libraries Certification</p></a>
+            <a href="" class="cuCards"><i class="fa-regular fa-eye"></i><p>Data Visulization Certification</p></a>
+            <a href="" class="cuCards"><i class="fa-solid fa-database"></i><p>Relational Database (Beta) Certification</p></a>
+            <a href="" class="cuCards"><i class="fa-solid fa-server"></i><p>Back End Development and APIs Certification</p></a>
+            <a href="" class="cuCards"><i class="fa-solid fa-clipboard"></i><p>Quality Assurance Certification</p></a>
+            <a href="" class="cuCards"><i class="fa-brands fa-python"></i><p>Scientific Computing with Python Certification</p></a>
+            <a href="" class="cuCards"><i class="fa-solid fa-chart-simple"></i><p>Data Analysis with Python Certification</p></a>
+            <a href="" class="cuCards"><i class="fa-solid fa-shield"></i><p>Information Security Certification</p></a>
+            <a href="" class="cuCards"><i class="fa-solid fa-robot"></i><p>Machine Learning with Python Certification</p></a>
 
-            <button>Get Started (it's free)</button>
+            <button onclick="location.href='https://www.freecodecamp.org/learn/'">Get Started (it's free)</button>
         </section>
     </main>
     <footer>
