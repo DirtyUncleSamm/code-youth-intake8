@@ -25,7 +25,6 @@ nav input{
 .dropdown{
     position: relative;
     display: inline-block;
-    float:right;
 }
 .dropbtn{
     background-color: rgb(10,10,35);
@@ -158,13 +157,22 @@ main button{
 #cuBtn{}
 
 footer{
+    margin-top: 50px;
+    Padding: 20px;
+    font-size: 16px;
     background-color:rgb(208,208,213);
+}
+.missionStatement td{
+    margin:45px;
 }
 .missionStatement{
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
+    justify-content:space-around;
 }
+
 .missionStatement a{
+    font-size:18px;
     text-decoration: none;
     color:black;
 
@@ -181,5 +189,7 @@ footer ul{
 footer li a{
     text-decoration:none;
     color:black;
-
+}
+footer a:hover{
+    text-decoration: underline;
 }
