@@ -4,14 +4,16 @@ body{
     contain:content;
 }
 nav{
+    padding:10px;
     width:100%;
     color:white;
     background-color:rgb(10,10,35);
-    align-items:center;
-    position:fixed;
+    position:sticky;
+    top:0;
     display:flex;
+    align-items:center;
     flex-direction:row;
-    justify-content:space-evenly;
+    justify-content:space-between;
     z-index:1;
 }
 
@@ -21,44 +23,49 @@ input{
     font-size: 18px;
     color:white;
     background-color:rgb(10,10,35);
+    display:flex;
+    align-items: flex-start;
 
 }
 .logo{
     font-size:25px;
     font-family:'Chakra Petch', sans-serif;
+    display:flex;
+    align-items: center;
     
 }
-nav button{
+
+
+.dropbtn{
     padding:1px 5px;
-    font-size: 18px;
-    color: white;
-    background-color: rgb(10,10,35);
-    border: 1px solid white;
-    position:relative;
-}
-.dropdown{
-    
-    width:50px;
-    display: inline-block;
-}
-.dropdown-content{
-    padding: 8px;
-    min-width: 260px;
-    font-family:sans-serif;
-    text-decoration: none;
-    display: none;
-    position: absolute;
-    background-color: rgb(10,10,35);
-    box-shadow: 0px 8px 16px rgb(10,10,35); 
+    font-size:18px;
+    color:white;
+    background-color:rgb(10,10,35);
     border:1px solid white;
+    position:relative;
+    right:20px;
 }
 button:hover{
     color:rgb(10,10,35);
     background-color:white;
 }
+.dropdown{
+    display:inline-block;
+}
+.dropdown-content{
+    padding:10px 0px;
+    font-family:sans-serif;
+    text-align: left;
+    text-decoration:none;
+    display: none;
+    position: absolute;
+    background-color: rgb(10,10,35);
+    box-shadow: 0px 8px 16px rgb(10,10,35); 
+    
+}
 .dropdown-content a{
-    padding:0px 8px;
-    font-size:16px;
+    padding:0px 20px;
+    font-size:18px;
     color:white;
     text-transform:capitalize;
     text-decoration: none;
@@ -68,9 +75,11 @@ button:hover{
     background-color:white;
 
 }
-.dropdown:hover .dropdown-content {
+button:hover .dropdown-content {
     display: flex;
     flex-direction:column;
+    position:abolute;
+    right:0px;
 }
 /*<hr>line wont span .dropdown box. */
 #welcome{
@@ -341,6 +350,17 @@ h2{
 #certification button{
     width:20%;
 }
+
+
+
+
+
+
+
+
+
+
+
 footer{
     
     Padding: 20px;
@@ -348,7 +368,7 @@ footer{
     background-color:rgb(208,208,213);
 }
 h3{
-    align-self:center;
+    text-align:center;
 }
 .missionStatement{
     margin:auto;
@@ -356,6 +376,7 @@ h3{
     flex-direction: row;
     justify-content: center;
 }
+.about{}
 .missionStatement td{
     padding:5px 10px;
 }
@@ -383,3 +404,29 @@ footer a:hover{
     color:blue;
     text-decoration: underline;
 }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .missionStatement{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about{
+        width:20rem;
+        border:1px solid;
+    }
+    .missionStatement table{}
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px){}
+
+
