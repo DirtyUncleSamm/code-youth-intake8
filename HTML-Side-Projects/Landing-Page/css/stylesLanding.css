@@ -116,10 +116,18 @@ a .signout:hover{
     background-image: linear-gradient(to top, rgb(238, 200, 84), rgb(238, 200, 84));
 }
 
+
+
+
+
+
+
+
 /*Welcome content*/
 #welcome{
     margin:auto;
-    width:100%;
+    padding: 40px 0px;
+    width:50%;
     display:flex;
     flex-direction:column;
     align-items: center;
@@ -127,19 +135,23 @@ a .signout:hover{
     border: 1px solid black;
 }
 #welcome h1{
-    margin:100px 30px 0px 30px;
-    font-size: 20px; 
+    padding: 30px 0px;
+    width:50%;
+    font-size: 40px; 
     border: 1px solid black;
     font-family: 'Montserrat', sans-serif;
 }
 #welcome p{
     margin:30px;
-    font-size: 16px;
+    padding: 30px 0px;
+    width:45%;
+    font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     border: 1px solid black;
     contain:content;
 }
 #welcome div{
+    padding:10px 0px;
     width:fit-content;
     display:flex;
     flex-direction:row; 
@@ -147,27 +159,14 @@ a .signout:hover{
     border: 1px solid black;
 }
 #welcome i{
-    padding: 0px 15px;
-    font-size: 18px;
+    margin-top:40px; 
+    padding: 0px 20px;
+    font-size: 30px;
     color:rgb(10,10,35);
     border: 1px solid black;
 }
-figure{
-    width:60%;
-    text-align: center;
-    border: 1px solid black;
-}
-#welcome img{
-    width: 20%;
-}
-figcaption{
-    margin:20px;
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
-    border: 1px solid black;
-}
 main button{
-    margin: 40px 70px;
+    margin: 40px 0px 0px 0px;
     padding: 10px 5px;
     width: 50%;
     font-size:26px;
@@ -178,12 +177,125 @@ main button{
 main button:hover{
     background-image: linear-gradient(to top, rgb(238, 200, 84), rgb(238, 200, 84));
 }
-@media only screen and (max-width 600px){
+figure{
+    margin: 40px 0px;
+    width:50%;
+    text-align: center;
+    border: 1px solid black;
+}
+#welcome img{
+    width: 90%;
+}
+figcaption{
+    margin:8px 20px;
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid black;
+}
+@media only screen and (max-width:600px){
+   #welcome {
+    width: 100%;
+   }
+    #welcome h1{
+        font-size:16px;
+    }
+    #welcome p{
+        font-size:12px;
+    }
+    #welcome i{
+        padding:0px 10px;
+        font-size: 14px;
+    }
+    #welcome button{
+        font-size:9px;
+    }
+    #welcome figure{
+        width:60%;
+    }
+    #welcome figcaption{
+        font-size: 8px;
+    }
+}
+@media only screen and (min-width:600px){
     #welcome {
         width: 100%;
+       }
+    #welcome h1{
+        font-size:20px;
     }
-    figure
+    #welcome p{
+        font-size:15px;
+    }
+    #welcome i{
+        margin:0px;
+        padding:0px 10px;
+        font-size: 16px;
+    }
+    #welcome button{
+        font-size:15px;
+    }
+    #welcome figure{
+        width:70%;
+    }
+    #welcome figcaption{
+        font-size: 13px;
+    }
 }
+@media only screen and (min-width: 768px){
+    #welcome {
+        width: 90%;
+       }
+    #welcome h1{
+        font-size:25px;
+    }
+    #welcome p{
+        font-size:17px;
+    }
+    #welcome i{
+        padding:0px 18px;
+        font-size: 25px;
+    }
+    #welcome button{
+        font-size:12px;
+    }
+    #welcome figure{
+        width:60%;
+    }
+    #welcome figcaption{
+        font-size: 10px;
+    }
+}
+
+/*min-width: 992px-1840px; h1 is too large, image is too small and the #welcome <div> seems incredibly squished. 
+after min-width: 1841px; the width:50%; fits <div #welcome> contents nicely*/
+@media only screen and (min-width:992px){
+    #welcome {
+        width: 50%;
+       }
+    #welcome h1{
+        font-size:40px;
+    }
+    #welcome p{
+        font-size:20px;
+    }
+    #welcome i{
+        padding:0px 20px;
+        font-size: 25px;
+    }
+    #welcome button{
+        font-size:20px;
+    }
+    #welcome figure{
+        width:60%;
+    }
+    #welcome figcaption{
+        font-size: 15px;
+    }
+}
+
+
+
 /*brand awareness*/
 #banner{
     width:100%;
@@ -200,7 +312,10 @@ main button:hover{
     width:100px;
     height:auto;
 }
-/*testimonials*/
+
+
+
+
 #testimonials{
     width: 60%;
     align-items: center;
