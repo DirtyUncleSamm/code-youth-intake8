@@ -52,6 +52,7 @@ button:hover{
 }
 .dropdown-content{
     padding:10px 0px;
+    width:200px;
     font-family:sans-serif;
     text-align: left;
     text-decoration:none;
@@ -238,7 +239,7 @@ figcaption{
 }
 .textbox{
     padding:40px;
-    text-align:left;
+    text-align:justify;
     contain: content;
 }
 h2{
@@ -266,9 +267,6 @@ h2{
         font-size: 15px;
     }
 }
-
-
-
 #certification{
     margin:auto;
     padding:100px; 
@@ -307,7 +305,6 @@ h2{
 #certification button{
     width:30%;
 }
-
 @media only screen and (max-width: 600px){
     #certification h1{
         font-size: 28px;
@@ -324,7 +321,6 @@ h2{
     }
 }
 footer{
-    
     Padding: 10px;
     font-size: 16px;
     background-color:rgb(208,208,213);
@@ -342,27 +338,30 @@ h3{
 .missionStatement .about{
     width:25%;
 }
+.about a {
+    text-decoration: none;
+    color:rgb(21, 21, 117);
+}
 .missionStatement table{
     margin: 10px 0px;
     width: 28%;
 }
-
 .missionStatement th{
     padding:10px 0px;
 }
-.missionStatement td{
-    padding:6px;
+ td a{
+    padding:0px;
+    text-decoration: none;
+    color:rgb(10, 10, 82);
 }
-
 .missionStatement div{
     margin: 10px 40px;
     width:18%;
 }
-
-footer a{
+.footer-bottom a{
     padding:5px 10px;
     text-decoration:none;
-    color:black;
+    color:rgb(10, 10, 82);
 }
 footer a:hover{
     color:blue;
@@ -399,6 +398,6 @@ footer a:hover{
         padding-top:10px;}
 
 }
-
+/*add color */
 
 
