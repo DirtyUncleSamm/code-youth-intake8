@@ -34,8 +34,6 @@ input{
     align-items: center;
     
 }
-
-
 .dropbtn{
     padding:2px 8px;
     font-size:18px;
@@ -87,6 +85,11 @@ button:hover .dropdown-content {
     }
 
 }
+@media only screen and (max-width:900px){
+    input{
+        display:none;
+    }
+}
 #welcome{
     margin:auto;
     padding:40px 0px;
@@ -103,16 +106,16 @@ button:hover .dropdown-content {
     font-family: 'Montserrat', sans-serif;
 }
 #welcome p{
-    margin:30px;
-    padding: 30px 0px;
-    width:45%;
-    font-size: 20px;
+    margin:10px;
+    padding: 10px 0px;
+    width:60%;
+    font-size: 28px;
     font-family: 'Montserrat', sans-serif;
     contain:content;
 }
 #welcome i{
     margin-top:40px; 
-    padding: 0px 20px;
+    padding: 0px 30px;
     font-size:40px;
     color:rgb(10,10,35);
 }
@@ -130,7 +133,7 @@ main button:hover{
 }
 figure{
     margin: 40px 0px;
-    width:50%;
+    width:65%;
     text-align:center;
 }
 #welcome img{
@@ -138,7 +141,7 @@ figure{
 }
 figcaption{
     margin:8px 20px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bolder;
     font-family: 'Montserrat', sans-serif;
 }
@@ -149,13 +152,13 @@ figcaption{
     }
     #welcome h1{
         padding:0px;
-        font-size: 30px;
+        font-size: 50px;
     }
     #welcome p{
         margin:0px;
         padding:0px;
-        width:50%;
-        font-size: 20px;
+        width:80%;
+        font-size: 30px;
         text-align: left;
     }
     .brandCons{
@@ -174,7 +177,6 @@ figcaption{
         display:none;
     }
 }
-
 /*brand awareness*/
 #banner{
     margin:auto;
@@ -208,12 +210,10 @@ figcaption{
     }
 }
 
-
-
 #testimonials{
     margin:auto;
-    padding:30px 50px;
-    width:60%;
+    padding:10px 50px;
+    width:90%;
     align-items:center;
     contain:content;
     display:flex;
@@ -282,7 +282,7 @@ h2{
 .cuCards{
     margin: 10px 0px;
     padding: 10px;
-    width:30%;
+    width:40%;
     color:rgb(10,10,35);
     background-color: rgb(208,208,213);
     border: 3px solid rgb(10,10,35);
@@ -305,7 +305,7 @@ h2{
     font-size:25px;
 }
 #certification button{
-    width:20%;
+    width:30%;
 }
 
 @media only screen and (max-width: 600px){
@@ -323,25 +323,14 @@ h2{
         font-size:18px;
     }
 }
-
-    
-
-
-
-
-
-
-
-
-
-
 footer{
     
-    Padding: 20px;
+    Padding: 10px;
     font-size: 16px;
     background-color:rgb(208,208,213);
 }
 h3{
+    padding-bottom: 10px;
     text-align:center;
 }
 .missionStatement{
@@ -350,23 +339,24 @@ h3{
     flex-direction: row;
     justify-content: center;
 }
-.about{
-    width:400px;
+.missionStatement .about{
+    width:25%;
 }
 .missionStatement table{
-    margin: 10px 40px;
+    margin: 10px 0px;
+    width: 28%;
 }
 
 .missionStatement th{
-    padding:20px 10px;
-
+    padding:10px 0px;
 }
-
+.missionStatement td{
+    padding:5px;
+}
 
 .missionStatement div{
     margin: 10px 40px;
     width:18%;
-    
 }
 
 footer a{
@@ -379,10 +369,14 @@ footer a:hover{
     text-decoration: underline;
 }
 .subLink{
-     list-style-type: none;
+    list-style-type: none;
     display:flex;
     flex-direction:row;
     justify-content: center;
+}
+.colspan{
+    text-align: center;
+    padding-top: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -406,13 +400,5 @@ footer a:hover{
 
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px){}
 
 
