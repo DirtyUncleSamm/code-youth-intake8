@@ -37,7 +37,7 @@ input{
 
 
 .dropbtn{
-    padding:1px 5px;
+    padding:2px 8px;
     font-size:18px;
     color:white;
     background-color:rgb(10,10,35);
@@ -81,7 +81,12 @@ button:hover .dropdown-content {
     position:abolute;
     right:0px;
 }
-/*<hr>line wont span .dropdown box. */
+@media only screen and (max-width:600px){
+    input{
+        display:none;
+    }
+
+}
 #welcome{
     margin:auto;
     padding:40px 0px;
@@ -104,13 +109,6 @@ button:hover .dropdown-content {
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     contain:content;
-}
-#welcome div{
-    padding:10px 0px;
-    width:fit-content;
-    display:flex;
-    flex-direction:row; 
-    contain: content;
 }
 #welcome i{
     margin-top:40px; 
@@ -145,109 +143,38 @@ figcaption{
     font-family: 'Montserrat', sans-serif;
 }
 @media only screen and (max-width:600px){
-   #welcome {
-    width: 100%;
-   }
+    #welcome{
+       width:100%;
+       justify-content: center;
+    }
     #welcome h1{
-        font-size:16px;
+        padding:0px;
+        font-size: 30px;
     }
     #welcome p{
-        font-size:12px;
-    }
-    #welcome i{
-        padding:0px 10px;
-        font-size: 14px;
-    }
-    #welcome button{
-        font-size:9px;
-    }
-    #welcome figure{
-        width:60%;
-    }
-    #welcome figcaption{
-        font-size: 8px;
-    }
-}
-@media only screen and (min-width:600px){
-    #welcome {
-        width: 100%;
-       }
-    #welcome h1{
-        font-size:20px;
-    }
-    #welcome p{
-        font-size:15px;
-    }
-    #welcome i{
         margin:0px;
-        padding:0px 10px;
-        font-size: 16px;
+        padding:0px;
+        width:50%;
+        font-size: 20px;
+        text-align: left;
     }
-    #welcome button{
-        font-size:15px;
-    }
-    #welcome figure{
-        width:70%;
-    }
-    #welcome figcaption{
-        font-size: 13px;
-    }
-}
-@media only screen and (min-width: 768px){
-    #welcome {
-        width: 90%;
-       }
-    #welcome h1{
-        font-size:25px;
-    }
-    #welcome p{
-        font-size:17px;
+    .brandCons{
+        display:flex;
+        flex-direction:row;
     }
     #welcome i{
-        padding:0px 18px;
+        padding:0px 15px;
         font-size: 25px;
-    }
-    #welcome button{
-        font-size:12px;
-    }
-    #welcome figure{
-        width:60%;
-    }
-    #welcome figcaption{
-        font-size: 10px;
-    }
-}
-/*min-width: 992px-1840px; h1 is too large, image is too small and the #welcome <div> seems incredibly squished. 
-after min-width: 1841px; the width:50%; fits <div #welcome> contents nicely*/
-@media only screen and (min-width:992px){
-    #welcome {
-        width: 50%;
-       }
-    #welcome h1{
-        font-size:40px;
-    }
-    #welcome p{
-        font-size:20px;
-    }
-    #welcome i{
-        padding:0px 20px;
-        font-size: 40px;
+
     }
     #welcome button{
         font-size:20px;
     }
-    #welcome figure{
-        width:60%;
-    }
-    #welcome figcaption{
-        font-size: 15px;
-    }
-}
-@media only screen and (max-width:1199px){
-    #welcome figure{
+    figure{
         display:none;
     }
 }
+
 /*brand awareness*/
 #banner{
     margin:auto;
@@ -272,6 +199,17 @@ after min-width: 1841px; the width:50%; fits <div #welcome> contents nicely*/
     width:150px;
     height:auto;
 }
+@media only screen and (max-width: 600px){
+    #banner h1{
+        font-size: 30px;
+    }
+    #banner img{
+        width:120px;
+    }
+}
+
+
+
 #testimonials{
     margin:auto;
     padding:30px 50px;
@@ -312,6 +250,25 @@ h2{
     padding: 20px;
     width: 90%;
 }
+@media only screen and (max-width: 600px){
+    #testimonials h1{
+    font-size:30px;
+   }
+    .alumniCards{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+    }
+    .alumniCards h1{
+        font-size:22px;
+    }
+    .alumniCards p{
+        font-size: 15px;
+    }
+}
+
+
+
 #certification{
     margin:auto;
     padding:100px; 
@@ -351,6 +308,23 @@ h2{
     width:20%;
 }
 
+@media only screen and (max-width: 600px){
+    #certification h1{
+        font-size: 28px;
+    }
+    .cuCards{
+        width:100%;
+    }
+    .cuCards p{
+        font-size:18px;
+    }
+    #certification button{
+        width:100%;
+        font-size:18px;
+    }
+}
+
+    
 
 
 
@@ -376,25 +350,25 @@ h3{
     flex-direction: row;
     justify-content: center;
 }
-.about{}
-.missionStatement td{
-    padding:5px 10px;
+.about{
+    width:400px;
 }
 .missionStatement table{
     margin: 10px 40px;
 }
+
+.missionStatement th{
+    padding:20px 10px;
+
+}
+
 
 .missionStatement div{
     margin: 10px 40px;
     width:18%;
     
 }
-footer ul{
-    list-style-type: none;
-    display:flex;
-    flex-direction:row;
-    justify-content: center;
-}
+
 footer a{
     padding:5px 10px;
     text-decoration:none;
@@ -404,19 +378,31 @@ footer a:hover{
     color:blue;
     text-decoration: underline;
 }
-/* Extra small devices (phones, 600px and down) */
+.subLink{
+     list-style-type: none;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
 @media only screen and (max-width: 600px) {
     .missionStatement{
         display:flex;
         flex-direction: column;
         align-items: center;
     }
-    .about{
-        width:20rem;
-        border:1px solid;
+    .missionStatement .about{
+        width:400px;
+        border-color:2px solid black;
     }
     .missionStatement table{}
-
+    .footer-bottom{
+        font-size:12px;
+    }
+    .footer-bottom{
+        text-align: center;}
+    .colspan{
+        padding-top:10px;}
 
 }
 
