@@ -24,7 +24,7 @@ else {
     alert("incorrect input");
 }
 
-let day == prompt("input a day to find the number");
+let day = prompt("input a day to find the number");
 if(day=="monday"){
     alert("your number is 1");
 }  

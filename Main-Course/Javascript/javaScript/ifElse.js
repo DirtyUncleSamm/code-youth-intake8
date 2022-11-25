@@ -34,7 +34,13 @@ else if(d>a){
 else(d=a)
     alert("Your value is equal to a!");
 
-
+//nested if
+//if(condition){
+    //if(condition){
+        //else{}
+        //else if{}
+        //   } 
+//}
 
     
 
