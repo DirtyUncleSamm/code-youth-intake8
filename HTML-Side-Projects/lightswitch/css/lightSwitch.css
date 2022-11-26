@@ -1,0 +1,47 @@
+body{
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+}
+#switches{
+    margin:auto;
+    display:flex;
+    flex-direction:row;
+
+}
+#switchA{
+    margin: 20px;
+    width: 100px;
+    height:100px; 
+    background-color:rgb(32, 105, 12);
+}
+#switchA:hover{
+    background-color:rgb(195, 204, 23);
+}
+#switchA:visited{
+    background-color:rgb(47, 23, 204);
+}
+#switchB{
+    margin: 20px;
+    width: 100px;
+    height:100px; 
+    background-color:rgb(64, 32, 118);
+}
+#switchB:hover{
+    background-color:rgb(195, 204, 23);
+}
+#switchB:visited{
+    background-color:rgb(47, 23, 204);
+}
+#switchC{
+    margin: 20px;
+    width: 100px;
+    height:100px; 
+    background-color:rgb(136, 23, 121);
+}
+#switchC:hover{
+    background-color:rgb(195, 204, 23);
+}
+#switchC:visited{
+    background-color:rgb(47, 23, 204);
+}
