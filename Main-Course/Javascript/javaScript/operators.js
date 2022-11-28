@@ -28,4 +28,6 @@ console.log("y equals b",b==y);
 console.log("y is strictly equal tob:",b===y);//strict equality operators, check the datatype and will return false if one is a number and the other is a string
 //look into bitwize operators on own [operators in binary form]
 console.log(y+3);//since y is a string it will concatinate the value of y='9' and will convert the value of '3' into string. Therefore the console.log will print 93 instead of 12
-
+// = is an assignment operator
+// == we are checking data if a==b boolean output
+// === comparing value of a===b not just in value but also in data type
