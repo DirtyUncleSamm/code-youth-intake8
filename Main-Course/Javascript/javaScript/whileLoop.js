@@ -26,3 +26,4 @@ while(num>0){
 }
 alert("thank you");
 //-----In the code above the 'while' loop can be used when there are coditions for the code to run as long as the prompt is true to the condition. The reason we didnt use the 'for' loop due to the fact that the coditions need to be defined, and changes need to be defined----
+
