@@ -37,15 +37,38 @@
 
 
 
-
-let sum = 0;
-for(let i=1; i<=10;i++){
-    num=prompt("enter prompt");
-    sum = sum +num;
+// ----sum of 10 prompts---
+// let sum = 0;
+// for(let i=1; i<=10;i++){
+//     num=prompt("enter prompt");
+//     sum = sum +num;
     
-}
-console.log("sum of 10 numbers", sum);
+// }
+// console.log("sum of 10 numbers", sum);
 
+// ----sum of natural 5 prompts---
+// let sum = 0;
+// for(let i=1; i<=5; i++){
+//     let num = parseInt(prompt("enter a number"));
+//     sum+=num;
+// }
+// console.log("sum is:", sum);
+// console.log("average is:", sum/5);
+
+
+
+// ---- Using if conditons nested in a for loop to sum up even numbers and odd numbers in a iteration from 1 to 20 -----
+// let evenSum = 0;
+// let oddSum = 0;
+// for(let i=1; i<=20; i++){
+//     if(i%2==0){
+//         evenSum = evenSum+i;
+//     }else{
+//         oddSum = oddSum+i;
+//     }
+// }
+// console.log(evenSum);
+// console.log(oddSum);
 
 
 
