@@ -71,38 +71,42 @@ Percentage less than 40% : Grade F
 // }
 
 
-let switchA = true, switchB = false, switchC = false, switchD = false;
-if(switchA == true){
-    if(switchB == true || switchD == true){
-        console.log("light is on")
-    }else{
-        console.log("light is off")
-    }
-}
+// let switchA = true, switchB = false, switchC = false, switchD = false;
+// if(switchA == true){
+//     if(switchB == true || switchD == true){
+//         console.log("light is on")
+//     }else{
+//         console.log("light is off")
+//     }
+// }
 
 
-let num = 4;
-for(let i = 1; i<=10; i++){
-    if(num == i){
-        console.log(i);
-    }
-}
+// let num = 4;
+// for(let i = 1; i<=10; i++){
+//     if(num == i){
+//         console.log(i);
+//     }
+// }
 
 
-for(let i = 1; i<=3; i++){
-    if(i == 1){
-        console.log("this is the first iteration");
-    }else if(i == 2){
-        console.log("this is the second iteration");
-    }else{
-        console.log("this is the third iteration")
-    }
-}
+// for(let i = 1; i<=3; i++){
+//     if(i == 1){
+//         console.log("this is the first iteration");
+//     }else if(i == 2){
+//         console.log("this is the second iteration");
+//     }else{
+//         console.log("this is the third iteration")
+//     }
+// }
  
 
-let year = 1970;
-for(i=1970; i<=2022; i++){
-    if(year % 4 == 0 && year % 400 == 0 && !(year % 100 == 0)){
-        console.log(year +" is a leap year");
-    }else{console.log(year+ " is not a leap year");}
-}
+// let year = 1970;
+// for(i=1970; i<=2022; i++){
+//     if(year % 4 == 0 && year % 400 == 0 && !(year % 100 == 0)){
+//         console.log(year +" is a leap year");
+//     }else{console.log(year+ " is not a leap year");}
+// } //--- This is not functional, it prints all the years that are not leap years into the console.log
+
+
+//--- Print user input to console.log ---
+let answer = p(val)
