@@ -2,25 +2,23 @@
 
 function calculator( val1, val2, operator){
     if(operator == "+"){
-        let sum = val1 + val2;
-        return sum;
+        let result = val1 + val2;
     }else if(operator == "-"){
         let result = val1 - val2;
-        return result;
     }else if(operator == "*"){
-        let product = val1 * val2;
-        return product;
+        let result = val1 * val2;
     }else if (operator == "/"){
-        let remainder = val1/val2;
-        return remainder;
-    }else(
+        let result = val1/val2;
+    }else{
         console.log("invalid")
-    )
-  
-    
-}
+    }
+    return result;
+}//--- having the result outside of the if else statements is not working
 
-let val1 = prompt("enter value");
-let val2 = prompt("enter value");
+
+
+let val1 = parseInt(prompt("enter value"));
+let val2 = parseInt(prompt("enter value"));
 let operator = prompt("enter operator");
-alert(calculator);
+let operation = (calculator(val1, val2, operator));
+alert(operation);
