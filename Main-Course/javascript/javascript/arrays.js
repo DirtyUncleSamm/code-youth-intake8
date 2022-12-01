@@ -33,6 +33,12 @@ console.log(color[color.length-1]);
 // --
 
 for(let i =0;i<=a.length; i++){
-    a[i]=a[i]*2;
-    console.log(a[i]);
+    console.log(a[i]*2);
+}
+
+let n = [1,2,3,4,5,6,7,8,9,10];
+for(let n=0; n<=n.length; n++){
+    if(n % 2 == 0){
+            console.log(n);
+    }
 }

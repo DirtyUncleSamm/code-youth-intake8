@@ -109,4 +109,22 @@ Percentage less than 40% : Grade F
 
 
 //--- Print user input to console.log ---
-let answer = p(val)
+const p = ["great", "good", "fine", "alright","not great", "horrible"]
+const pc = ["red", "blue", "green"]
+const sc = ["orange", "purple", "yellow"]
+let answer = prompt("hello how are you?");
+if(answer === p[0] || answer === p[1] || answer === p[2] || answer === p[3]){
+   console.log(answer);
+   prompt("thats great! what is your favourite primary colour?")
+      if(answer === pc[0] || answer === pc[2] || answer === pc[3]){
+         console.log(answer);
+      if(answer === pc[0])
+         
+      }
+
+   
+}else{
+   console.log(answer);
+   prompt("aww man, that sucks! Maybe come back when your feeling better.")
+
+}
