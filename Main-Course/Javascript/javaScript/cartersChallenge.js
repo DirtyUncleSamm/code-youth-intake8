@@ -109,22 +109,56 @@ Percentage less than 40% : Grade F
 
 
 //--- Print user input to console.log ---
-const p = ["great", "good", "fine", "alright","not great", "horrible"]
-const pc = ["red", "blue", "green"]
-const sc = ["orange", "purple", "yellow"]
-let answer = prompt("hello how are you?");
-if(answer === p[0] || answer === p[1] || answer === p[2] || answer === p[3]){
+// --- I need to console.log a different term for each 'answer'
+const pc = ["red", "blue", "yellow"]
+let answer = prompt("what is your favourite colour?");
+if(answer === pc[0]){
    console.log(answer);
-   prompt("thats great! what is your favourite primary colour?")
-      if(answer === pc[0] || answer === pc[2] || answer === pc[3]){
+   prompt("what is your second favourite colour?")
+   if(answer === pc[0]){
+      console.log(answer);
+      alert("Wow! You really like red!");
+   }else if(answer === pc[1]){
+   console.log(answer);
+   alert("You must love purple!");
+   }else if(answer === pc[2]){
+      console.log(answer);
+      alert("You must love orange!")
+   }else{
+      alert("incorrect input");
+      }    
+}else if(answer === pc[1]){
+   console.log(answer);
+   prompt("what is your second favourite colour?")
+   if(answer === pc[0]){
+      console.log(answer);
+      alert("You must love purple!");
+   }else if(answer === pc[1]){
+   console.log(answer);
+   alert("Wow! You really love blue!");
+   }else if(answer === pc[2]){
+      console.log(answer);
+      alert("You must love green!")
+   }else{
+      alert("incorrect input");
+      }    
+
+}else if(answer === pc[2]){
+   console.log(answer);
+   prompt("what is your second favourite primary colour?");
+      if(answer === pc[0]){
          console.log(answer);
-      if(answer === pc[0])
-         
-      }
-
+         alert("You must love orange!");
+      }else if(answer === pc[1]){
+      console.log(answer);
+      alert("You must love green!");
+      }else if(answer === pc[2]){
+      console.log(answer);
+      alert("Wow! You really love yellow");
+      }else{
+      alert("incorrect input");
+      }   
    
-}else{
-   console.log(answer);
-   prompt("aww man, that sucks! Maybe come back when your feeling better.")
-
+}else {
+   alert("incorrect input");
 }
