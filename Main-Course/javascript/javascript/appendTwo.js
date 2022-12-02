@@ -12,6 +12,6 @@ console.log(joinArr);
 // -- reduce
 let arr = (45, 63, 78, 12, 19, 105);
 console.log(arr);
-// -- total+=current;
-let result = (arr.reduce(total, current => total+current));
-console.log(result)
+// -- total+=current
+let result = arr.reduce((total, current) => total+current,0);
+console.log(result);
