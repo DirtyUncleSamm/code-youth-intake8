@@ -1,7 +1,10 @@
 // -- array append methods example << https://medium.com/@mandeepkaur1/a-list-of-javascript-array-methods-145d09dd19a0 >>
+
 // ------------------further define--------------------------
 // -- stack, queue (takes from the front and adds to the back)
+
 let colors = ['red', 'green', 'blue', 'yellow', 'pink'];
+
 // -- push is adding the element to the end
 colors.push("white");// -- This function can add more then one element at a time
 console.log("push:", colors);
@@ -16,15 +19,17 @@ colors.unshift("black");
 console.log("unshift", colors);
 
 // -- .shift is used to delete elements from the beginning
-
 del = colors.shift();
     console.log("shift", colors);
 
 // -- add to any positon in array
     colors[3] = "aqua";
     console.log("change 3 place in array", colors);
+
+
+    
 // -- splice is used to add, remove, or replace elements from any position
-        // -- splice(start_index,count_to_delete,add_element,add_element);
+    // -- splice(start_index,count_to_delete,add_element,add_element);
 let splicedARR = colors.splice(2,1); // -- the first value defines the position of value, the second value defines the amount of elements this function is affecting
 console.log("deleted splice", colors);
 console.log("elements in the splicedARR function:", splicedARR);
@@ -37,6 +42,8 @@ console.log("added spliced", colors);
 // -- splice to replace elements
 splicedARR = colors.splice(1,2, "dark green", "brown");
 console.log("replaced slice:", colors);
+
+
 
 // -- sort elements
 colors.sort();
@@ -68,3 +75,9 @@ for(i=0;i<arr.length;i++){
 console.log("array res", res);
 // -- console.log("map", newArr);
 console.log("original array", arr);
+
+// -- filter an array
+
+let filteredArr = arr.filter((ele) => ele>50);
+console.log("filtered array: ", filteredArr);
+

@@ -1,4 +1,4 @@
-const count = [11,13,3,4,5,6,7,8,9,10,1,12,14,2,15,16,17,18,19,20];
+const count = [11,13,3,4,5,20,7,8,9,10,1,12,14,2,15,16,17,18,19,6];
 
 // -- Count even elements in an array.  [22,5,8,12,45,78] ==>4   count=0;  count++; --
 console.log("Even values in the array: ");
@@ -20,7 +20,7 @@ console.log("the length of the array: ", count.length);
 console.log("the average of the array: ", average)
 
 // -- Search an element in an array --
-let value = 2;
+let value = 1;
 for(let i=0;i<=count.length;i++){
     if(count[i] === value){
         console.log("position of", value ,'in array is:' , count.indexOf(value));
