@@ -1,15 +1,19 @@
 // -- using filter, return positive numbers
 
-// -- Adding items from 0 - 10 to an empty array
+
 console.log("  ---- ITERATE NUMBERS 0 TO 10 IN AN ARRAY USING THE 'FOR LOOP' -- ");
+
 let arr = [];
 for(i=0;i<=10;i++){
     arr.push(i);
 }
 console.log(arr);
 
-// -- Add everyone from toBeAdded to the banList array then empty the toBeAdded Array
+
+
+
 console.log("  ---- ADD EVERYONE FROM THE 'toBeAdded' LIST TO THE 'banList' AND ERASE ELEMENTS FROM 'toBeAdded' ARRAY -- ");
+
 let toBeAdded = ["Jomsly", "Henrick", "Darsha"]
 let banList = ["Budly","Gurtrood","dimsly"]
 
@@ -24,8 +28,9 @@ console.log("nameAdd array:", nameAdd);
 
 
   
-// -- Using only pop()  push()  unshift()  and  shift() make weekDays start at monday and end at sunday in the correct order
+
 console.log("  ---- USING .pop()   .push()   .shift()   .unshift() MAKE THE 'weekDays' ARRAY START AT MONDAY AND END ON SUNDAY -- ");
+
 let weekDays = ["Friday", "Tuesday","Wednesday","Thursday","Sunday","Monday","Saturday","PlaceHolder"]
 console.log("initial 'weekDays' array: ", weekDays);
 
@@ -49,7 +54,9 @@ console.log("after 'weekDays.push()':", weekDays);
      
 
   
-// Add fifty random whole numbers between 0 and 100 to myNumbers console.log(myNumbers) after all 50 numbers are added
+// -- Add fifty random whole numbers between 0 and 100 to myNumbers console.log(myNumbers) after all 50 numbers are added
+
+
   
 
 // split the numbers into two arrays, 'even' and 'odd'

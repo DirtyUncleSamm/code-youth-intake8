@@ -1,3 +1,24 @@
+// -- fix functions on this document by putting them into a temporary document --
+
+
+let colors = ['red', 'green', 'blue', 'yellow', 'pink'];
+for(let i = 0; i<colors.length; i++){
+    console.log(i, colors[i]); // -- this will put the position of the element in the array, along with its value
+}
+
+for(let item of colors){
+    console.log(item);
+}// -- this displays the elements in the array
+
+// -- below is a callback function 
+// - a call back function is a functiuon passed into another function as an argument
+colors.forEach((ele)=> console.log("item", ele));
+colors.forEach(print);
+function print(ele){
+    console.log("e", ele)
+}
+// -- ele is a callback because it is calling the function colors and adding to it
+
 // -- array append methods example << https://medium.com/@mandeepkaur1/a-list-of-javascript-array-methods-145d09dd19a0 >>
 
 // ------------------further define--------------------------
@@ -67,6 +88,8 @@ console.log("decending sort: ", arr);
 arr.reverse();
 console.log("elements reversed: ", arr);
 
+
+// -- .map effects all elements of the array
 let newArr = arr.map((item)=> item/2);
 let res = [];
 for(i=0;i<arr.length;i++){
@@ -76,8 +99,27 @@ console.log("array res", res);
 // -- console.log("map", newArr);
 console.log("original array", arr);
 
+
+
 // -- filter an array
 
 let filteredArr = arr.filter((ele) => ele>50);
 console.log("filtered array: ", filteredArr);
 
+let colors = ['red', 'green', 'blue', 'yellow', 'pink'];
+
+// -- find items in array
+if(colors.includes('green')){
+    console.log("green is here");
+}
+
+// -- format spacing between elements in array
+let joinArr = (colors.join('+'));
+console.log(joinArr);
+
+// -- reduce
+let arr = (45, 63, 78, 12, 19, 105);
+console.log(arr);
+// -- total+=current
+let result = arr.reduce((total, current) => total+current,0);
+console.log(result);
