@@ -19,5 +19,5 @@ console.log(student[0]);
 console.log(student[0].address);
 // -- display names of all students
 for(i=0;i<student.length;i++){
-    console.log("name: ", student[i].name);
+    console.log("name: ",student[i].name);
 }

@@ -9,16 +9,16 @@
 // cumin
 // cocoa
 
-let recipe = {
+let recipe = 
+{
     title: "mocha",
     serving: 1,
     prepTime: 3,
     ingredients: ["coffee", "hot chocolate", "milk", "marshmellows"],
     description: function(){
         console.log("recipe title: ", this.title, "this recipe serves :", this.serving, ", and will take", this.prepTime, "mins");
-       
     }
-};
+};// -- when I use console.log in a function I need to declare my function globally
 recipe.description();
 // console.log("recipe: ", recipe.title);
 // console.log("serving size: ", recipe.serving);
@@ -32,7 +32,7 @@ recipe.description();
 //             console.log(key[i]);
 //         }
 //     }
-// }
+// }// -- this will list the elements in the array on different lines in my terminal
 
 // console.log("keys", Object.keys(recipe));
 // console.log("values", Object.values(recipe));

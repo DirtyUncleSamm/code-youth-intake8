@@ -39,9 +39,3 @@ if( cart.includes("bob")){
 console.log("-- using the filter method create a new array and add only values that are multiples of ten -- ")
 let nums = [45,50,55,60,75,80,95,90,100,10,20,15,44]
 
-for(i=0;i<=nums.length;i++){
-    if(nums = nums.filter(nums[i] % 10 == 0)){
-        let filt = nums[i];
-        console.log(filt);
-    }
-}
