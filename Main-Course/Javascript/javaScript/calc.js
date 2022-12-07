@@ -1,5 +1,3 @@
-
-
 function calculator( val1, val2, operator){
     if(operator == "+"){
         let result = val1 + val2;

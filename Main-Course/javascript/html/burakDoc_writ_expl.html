@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const recipe=[{
+    title:"crispy Cheddar waffles",
+    duration:"30 min",
+    serving:4,
+    ingredients:["blackberries"," red pepper flakes","maple syrup"],
+    read:true,
+    },
+    {
+    title:"Grilled Halloumi with Herbed Berry Salsa",
+    duration:"20 min",
+    serving:4,
+    ingredients:[" red currants","olive oil","cashews"],
+    read:true,
+    },
+    {
+    title:"Saucy Sriracha Franks",
+    duration:"10 min",
+    serving:10,
+    ingredients:["garlic,sesame oil,rice vinegar,brown sugar"],
+    read:true,
+    }
+    ];
+    console.log(recipe[0]);
+    for(let i=0; i<=recipe.length; i++){
+    document.write(`<p>${recipe[i].title}</p>`)
+    }
+    </script>
+</body>
+</html>

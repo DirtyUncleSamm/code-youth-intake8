@@ -1,11 +1,8 @@
-
-
-
-// const multiply = (val1, val2) => {
-//    let output = val1*val2;
-//    return output;
-// }
-// console.log(multiply(3,6));
+const multiply = (val1, val2) => {
+   let output = val1*val2;
+   return output;
+}
+console.log(multiply(3,6));
 
 
 //-- this is long form

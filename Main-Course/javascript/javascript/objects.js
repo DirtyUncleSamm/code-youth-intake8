@@ -47,9 +47,9 @@ for(let i = 0; i < user.marks.length; i++){
 for(let key in student){
     console.log(student[key]);
 } // -- this is the code to see the value of all the elements in the object -- Below achieves the same thing but specifies what I am seeing in the console.log
-// console.log("keys", Object.keys(user));
-// console.log("values", Object.values(user));
-// console.log("marks", Object.entries(user));
+console.log("keys", Object.keys(user));
+console.log("values", Object.values(user));
+console.log("marks", Object.entries(user));
 
 
 
