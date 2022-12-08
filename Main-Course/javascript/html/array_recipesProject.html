@@ -24,9 +24,11 @@
             }
 
         ]
+
+        document.write(`<h3>${recipes[0].title}`) 
         console.log(recipes[0]);
     for(let i=0; i<=recipes.length; i++){
-    document.write(`<p>${recipes[i].title}</p>`)
+    document.write(`<p>${recipes[i].title}</p>`) // -- back ticks are called template literal, the '${}' means value of 
     }
     </script>
 </head>
