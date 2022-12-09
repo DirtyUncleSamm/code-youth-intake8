@@ -39,7 +39,6 @@
     h1.innerHTML="This list was created in JavaScript";
     h1.id="h1";
     div.appendChild(h1);
-        
     let unOlist = document.createElement("ul");
     div.appendChild(unOlist);
 
@@ -47,13 +46,10 @@
     function add(){
         for(let i=0; i<arr.length;i++){
         const list = document.createElement("li");
-        
         list.innerHTML = arr[i]
         unOlist.appendChild(list);
         }  
     } 
-    const pokeball = [];
-    
     function sub(){
         unOlist.removeChile(arr[4])
     }

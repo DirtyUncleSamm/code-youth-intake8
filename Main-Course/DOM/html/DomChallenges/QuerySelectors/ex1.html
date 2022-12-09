@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <!-- Ex1: Using .querySelectorAll() Select all the li's in the myList list-->
+       <ul id="myList">
+        <li>Hello</li>
+        <li>WOw</li>
+        <li>So Cool</li>
+    </ul>
+    
+    <ul>
+        <li>No</li>
+        <li>What</li>
+        <li>From</li>
+    </ul>
+    <script>
+        const sel = document.querySelectorAll(".myList").innerHTML;
+        console.log(sel);
+    </script> 
+</body>
+</html>
