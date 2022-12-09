@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+    background-color: red;
+    }
+    header ul li{
+        display: inline-block;
+    }
+    #searchBar{
+        width: 30%;
+    }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1 class="logo">LOGO</h1>
+        <input type="search" id="searchBar"><button class="searchBtn" onclick="log()">🔎</button>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Store</a></li>
+        </ul>
+    </header>
+
+    <div class="content">
+        <div class="welcome">
+        <h1>Welcome 2 my website :)</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eligendi repudiandae, tenetur dolore sunt delectus culpa voluptatem quas eum fuga est exercitationem voluptatibus ipsa aliquid provident? Exercitationem magnam cupiditate vitae illo quia, nam placeat veniam est voluptatibus iste odit? Eum quo quisquam, ipsa labore maxime minus illo. Perferendis, sequi accusantium!</p>
+        </div>
+
+        <div class="about">
+            <h2 class="subHeader">About this site</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquid ducimus, rem asperiores deleniti similique doloremque commodi nobis non eos eum deserunt dolorum laborum illo illum possimus provident ipsa modi. Esse praesentium minima eum suscipit in, maxime deserunt porro sunt excepturi et voluptatibus non quo officiis labore aliquam fugiat doloremque repellendus eos provident. Tempore velit possimus at vel maiores doloribus!</p>
+        </div>
+
+        <div>
+            <h2 class="subHeader">But how do i use it?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, velit!</p>
+        </div>
+    </div>
+
+    <script>
+    // -- 1. Using DOM select the search bar
+        const elementSB = document.getElementById("searchBar");
+        console.log(elementSB);
+
+
+    // --  2. Using DOM Select the logo
+        const elementLo = document.getElementsByClassName("logo"); 
+        console.log(elementLo);
+
+    // -- 3. Using DOM select all the li elements
+        const elementLi = document.getElementsByTagName("li"); 
+        console.log(elementLi);
+
+    // -- 4. Using DOM Select all the subheaders and change there color to blue
+        const elementSub = document.getElementsByClassName("subHeader"); 
+        console.log(elementSub);
+        for(let i = 0; i<elementSub.length; i++){
+            elementSub[i].style.color="blue";
+        } 
+        
+    // -- 5. Add an onclick function to the searchbutton
+        // -- When clicked console.log() the value of anything typed inside the search bar
+        function log(){
+            const searchTerms = document.getElementById("searchBar");
+            console.log(searchTerms.value);
+        }
+    </script>
+</body>
+</html>

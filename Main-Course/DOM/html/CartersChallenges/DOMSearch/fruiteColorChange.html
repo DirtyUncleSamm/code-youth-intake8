@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Ex3: change color of fruits, chnage heading to Fruits grocery List
+list of Fruits
+Apples
+Kiwi
+Grapes
+Orange
+Stawberry
+Pomegranate -->
+    <h1>This is a list of fruit</h1>
+    <ul>
+        <li class="red">Apples</li>
+        <li class="green">Kiwi</li>
+        <li class="orange">Orange</li>
+        <li class="green">Grapes</li>
+        <li class="red">Strawberry</li>
+        <li class="red">Pomegranate</li>
+    </ul>
+    <button type="button" onclick="colorChange()">YOLO</button>
+    <script>
+        function colorChange(){
+            const fruit = document.getElementsByTagName("li");
+            for(let i=0; i<=fruit.length; i++){
+                if(fruit[i].classList.contains("red")){
+                    fruit[i].style.color="red";
+                }else if(fruit[i].classList.contains("green")){
+                    fruit[i].style.color="green";
+                }else if(fruit[i].classList.contains("orange")){
+                    fruit[i].style.color="orange";
+                }else{
+                    console.log("not fruit");
+                }
+            }
+        }
+    </script>
+    
+</body>
+</html>

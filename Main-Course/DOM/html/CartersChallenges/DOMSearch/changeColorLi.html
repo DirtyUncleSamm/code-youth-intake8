@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Ex2:  change color of colors in a list
+red
+green
+purple
+blue -->
+
+<h1>This is a list of colors.</h1>
+<ul>
+    <li class="r">red</li>
+    <li class="g">green</li>
+    <li class="p">purple</li>
+    <li class="b">blue</li>
+</ul>
+<button onclick="color()">change color of text</button>
+<script>
+    function color(){
+        const change = document.getElementsByTagName("li");
+        for(let i=0; i<= change.length; i++){
+            if(change[i].classList.contains("r")){
+                change[i].style.color="red";
+            }else if(change[i].classList.contains("g")){
+                change[i].style.color="green";
+            }else if(change[i].classList.contains("p")){
+                change[i].style.color="purple";
+            }else if(change[i].classList.contains("b")){
+                change[i].style.color="blue";
+            }else{
+                console.log("not fruit");
+            }
+        }
+    }
+</script>
+</body>
+</html>

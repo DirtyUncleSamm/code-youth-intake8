@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML</title>
+</head>
+<body>
+<!-- Ex4: Get the innerHTML of every li from this list and add it to an array. console.log() the array -->
+<ul>
+    <li class="sports">BasketBall</li>
+    <li class="sports">Hockey</li>
+    <li class="sports">FootBall</li>
+    <li class="sports">Soccer</li>
+    <li class="sports">DodgeBall</li>
+</ul>
+<script>
+
+    const value = document.getElementsByTagName("li").innerHTML;
+    console.log(value)
+   
+   
+    // console.log(value);
+    // for(let i=0; i<=value.length; i++){
+    //     arr.push(value[i]);
+    //     console.log(arr);
+    // }
+</script>
+</body>
+</html>

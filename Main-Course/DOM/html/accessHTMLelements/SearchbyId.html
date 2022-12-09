@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+ <html lang="en"> <!-- the head and body are children of the html tag -->
+<head>
+   <meta charset="UTF-8">   <!-- any object 'meta', 'title', 'link', 'script' are all children of head -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- any objects that are embedded in the body are children of the body -->
+     <!-- https://www.w3schools.com/js/js_htmldom.asp -->
+     <!-- DOM: Standard Object Model -->
+     <h1>Welcome to Code Youth!</h1>
+     <h3>Today we are learning about document object models</h3>
+     <p id="p1">This is a randome string of letters so we can practice accessing elements through DOM</p>
+     <button type="button" onclick="change()" value="Change">change</button>
+     <script>
+          function change(){
+          const element = document.getElementById("p1");
+          console.log(element);
+          // element.innerHTML="this paragraph changes to something new";
+          element.innerText="This is an example of an inner text change using JavaScript";
+          element.style.color="red";
+          }
+     </script>
+</body>
+</html>

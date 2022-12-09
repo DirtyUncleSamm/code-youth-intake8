@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+ <html lang="en"> <!-- the head and body are children of the html tag -->
+<head>
+   <meta charset="UTF-8">   <!-- any object 'meta', 'title', 'link', 'script' are all children of head -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- any objects that are embedded in the body are children of the body -->
+     <!-- https://www.w3schools.com/js/js_htmldom.asp -->
+     <!-- DOM: Standard Object Model -->
+     <h1>Welcome to Code Youth!</h1>
+     <h3>Today we are learning about document object models</h3>
+     <p class="p1">This is the first paragraph</p>
+     <p>This is the second paragraph</p>
+     <p class="p1">This is the third paragraph</p>
+
+     <button type="button" onclick="change()" value="Change">change</button>
+
+     <script> 
+          function change(){
+          const element = document.getElementsByTagName("p"); //when searching for class it is important to pluralize .getElements
+          console.log(element); //This does not console.log the value of the  elements but the properties of the element because it turns the HTML into an array
+          for(let i = 0; i<element.length; i++){
+          element[i].style.fontFamily="Times New Roman";
+          } 
+        }
+     </script>
+</body>
+</html>

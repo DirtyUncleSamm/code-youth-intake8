@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search By Id Assignment</title>
+</head>
+<body>
+
+<!-- Ex: 1 heading, 2 paragraphs
+click on a button, heading chnage to something elements
+para1 color chnages to green
+para2 background color to yellow -->
+
+
+
+    <h1 id="h1">This is a large header</h1>
+    <p id="p1">This is a paragraph One!</p>
+    <p id="p2">This is paragraph Two!</p>
+    <button type="button" onclick="change()" value="Change">change</button>
+    <script>
+        function change(){
+          const elementh = document.getElementById("h1");
+          console.log(elementh);
+          elementh.innerHTML="this is a different smaller header";
+          elementh.style.fontSize="12px";
+          const elementp1 = document.getElementById("p1");
+          console.log(elementp1);
+          elementp1.style.color="green";
+          const elementp2 = document.getElementById("p2");
+          console.log(elementp2);
+          elementp2.style.backgroundColor="yellow";
+          }
+    </script>
+
+
+</body>
+</html>
+
+
+
+
+
