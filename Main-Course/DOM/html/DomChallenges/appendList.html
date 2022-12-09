@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append-List</title>
+    <style>
+        body{
+            margin:auto;
+        }
+        #div{
+            margin: 30px;
+            background-color:gray;
+            color:white;
+        }
+        #h1{
+            text-align: center;
+        }
+        .list{
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Ex2: two buttons -create and remove,,,create list of 5 elements, remove last 2 elements on a click of button
+<ul>
+<li>Math
+<li>english -->
+
+<script>
+    const div = document.createElement("div");
+    div.id="div";
+    document.body.appendChild(div);
+    console.log(div);
+
+
+    const h1 = document.createElement("h1");
+    h1.innerHTML="This list was created in JavaScript";
+    h1.id="h1";
+    div.appendChild(h1);
+        
+    let unOlist = document.createElement("ul");
+    div.appendChild(unOlist);
+
+    let arr = ["dog", "monkey", "tiger", "elephant", "charizard", "pikachu", "bulbasaur"];
+    function add(){
+        for(let i=0; i<arr.length;i++){
+        const list = document.createElement("li");
+        
+        list.innerHTML = arr[i]
+        unOlist.appendChild(list);
+        }  
+    } 
+    const pokeball = [];
+    
+    function sub(){
+        unOlist.removeChile(arr[4])
+    }
+</script>
+<button onclick="add()">Add animals</button>
+<button onclick="sub()">Subtrack the pokemon</button>
+
+</body>
+</html>

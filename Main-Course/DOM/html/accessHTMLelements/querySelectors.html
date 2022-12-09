@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>heading</h1>
+    <p>first paragraph</p>
+    <p class="p2">second paragraph</p>
+    <div>
+    <p>another sentence</p>
+    <p class="p2">third paragraph</p>
+    </div>
+    <button onclick="change()">click me</button>
+    <script>
+        // -- querySelector only selects the first element
+        // -- querySelector selects all specified elements
+        function change(){
+            // const ele = document.querySelector("div>.p");// -- this code required the > to note the child of div.
+            // ele.style.color="red";
+            // document.querySelector("h1").style.color="red";
+            const ele = document.querySelectorAll("p");
+            for(let i = 0; i<=ele.length; i++){
+            ele[i].style.backgroundColor="green";
+            ele[i].style.color="white";
+            }
+        }
+    </script>
+</body>
+</html>

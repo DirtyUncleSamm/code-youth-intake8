@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div{
+            padding: 10px;
+            background-color: gray;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+     <h2>Heading Two</h2> <!--Any element appended will go to the end of the website -->
+    <script>
+        const h1 = document.createElement("h1");
+        h1.innerHTML="Heading One";
+        h1.style.textAlign="center";
+        document.body.appendChild(h1);
+
+        const div = document.createElement("div");
+        div.id="div";
+        const para = document.createElement("p");
+        para.innerHTML = "This is a paragraph created in JavaScript";
+        console.log(div);
+        div.appendChild(para);// -- to put content in my div container I need to appendChild
+        document.body.appendChild(div);// -- to put content on body I need to route my div to my body through appendChild
+        const h2 = document.querySelector("h2");
+        h2.remove();
+        div.removeChild(para);
+    </script>
+    
+
+</body>
+</html>

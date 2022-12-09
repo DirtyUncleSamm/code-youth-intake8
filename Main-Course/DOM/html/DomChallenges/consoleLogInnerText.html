@@ -17,9 +17,10 @@
 </ul>
 <script>
 
-    const value = document.getElementsByTagName("li").innerHTML;
-    console.log(value)
-   
+    const value = document.querySelectorAll("li");
+    for(let i=0; i<=value.length; i++){
+    console.log(value[i].innerHTML)
+    }
    
     // console.log(value);
     // for(let i=0; i<=value.length; i++){

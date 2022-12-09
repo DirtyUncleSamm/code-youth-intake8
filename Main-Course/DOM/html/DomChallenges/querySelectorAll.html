@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>querySelect-elementAdd-DOM</title>
+    <style>
+        table{
+            padding: 2px;
+            
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Ex1: Using .querySelectorAll() Select all the li's in the myList list-->
+    <ul id="myList">
+        <li>Hello</li>
+        <li>WOw</li>
+        <li>So Cool</li>
+    </ul>
+    
+    <ul>
+        <li>No</li>
+        <li>What</li>
+        <li>From</li>
+    </ul>
+
+    <script>
+        const sel = document.querySelectorAll(".myList").innerHTML;
+        console.log(sel);
+        
+        
+    const tbl = document.createElement("table");
+        document.body.appendChild(tbl);
+        tbl.class="employeeTable";
+    const tr = document.createElement("tr");
+    const tr2 = document.createElement("tr");
+    const tr3 = document.createElement("tr");
+        tbl.appendChild(tr);
+        tr.class="headRow";
+        tbl.appendChild(tr2);
+        tbl.appendChild(tr3);
+    
+
+    const th = document.createElement("th");
+    const thi = document.createElement("th");
+        tr.appendChild(th);
+        tr.appendChild(thi);
+        th.innerHTML="Name";
+        thi.innerHTML="Role";
+
+    const td = document.createElement("td");
+    const tdi = document.createElement("td");
+        tr2.appendChild(td);
+        td.innerHTML="Bingle Dorf";
+        tr2.appendChild(tdi);
+        tdi.innerHTML="CEO";
+    const tdii = document.createElement("td");
+    const tdiii = document.createElement("td");
+        tr3.appendChild(tdii);
+        tdii.innerHTML="Jurimo Datatag";
+        tr3.appendChild(tdiii);
+        tdiii.innerHTML("Head of Security");
+
+    </script>
+    <!-- Ex2: Recreate the following table using only DOM
+
+     <table border="1" class="employeeTable">
+        <tr class="headRow">
+            <th>Name</th>
+            <th>Role</th>
+        </tr>
+        <tr>
+            <td>Bingle Dorf</td>
+            <td>CEO</td>
+        </tr>
+        <tr>
+            <td>Jurimo Datatag</td>
+            <td>Head of Security</td>
+        </tr>
+    </table> -->
+
+
+    <!-- Ex3: Compare the list to the items array. Any items in the array that are not in the list should be added to the list
+    let items = ['brocoli','lettuce','grass','cabbage','frisby','window']
+    -->
+    <ul>
+        <li>lettuce</li>
+        <li>grass</li>
+        <li>frisby</li>
+    </ul>
+
+    <!-- Ex4: Create an onclick function for the button that takes the first li in the first list and puts it into the bottom list -->
+    <ul class="listOne">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+
+    <button>↓Move↓</button>
+
+    <ul class="listTwo">
+        
+    </ul>
+</body>
+</html>

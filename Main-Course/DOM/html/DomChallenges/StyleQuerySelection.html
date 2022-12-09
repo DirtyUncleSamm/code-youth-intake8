@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .header{
+        text-align:center;
+        color:red;
+        font-size: 30px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Section 1</h1>
+    <p>We have just <b>started</b> this <b>section</b> for the users (<b>beginner</b> to <b>intermediate</b>) who want to work with various <b>JavaScript</b> problems and write scripts online to test their <b>JavaScript</b> skill.</p>
+    <button onclick="change()"><!--the onclick event can nest a single line function-->click me</button>
+
+    <!-- Heading-appear in the centre, font size bigger, text Main Section, Red in color
+    Paragraph- everything bold should be highlighted font style changed -->
+
+    <script>
+        function change(){
+            const h1 = document.querySelector("h1");
+            h1.className="header";
+            h1.setAttribute("class", "header");
+            // h1.style.textAlign="center";
+            // h1.style.fontSize="30px";
+            h1.innerHTML = "Main Section"
+            const ele1 = document.querySelector("p");
+            ele1.style.color="red";
+            ele1.style.fontSize="20px";
+            ele1.style.fontFamily="cursive";
+            
+            const bold = document.querySelectorAll("b");
+            bold.forEach ((ele)=>{
+                ele.style.backgroundColor="yellow";
+                
+            })
+        }
+
+    </script>
+    
+
+</body>
+</html>
