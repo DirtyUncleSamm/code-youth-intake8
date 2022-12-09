@@ -6,9 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>querySelect-elementAdd-DOM</title>
     <style>
-        .border{
-            padding: 2px;
+        body{
+            margin:auto;
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+        }
+        table{
+            width:70%;
+        }
+        table, th, td{
+            margin: 10px;
+            padding: 5px;
             border:1px solid black;
+            border-collapse: collapse;
+        }
+        th{
+            font-size: 20px;
+        }
+        td{
+            font-size: 18px;
         }
     </style>
 </head>
@@ -29,47 +46,45 @@
             <td>Head of Security</td>
         </tr>
     </table> -->
+
     <script> 
+        const h1 = document.createElement("h1");
+            document.body.appendChild(h1);
+            h1.innerHTML="Datatag & Dorf Co."
+            
         const tbl = document.createElement("table");
             document.body.appendChild(tbl);
             tbl.class="employeeTable";
+        
         const tr = document.createElement("tr");
-        const tr2 = document.createElement("tr");
-        const tr3 = document.createElement("tr");
             tbl.appendChild(tr);
             tr.class="headRow";
+        const tr2 = document.createElement("tr");
             tbl.appendChild(tr2);
+        const tr3 = document.createElement("tr");
             tbl.appendChild(tr3);
-    
+        
         const th = document.createElement("th");
-        const thi = document.createElement("th");
             tr.appendChild(th);
-            tr.appendChild(thi);
             th.innerHTML="Name";
+        const thi = document.createElement("th");
+            tr.appendChild(thi);
             thi.innerHTML="Role";
 
         const td = document.createElement("td");
-        const tdi = document.createElement("td");
             tr2.appendChild(td);
             td.innerHTML="Bingle Dorf";
+        const tdi = document.createElement("td");
             tr2.appendChild(tdi);
             tdi.innerHTML="CEO";
 
         const tdii = document.createElement("td");
-        const tdiii = document.createElement("td");
             tr3.appendChild(tdii);
             tdii.innerHTML="Jurimo Datatag";
+        const tdiii = document.createElement("td");
             tr3.appendChild(tdiii);
-            tdiii.innerHTML("Head of Security");
+            tdiii.innerHTML=("Head of Security");
 
     </script>
-
-
-
-
-
-   
-   
-
 </body>
 </html>
