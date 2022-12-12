@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- Create a table element and add it to the body.
+Create a table row element and add it to the table.
+Remove 2nd row from the table.
+Add a class attribute to the table row.
+Replace 3rd row with a new row. -->
+<script>
+    const tbl = document.createElement("table");
+    document.body.appendChild(tbl);
+    tbl.style.border = "1px solid black";
+    
+    const row1 = document.createElement("tr");
+    tbl.appendChild(row1);
+    const td1 = document.createElement("td")
+    td1.innerHTML = "This is the first row";
+    row1.appendChild(td1);
+    
+    
+    const row2 = document.createElement("tr");
+    tbl.appendChild(row2);
+    const td2 = document.createElement("td");
+    td2.innerHTML = "This is the second row";
+    row2.appendChild(td2);
+    
+    const row3 = document.createElement("tr");
+    tbl.appendChild(row3);
+    row3.id = "row";
+    const td3 = document.createElement("td");
+    td3.innerHTML = "This is the third row";
+    row3.appendChild(td3);
+    
+    
+    const row4 = document.createElement("tr");
+    const td4 = document.createElement("td");
+    td4.innerHTML = "Third row has been replaced";
+    row4.appendChild(td4);
+    const rep = document.getElementById("row");
+    tbl.replaceChild(row4, rep);
+
+</script>
+
+</body>
+</html>

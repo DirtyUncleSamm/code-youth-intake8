@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+
+
+        <script>
+            const table = document.createElement("table");
+            for(i = 1; i<=3;i++){
+                const row = document.createElement("tr");
+                const data = document.createElement("td")
+                data.innerHTML = i;// -- The issue described in class with a forloop is that it is difficult to initialize each cell with content
+                row.appendChild(data);
+                table.appendChild(row);
+            }
+            document.body.appendChild(table);
+        </script>
+    
+</body>
+</html>

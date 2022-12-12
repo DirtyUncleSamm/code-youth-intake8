@@ -18,13 +18,17 @@
     </style>
 </head>
 <body><!-- Set attributes in js -->
-    <img></img>
+   
 
     <script>
-        const img = document.querySelector("img");
+        const img = document.createElement("img");
         img.src="https://i.natgeofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_4x3.jpg";
-        img.height(100px);
+        img.className="class1";
+        img.height="400px";
+        img.setAttribute("class1", "class2");
+        img.removeAttribute("height");
         document.getElementById('im').appendChild(img);
+
     </script>
 </body>
 </html>
