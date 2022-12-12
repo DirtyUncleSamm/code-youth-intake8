@@ -27,6 +27,8 @@
 <ul>
 <li>Math
 <li>english -->
+<button onclick="add()">Add animals</button>
+<button onclick="sub()">Subtrack the pokemon</button>
 
 <script>
     const div = document.createElement("div");
@@ -34,11 +36,14 @@
     document.body.appendChild(div);
     console.log(div);
 
-
     const h1 = document.createElement("h1");
     h1.innerHTML="This list was created in JavaScript";
     h1.id="h1";
     div.appendChild(h1);
+
+    // document.querySelectorAll("button");
+    // div.appendChild(button);
+
     let unOlist = document.createElement("ul");
     div.appendChild(unOlist);
 
@@ -46,16 +51,20 @@
     function add(){
         for(let i=0; i<arr.length;i++){
         const list = document.createElement("li");
-        list.innerHTML = arr[i]
-        unOlist.appendChild(list);
+        list.innerHTML = arr[i];
+        document.querySelectorAll('.unOlist')[0].appendChild(li);// --  Carters edits, there seems to be an issue with .appendChild
+        // unOlist.appendChild(list);
         }  
     } 
     function sub(){
-        unOlist.removeChile(arr[4])
+        for(let i=0;i<2;i++){
+            let unOlistLi = document.querySelectorAll('.unOlist li')
+            unOlistLi[unOlist.length - 1].remove();
+        }
+        // unOlist.removeChile(arr[4])
     }
 </script>
-<button onclick="add()">Add animals</button>
-<button onclick="sub()">Subtrack the pokemon</button>
+
 
 </body>
 </html>
