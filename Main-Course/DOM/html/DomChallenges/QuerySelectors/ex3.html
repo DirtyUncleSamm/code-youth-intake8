@@ -7,13 +7,29 @@
     <title>Document</title>
 </head>
 <body>
-        <!-- Ex3: Compare the list to the items array. Any items in the array that are not in the list should be added to the list
+   <!-- Ex3: Compare the list to the items array. Any items in the array that are not in the list should be added to the list
     let items = ['brocoli','lettuce','grass','cabbage','frisby','window']
     -->
-    <ul>
+    
+    <ul class="myItems">
         <li>lettuce</li>
         <li>grass</li>
         <li>frisby</li>
     </ul>
+
+    <script>
+    let items = ['brocoli','lettuce','grass','cabbage','frisby','window']
+    let listItems = []
+    for(let i = 0; i < document.querySelectorAll('.myItems li').length;i++){
+        listItems.push(document.querySelectorAll('.myItems li')[i].innerHTML)
+    }
+    for(let i in items){
+        if(listItems.includes(items[i]) !== true){
+            let li = document.createElement('li');
+            li.innerHTML = items[i]
+            document.querySelectorAll('.myItems')[0].appendChild(li)
+        }
+    }
+    </script>
 </body>
 </html>
