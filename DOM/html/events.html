@@ -5,11 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events</title>
+    <style>
+ 
+        h1{
+            text-align: center;
+        }
+        p>a {
+            margin-right: 3px;
+            padding: 3px;
+            color:white;
+            background-color:gray;
+            border-radius: 5px;
+            text-decoration:none;
+        }
+        button{
+            margin: 10px;
+        }
+        #terminology{
+            padding: 5px 10px;
+            width: 90%;
+            box-shadow: 0px 0px 10px gray;
+        }
+        #blankCard
+    </style>
 </head>
 <body>
-    <h1>Event Terminology</h1>
-    <h3>There are two terms:</h3>
-    <p><a src="https://www.javatpoint.com/javascript-events">Event Listener: </a>an object that listens to a certain event like a click, keypress, mouse move</p>
-    <p>Event Handler: are generally a function that is invoked when a certain even occurs</p>
+    <h1>Events</h1>
+    <div id="terminology">
+        <h3 style="text-align:center;">There are two terms</h3>
+        <p><a href="https://www.javatpoint.com/javascript-events" onmouseover="buttonChange(this)" onmouseout="revert(this)" id="butt">Event Listener </a>an object that listens to a certain event like a click, keypress, mouse move</p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/Events/Event_handlers" onmouseover="buttonChange(this)" onmouseout="revert(this)">Event Handler</a> are generally a function that is invoked when a certain even occurs</p>
+    </div>
+   
+    <button id="btn">Change</button>
+    <button id="btnRev">revert</button>
+    <button id="btnE">?</button>
+    <script>
+        function buttonChange(ele){
+            ele.style.backgroundColor="black";
+        }
+        function revert(elem){
+            elem.style.backgroundColor="gray";
+        }
+
+        const button = document.getElementById("btn");
+        button.onclick = function(){
+            const element = document.getElementById("terminology");
+            element.style.boxShadow="0px 0px 10px red";
+        }/* 
+        button.onclick = function (){
+            alert("shadow is red");
+        } -- this will replace the previouse button function */
+        const butRev = document.getElementById("btnRev");
+        butRev.onclick = function(){
+            const element = document.getElementById("terminology");
+            element.style.boxShadow="0px 0px 10px gray";
+        }
+        const butnE = documetn.getElementById("btnE");
+        butnE.addEventListener("onclick", function(){
+            const titl = document.getElementsByTagName("h3");
+            titl.style.color="red";
+        })
+    </script>
 </body>
 </html>
