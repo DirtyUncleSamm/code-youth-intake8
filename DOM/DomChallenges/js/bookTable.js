@@ -23,12 +23,12 @@ const books = {
     }
 }
 
-const tab = document.createElement("table");
-tab.style.border="1px solid black";
-document.body.appendChild(tab);
+const tabl = document.createElement("table");
+tabl.style.border="1px solid black";
+document.body.appendChild(tabl);
 const titls = ['Title', 'author', 'genre', 'published'];
 const titlRow = document.createElement("tr")
-tab.appendChild(titlRow);
+tabl.appendChild(titlRow);
 
 for(let i = 0; i<=titls.length;i++){
     const titlRowDat = document.createElement("th");
