@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="/DOM/DomChallenges/css/frorVal.css">
+    <script src="/DOM/DomChallenges/js/formVal.js"></script>
+</head>
+<body>
+
+    <div>
+        <div id="banner">
+           <h3>Sign up</h3> 
+        </div>
+        <form name="signUp" id="signUp" onsubmit=" return validate()">
+            First Name <input type="text" name="fn" id="fn">
+            Last Name <input type="text" name="ln" id="ln">
+            Email <input type="email" name="email" id="email">
+            Password <input type="password" name="pwd" id="pw">
+            Password Confirmation <input type="password" name="pwd" id="pwc">
+            <button type="submit" id="btn">submit</button>
+        </form>
+
+    </div>
+</body>
+</html>
