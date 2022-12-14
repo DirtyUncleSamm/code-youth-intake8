@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="/DOM/DomChallenges/js/shaceship.js"></script>
+    <title>Rocket Launch Simulaation</title>
+    <script src="/DOM/DomChallenges/css/spaceShip.css"></script>
     <link rel="stylesheet" href="/DOM/DomChallenges/css/spaceShip.css">
 </head>
 <body>
     <div id="missionControl">
         <h1 style="text-align:center;">Launch Simulator</h1>
-        
-        <p>The shuttle is on the ground...</p>
+
+        <p id="launchStatus">The shuttle is on the ground...</p>
+        <div id="gameControls">
+            <button id="takeOff" onclick="launch()">Take off!</button>
+            <button id="abort" onclick="launchWarning()" onmouseover="warning(this)" onmouseout="warningAbort(this)">Abort!</button>
+        </div> 
     </div>
+
 </body>
 </html>

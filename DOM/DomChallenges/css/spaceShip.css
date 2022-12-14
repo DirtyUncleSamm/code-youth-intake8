@@ -11,3 +11,14 @@ body{
     border-radius: 30px;
     border: 20px solid gray;
 }
+#gameControls{
+    display:flex;
+    flex-direction: row;
+}
+.box{
+    margin: 20px;
+    color: rgb(0, 156, 0);
+    height: 3rem;
+    width: 40rem;
+    border: 1px solid gray;
+}
