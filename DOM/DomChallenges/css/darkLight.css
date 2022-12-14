@@ -10,3 +10,6 @@ div>button{
     width: 50%;
     align-self: center;
 }
+.darkdiv{
+    background-color:rgb(1, 1, 77);
+}
