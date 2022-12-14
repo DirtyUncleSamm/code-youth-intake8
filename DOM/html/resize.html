@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onresize = "fun()">
+    <body onresize = "fun()">  
+        <h3> This is an example of using onresize attribute. </h3>  
+        <p> Try to resize the browser's window to see the effect. </p>  
+          
+        <p id = "para"> </p>  
+        
+    <script>
+        // function changeSize(){
+        //     const height = window.outerHeight;
+        //     const width = window.outerWidth;
+        //     console.log(height);
+        //     document.write('height' + height + 'width' + width);
+        // }
+
+        function fun() {  
+        var res = "Width = " + window.outerWidth + "<br>" + "Height = " + window.outerHeight;  
+        document.getElementById("para").innerHTML = res;  
+  
+
+}  
+
+    </script>
+    
+</body>
+</html>

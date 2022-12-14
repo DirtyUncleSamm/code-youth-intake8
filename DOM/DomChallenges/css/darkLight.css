@@ -1,0 +1,12 @@
+body>div{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    background-color: white;
+    box-shadow: 0 0 10px gray;
+}
+div>button{
+    margin: 10px;
+    width: 50%;
+    align-self: center;
+}
