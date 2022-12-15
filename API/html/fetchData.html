@@ -1,0 +1,53 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Data</title>
+</head>
+<body>
+    <script>
+        const url = "https://type.fit/api/quotes_limit?=3";
+        fetch(url) // -- promise
+        .then((response)=>{
+            return response.json();
+        })
+        .then((err)=>{
+            console.log(err)
+        })
+    </script>
+</body> // -- This was pulling a syntax error because it wanted the information to be in a json file
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		const url = "https://type.fit/api/quotes/?_limit=10";
+		fetch(url)  //promise
+		.then((res)=>{   //if promise fulfilled
+			return res.json()
+		})
+		.then((data)=> {
+            const list = document.createElement('ul');
+            for(let i = 0; i<data.length;i++){
+                const li = document.createElement('li');
+                li.innerHTML = data[i].author;
+                list.appendChild(li);
+            }
+            document.body.appendChild(list);
+        })
+
+		.then((err)=>{  //if promise rejected
+			console.log(err)
+		})
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Create three img tags and set the src to three random pictures in the array
+        // Remember to get a random number use Math.floor(Math.random*3):
+        // https://jsonplaceholder.typicode.com/photos
+        const url = "https://jsonplaceholder.typicode.com/photos";
+		    fetch(url)  //promise
+		    .then((res)=>{   //if promise fulfilled
+			    return res.json()
+		    })
+    </script>
+</body>
+</html>
