@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/API/Challenges/storeFront/storeFront.css">
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        // -- fetch product from API
+        const url = "https://dummyjson.com/products";
+        fetch(url)
+        .then((res)=>{
+            return res.json()
+        })
+        .then((data)=>{
+            // console.log(data);
+            let temp = "";
+            const main = document.getElementById("container");
+            data.products.forEach((ele)=>{
+                temp += `<div class="section">
+                    <img src=${ele.thumbnail} alt="photo" height="100" width="120">
+                    <p>${ele.title}</p><br>
+                    <p>${ele.description}</p>
+                    <button class="button" onclick="addtocart(this)">Add to cart<button>
+                    </div>`
+                main.innerHTML=temp;
+            })
+        })
+        // -- [line 24] I wrote data.products because I am accessing an object. When I am accessing the arrays in the for loop the ele represents the object I am accessing so I can navigate my array inside from [line 25 to 29]
+        .catch((err)=>console.log('error'))
+            
+        
+    </script>
+    <script src="/API/Challenges/storeFront/storeFront.js"></script>
+</body>
+</html>

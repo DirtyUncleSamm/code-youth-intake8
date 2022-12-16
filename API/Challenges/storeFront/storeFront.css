@@ -1,0 +1,12 @@
+#container{
+    display:grid;
+    grid-template-columns: 4, 25%;
+
+}
+.section{
+    width: 200px;
+    display:flex;
+    flex-direction: column;
+    contain:contents;
+    border:1px solid black;
+}
