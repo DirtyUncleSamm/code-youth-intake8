@@ -4,12 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tech Shop</title>
     <link rel="stylesheet" href="/API/Challenges/storeFront/storeFront.css">
 </head>
 <body>
+    <h1>Discount Tech</h1>
+    <div id="reg">
+        <h2>Cart:</h2>
+    </div>
     <div id="container"></div>
     <script>
+        
+        const reg = document.getElementById('reg');
+        const table = document.createElement('table');
+        reg.appendChild(table);
+    
+        const titlr = document.createElement('tr');
+        table.appendChild(titlr);
+    
+        const titlh1 = document.createElement('th');
+        titlh1.innerHTML="Item";
+        titlr.appendChild(titlh1);
+        
+        const titlh2 = document.createElement('th');
+        titlh2.innerHTML="Price";
+        titlr.appendChild(titlh2);
+       
+        
+
+
+
         // -- fetch product from API
         const url = "https://dummyjson.com/products";
         fetch(url)
@@ -21,18 +45,25 @@
             let temp = "";
             const main = document.getElementById("container");
             data.products.forEach((ele)=>{
-                temp += `<div class="section">
-                    <img src=${ele.thumbnail} alt="photo" height="100" width="120">
-                    <p>${ele.title}</p><br>
-                    <p>${ele.description}</p>
-                    <button class="button" onclick="addtocart(this)">Add to cart<button>
-                    </div>`
+                temp +=`<div class="section">
+                            <img src=${ele.thumbnail} alt="photo" height="150" width="125">
+                            <div class="txtBx">
+                                <p class="title"><b>${ele.title}</b></p>
+                                <p class="subTitl"><b>Price:</b></p>
+                                <p class="value">$${ele.price}</p>
+                                <p class="subTitl"><b>Description:</b></p>
+                                <p class="value">${ele.description}</p>
+                            </div>
+                            <button class="button" onclick="addtocart(this)">Add to cart</button>
+                        </div>`
                 main.innerHTML=temp;
             })
         })
         // -- [line 24] I wrote data.products because I am accessing an object. When I am accessing the arrays in the for loop the ele represents the object I am accessing so I can navigate my array inside from [line 25 to 29]
         .catch((err)=>console.log('error'))
-            
+        
+
+          
         
     </script>
     <script src="/API/Challenges/storeFront/storeFront.js"></script>
