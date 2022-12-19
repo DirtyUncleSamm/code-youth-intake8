@@ -2,8 +2,8 @@
 const cartItems = [];
 function addtocart(ele){
     const parent = ele.closest('.section');
-    const price = parent.querySelector('ele.price').innerText;
-    const title = parent.querySelector('ele.title').innerText;
+    const price = parent.querySelector('.price').innerText;
+    const title = parent.querySelector('.title').innerText;
     let cash = "";
     cash+= `<tr>`;
     cash+= `<td>${title}</td>`
