@@ -26,6 +26,8 @@
         var searchBtn = document.getElementById("searchButn");
             var url = "www.themealdb.com/api/json/v1/1/search.php?s=";
             var result = document.getElementById('results');
+            
+
             searchBtn.addEventListener("click", () => {
                 var userInp = document.getElementById("userInput").value;
                 if (userInp.length == 0){
