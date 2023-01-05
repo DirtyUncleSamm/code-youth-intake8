@@ -1,38 +1,119 @@
-Introduction to Database and SQL
-    https://www.programiz.com/sql/database-introduction
-- A database is an organized collection of data. We use Database Management Systems (DBMS)
-    There are two different DBMS
-    - Non-Relational (Non-RDBMS)
-        Are stored in key-value pairs 'objects'.
-        These are databases such as MongoDB, Amazon DynamoDB, Redis
-    - Relational (RSBMS)
-        Are stored in a table format. These tables store different datasets and are connected by related data
-        Common RDBMS: MySQL, PostgreSQL, MSSQL, Oracle
-
-#Database Keys
-    https://www.learncomputerscienceonline.com/database-keys/
-
-- most of the time we deal with primary and forein keys
--
-
-Keys
-    Super keys:
-    - are object id's. Is a single or a group of unique attributes to identify 
-    Candidate Keys:
-    - 
-    Primary Key:
-    - Selected by the database designer, will identify each row in a table
-
-Forein Key: 
-- a common piece of data that connects tables, by using a primary key in one table as a reference in another 
-
-database design
-elephantsql.com/blog/databases-for-beginners-what-is-a-database-what-is-postgresql.html
- - How to link attributes, explaining types of relationships the tables can have to eachother
-
- https://www.elephantsql.com/blog/databases-for-beginners-what-is-a-database-what-is-postgresql.html
-
-Cardinality
-    data model format
+Introduction to Database and SQL [
+    Confluence: Link to course; {
+        https://codeyouth.atlassian.net/wiki/spaces/CODEYOUTH/pages/904200199/Introduction+to+Databases
+        # Link Above: Takes me to the course page. Links below describe the concepts with more depth
+    },
+    Programiz: Database Introduction; {
+        https://www.programiz.com/sql/database-introduction
+        # A database is an organized collection of data. We use a DBMS or Database Management Systems 
+        There are two different DBMS': [
+            - Non-Relational (Non-RDBMS)
+                Are stored in key-value pairs 'objects'.
+                These are databases such as MongoDB, Amazon DynamoDB, Redis
+            - Relational (RSBMS)
+                Stored in a table format. These tables store different datasets and are connected by related data
+                Common RDBMS: MySQL, PostgreSQL, MSSQL, Oracle
+        ]
+    },
+    Elephantsql: fudemental structure and key terms; {
+        elephantsql.com/blog/databases-for-beginners-what-is-a-database-what-is-postgresql.html 
+        # How to link attributes, heiracle relationships between datasets
+        Concepts [
+            Rows == (Record &| Tuple) = information about a specific entity
+            Entity == the identity of the data representing the fields
+            Columns == fields (information about the entity i.e. birthday, address...)
+            Data Value == the values in each cell of he fields
+        ],
+        Design: [
+            # Just like when we create a website there should be a structure to the database. 
+            - Data should not be saved on diffent tables (except when it comes to forein keys)
+            - Depending on the structure of your app keep in mind:
+                - What kind of information you want to store?
+                - Can the information be sepatated into distinct categories, so that each entity holds only one type?
+            More on Design under Data Models
+        ],    
+        Cardinality: [
+            # The relationship between entities: Shows how one side of each relationship (RSBMS) belongs to the other 
+            - the relationships between datasets include: one to many, and many to one
+            - There can never be a "many to many" relationship between datasets so we must break it into two one to many datasets
+                e.g. There are two data sets: 'Players' && 'Games'. This creates conflict as any player could play multiple Games
+                Therefore we need to add in another dataset that breaks the relationship into one to many and many to one. Hense we add the 'Teams' data set so each player is on one team that plays multiple games
+            The Relationship between DataSets are accessed through 'KEYS' as described below
+        ]
+    },
+    JavaPoint: Data Models 'flowcharts', and keys; {
         https://www.javatpoint.com/dbms-er-model-concept
-    - before designing the table we need to design an entity relationship diagram
+        # ER model stands for an Entity-Relationship model (a high level data model). This is displayed as a diagram to conceptualize the database and develops an easy design to view it. 
+
+        Components: This is the style guide to an ER model(
+
+            const Entity === object, class, person, place;
+                style{
+                    border: 1px solid black;
+                }
+
+                if (entity<=parent entity){
+                    entity == weak;
+                    style{
+                        border: 1px solid black;
+                    }
+                }
+            
+            
+            const Attribute === description of an entity [id, phone_number, age, name];
+                style{
+                    border: 1px solid black;
+                    border-radius: 50%;
+                }        
+
+                if(attribute == main characteristics of entity 'Primary Key'){
+                    const primaryKey === attribute;
+                    style{
+                        border: 1px solid black;
+                        border-radius: 50%;
+                        text-decoration: underline;
+                    }
+                }else if(attribute = multiple attributes 'Composite Attribute'){
+                    compositeAtt.forEach(style => 'border: 1px solid black' 'border-radius: 50%')  
+                }else if(attribute = multible values 'Multivalued Attribute){
+                    style{
+                        border: 1px double black;
+                        border-radius: 50%;
+                    }
+                }else if(attribute can be derived from another attribute 'Derived Attribute'){
+                    style{
+                        border: 1px dashed black;
+                        border-radius: 50%;
+                    }
+                }
+
+            const Relation === relation between entities;
+                relationship.style.border="rhombus"
+                if(rel = one instance of an entity is associated with the relationship){
+                    rel = one-to-one;
+                    i.e 1 female - married - 1 male
+                }else if(rel = one instance of the entity on the left & >1 instance on the right){
+                    rel = one to many;
+                    i.e 1 scientist - invented - many inventions
+                }else if(rel = rel>1 instance of the entity on the left & rel = 1 instance of the entity on the right){
+                    rel = many to one;
+                    i.e many students - enroll - one course
+                }ele if (rel = rel>1 instance on the left && rel>1 instance on the right){
+                    rel = many to many;
+                    i.e many employees are assigned many projects;
+                }
+        )
+    },
+    Learn Computer Science: Database Keys; {
+        https://www.learncomputerscienceonline.com/database-keys/
+        # an attribute or a group of attributes that uniquely identify each record table
+    
+        Rules of the keys: [
+            # Relevant Persons: E F Codd (A British Computer Scientist, while working for IBM invented the relational databse management system);
+
+        ]
+
+
+        
+
+},
