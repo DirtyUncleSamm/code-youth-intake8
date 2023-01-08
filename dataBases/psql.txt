@@ -106,13 +106,28 @@ Introduction to Database and SQL [
     },
     Learn Computer Science: Database Keys; {
         https://www.learncomputerscienceonline.com/database-keys/
-        # an attribute or a group of attributes that uniquely identify each record table
+        # an attribute or a group of attributes that uniquely identify each tuple in a table
     
         Rules of the keys: [
             # Relevant Persons: E F Codd (A British Computer Scientist, while working for IBM invented the relational databse management system);
-
+            
+            Primary Keys: attribute that uniquely identifies a record in a table
+            Forein Key: Primary key of another table which is used to link the two tables
         ]
+        Commands:
+        1. creting database
+        postgres# 
+        https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-data-types/
 
+
+        create table
+        create table users(id serial primary key, firstname varchar(50), lastname varchar(50));
+        https://www.postgresql.org/docs/current/datatype-datetime.html
+
+        DIFFERENCE IN KEYShttps://www.geeksforgeeks.org/difference-between-primary-key-and-unique-key/
+
+        CHANGE PASWORD
+        https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
 
         
 

@@ -20,7 +20,7 @@ console.log("the length of the array: ", count.length);
 console.log("the average of the array: ", average)
 
 // -- Search an element in an array --
-let value = 1;
+let value = 8;
 for(let i=0;i<=count.length;i++){
     if(count[i] === value){
         console.log("position of", value ,'in array is:' , count.indexOf(value));
