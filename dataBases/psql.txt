@@ -115,7 +115,7 @@ Introduction to Database and SQL [
             Forein Key: Primary key of another table which is used to link the two tables
         ]
         Commands:
-        1. creting database
+        1. creating database
         postgres# 
         https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-data-types/
 
@@ -124,7 +124,8 @@ Introduction to Database and SQL [
         create table users(id serial primary key, firstname varchar(50), lastname varchar(50));
         https://www.postgresql.org/docs/current/datatype-datetime.html
 
-        DIFFERENCE IN KEYShttps://www.geeksforgeeks.org/difference-between-primary-key-and-unique-key/
+        DIFFERENCE IN KEYS
+        https://www.geeksforgeeks.org/difference-between-primary-key-and-unique-key/
 
         CHANGE PASWORD
         https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
@@ -132,3 +133,67 @@ Introduction to Database and SQL [
         
 
 },
+
+CREATE TABLE customers ( customer_id SERIAL PRIMARY KEY, first_name VARCHAR(50), last_name VARCHAR(50), age INT, country VARCHAR(100));
+
+INSERT INTO customers(first_name, last_name, age, country) VALUES('John', 'Doe', 31, 'USA');
+INSERT INTO customers(first_name, last_name, age, country) VALUES('Robert', 'Luna', 22, 'USA');
+INSERT INTO customers(first_name, last_name, age, country) VALUES('David', 'Robinson', 22, 'Uk');
+INSERT INTO customers(first_name, last_name, age, country) VALUES('John', 'Reinhardt', 25, 'UK');
+INSERT INTO customers(first_name, last_name, age, country) VALUES('Betty', 'Doe', 28, 'UAE);
+
+6. to check tables in database
+\dt
+
+7. schema of a table
+\d tablename;
+
+8. insert data into table
+
+
+9. view data in a table
+SELECT * FROM users;
+
+10. creating table with foreign key
+CREATE TABLE products(id SERIAL PRIMARY KEY, item VARCHAR(40),amount INT, user_id INT REFERENCES users(id) ON DELETE CASCADE);
+
+
+
+
+inner and outer join 
+https://phoenixnap.com/kb/mysql-join 
+
+
+
+Practice
+
+# - return names of all thos customers whose shipping status is pending
+    SELECT first_name, last_name
+    FROM customers
+    JOIN shippings
+    ON customers.customer_id = shipping.customer_id
+    WHERE status = 'Pending'; 
+
+# - return names of customers who spend more than 300 on items
+    SELECT first_name, last_name
+    FROM customers
+    JOIN orders
+    ON customers.customer_id=orders.customer_id
+    WHERE amount > 300;
+
+# - return names of customers who ordered keyboards and shipping status is pending
+    SELECT first_name, last_name
+    FROM customers
+    INNER JOIN orders ON customers.customer_id = orders.customer_id
+    INNER JOIN shippings ON  orders.customer_id = shippings.customer_id
+    WHERE item = 'Keyboard' AND status = 'Pending'; 
+
+    IP4 address
+
+
+    projects
+
+
+    https://raw.githubusercontent.com/lighthouse-labs/w5-sql-seeds/master/bootcampx_seeds/students_seeds.sql
+    https://raw.githubusercontent.com/lighthouse-labs/w5-sql-seeds/master/bootcampx_seeds/cohorts_seeds.sql
+    https://cdn.discordapp.com/attachments/1045366403475177495/1060950886383366265/image.png
