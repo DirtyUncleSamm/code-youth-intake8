@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(4, 4, 78);
+}
+nav{
+    display:flex;
+    justify-content: right;
+}
+nav>a{
+    color:white;
+    text-decoration: none;
+}
+#title{
+    color:white;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
