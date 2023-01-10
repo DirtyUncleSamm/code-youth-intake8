@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/expressJS/public/css/style.css">
+</head>
+<body>
+    <h1>Code Youth</h1>
+    
+    <!-- <p>new paragraph</p>
+    <% if(user) { %>
+        <p>Name: <%=user.name %></p>
+        <p> ID: <%= user.id %></p>
+    <% } else {%>
+    <%  %>
+        <h3>No user</h3>
+    <% } %> -->
+<!--the else part of this function is not working, possible solution below --> 
+    <!-- https://stackoverflow.com/questions/41202233/how-can-i-use-if-statement-in-ejs -->
+    <p>Student Data:</p>
+    <% data.forEach((ele)=>{%>
+        <p><%=data.id %></p>
+        <p><%=data.name %></p>
+        <p><%=data.city %></p>
+        <img src=<% ele.url %>>
+    <% }) %>
+</body>
+</html>

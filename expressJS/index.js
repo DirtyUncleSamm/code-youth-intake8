@@ -15,7 +15,7 @@ res.send("user page")
 )
 app.listen(port, ()=>
 console.log("server running")
-)// the => listed here is a call back funstion
+)// the => listed here is a call back function
 // -- This is a code for my terminal to show that my server is running
 // -- type into the url: localhost: 'portnumber' and this will bring up any code stored locally
 
