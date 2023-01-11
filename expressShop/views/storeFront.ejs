@@ -8,11 +8,11 @@
 </head>
 <body>
     <h1>Shop of things!</h1>
-    <% products.forEach((ele)=>{%>
-        <p><% products.title %></p>
-        <p><% products.price %></p>
-        <img src="<% products.url %>">
-    <%})%>
+    <%= data[0].forEach((ele)=>{%>
+        <p><%= ele.title %></p>
+        <p><%= ele.price %></p>
+        <img src="<%= ele.url %>">>
+    <%=})%>
     
 </body>
 </html>

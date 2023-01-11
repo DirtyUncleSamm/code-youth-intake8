@@ -12,10 +12,18 @@ app.get('/', (req,res)=>{
 app.get('/storeFront', (req,res)=>{
     res.render("storeFront")
 })
-app.get('/data/:id', (req,res)=>{
-    const id = req.params.id;
-    res.send(id);
-    const products = products.find((item) =>item.id===id)
-})
+app.get('/data', (req,res)=>
+res.json(products)
+)
+app.get('/data/:id',(req,res)=>{
+	const id = req.params.id;
+	const prod= {};
+	res.send(id);
+const product = products.find((item)=>item.id==id) 
+
+res.json(product)
+}
+)
 app.listen(port, ()=>
-console.log("server running"))
+console.log("server running")
+)

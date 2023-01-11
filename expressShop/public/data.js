@@ -12,7 +12,7 @@ const products = [
         url: "/public/img/bucket.jpg"
     },
     {
-        id: 2,
+        id: 3,
         title: "can",
         price: 3,
         url: "/public/img/can.jpg"
