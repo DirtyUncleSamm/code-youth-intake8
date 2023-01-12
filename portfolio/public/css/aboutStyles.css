@@ -1,17 +1,68 @@
 body{
+    background-color: rgb(3, 3, 62);
+}
+#largeCard{
+    margin: 150px 100px;
+    padding: 0px 30px;
+    height: 900px;
+    display:flex;
+    flex-direction: row;
+    align-content: center;
+    box-shadow: 0 0 20px rgb(44, 31, 122);
     background-color: rgb(4, 4, 78);
+    border-radius: 10px;
 }
-nav{
-    display:flex;
-    justify-content: right;
+img{
+    margin: 0px;
+    padding: 20px;
+    width:300px;
+    height: 300px;
+    border: 1px solid white;
+    border-radius: 50%;
 }
-nav>a{
-    color:white;
-    text-decoration: none;
-}
-#title{
-    color:white;
-    display:flex;
-    flex-direction: column;
+#mainContent{  
+    padding: 20px;
+    color: white;
     text-align: center;
 }
+#mainContent>h1{
+    margin-top: 80px;
+    font-size: 50px;
+    
+    /* font-family: 'Amatic SC', cursive; */
+    font-family: 'Chakra Petch', sans-serif;
+    /* font-family: 'Nunito', sans-serif; */
+    /* font-family: 'Orbitron', sans-serif; */
+    /* font-family: 'Space Grotesk', sans-serif; */
+}
+#mainContent>h3{
+    margin: 10px;
+    font-size: 30px;
+}
+#mainContent>div{
+    margin: 50px 150px;
+    height: 550px;
+    width: 600px;
+    background-color:rgb(68, 49, 120);
+    align-self: center;
+    border: 10px inset rgb(9, 9, 82);
+}
+nav{
+    
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-end;
+
+}
+nav>input{
+    margin: 25px 0px;
+    padding: 15px 20px;
+    font-size: 30px;
+    background-color:rgb(4, 4, 78);
+    color: white;
+    border: 1px solid rgb(4, 4, 78);
+    box-shadow: 0 0 20px rgb(44, 31, 122);
+    border-radius: 10px;
+}
+
+
