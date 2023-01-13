@@ -1,8 +1,9 @@
+/* --  * containers need dimentions changed to be responsive: text (vw or rem), image and div (%) */
 body{
     background-color: rgb(3, 3, 62);
 }
 #largeCard{
-    margin: 150px 100px;
+    margin: 50px;
     padding: 0px 30px;
     height: 900px;
     display:flex;
@@ -12,57 +13,73 @@ body{
     background-color: rgb(4, 4, 78);
     border-radius: 10px;
 }
+
+nav{
+    margin-right: 50px;
+    
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    /* border: 1px solid wheat; */
+}
 img{
-    margin: 0px;
-    padding: 20px;
-    width:300px;
-    height: 300px;
+    margin: 10px;
+    padding: 25px;
+    width:20vw;
     border: 1px solid white;
     border-radius: 50%;
 }
-#mainContent{  
+#pageSelection{
+    margin-top: 70px;
+    display:flex;
+    flex-direction: column;
+    /* border: 1px solid wheat; */
+}
+#pageSelection>button{
+    margin: 25px 0px;
+    padding: 15px 20px;
+    font-size: 30px;
+    background-color:rgb(4, 4, 78);
+    color: white;
+    border: 1px solid rgb(4, 4, 49);
+    box-shadow: 0 0 20px rgb(38, 26, 103);
+    border-radius: 10px;
+}
+#pageSelection>button:hover{
+    background-color:rgb(3, 3, 62);
+}
+#pageSelection>button:visited{
+    background-color:rgb(3, 3, 62);
+    box-shadow: 0 0 20px rgb(3, 3, 62);
+}
+
+#profileCard{  
     padding: 20px;
+    width: 100%;
     color: white;
     text-align: center;
+    contain: content;
 }
-#mainContent>h1{
-    margin-top: 80px;
-    font-size: 50px;
-    
+#profileCard>h1{
+    margin-top: 50px;
+    font-size: 60px;
     /* font-family: 'Amatic SC', cursive; */
     font-family: 'Chakra Petch', sans-serif;
     /* font-family: 'Nunito', sans-serif; */
     /* font-family: 'Orbitron', sans-serif; */
     /* font-family: 'Space Grotesk', sans-serif; */
 }
-#mainContent>h3{
+#profileCard>h3{
     margin: 10px;
-    font-size: 30px;
+    font-size: 40px;
 }
-#mainContent>div{
-    margin: 50px 150px;
-    height: 550px;
-    width: 600px;
-    background-color:rgb(68, 49, 120);
+#mainContent{
+    /* -- size should be static irrelevant to the page loaded */
+    margin: 80px 50px 0px 50px;
+    height: 55%;
+    background-color:#37689D;
     align-self: center;
-    border: 10px inset rgb(9, 9, 82);
-}
-nav{
-    
-    display:flex;
-    flex-direction: column;
-    justify-content:flex-end;
-
-}
-nav>input{
-    margin: 25px 0px;
-    padding: 15px 20px;
-    font-size: 30px;
-    background-color:rgb(4, 4, 78);
-    color: white;
-    border: 1px solid rgb(4, 4, 78);
-    box-shadow: 0 0 20px rgb(44, 31, 122);
-    border-radius: 10px;
+    border: 15px inset rgb(9, 9, 82);
 }
 
 
