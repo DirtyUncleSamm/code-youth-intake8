@@ -1,3 +1,7 @@
 function aboutPage(){
-    const about = document.
+    const cont = document.getElementById('mainContent')
+    const about = document.createElement('div');
+    
+
+
 }

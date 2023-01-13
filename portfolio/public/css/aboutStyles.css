@@ -74,10 +74,11 @@ img{
     font-size: 40px;
 }
 #mainContent{
-    /* -- size should be static irrelevant to the page loaded */
+    /* -- size should be static regardless of the page loaded */
     margin: 80px 50px 0px 50px;
     height: 55%;
     background-color:#37689D;
+    /*bc is the windows 2000 ui*/
     align-self: center;
     border: 15px inset rgb(9, 9, 82);
 }
