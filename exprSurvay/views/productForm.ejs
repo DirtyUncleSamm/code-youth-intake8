@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/proFormStyles.css">
+    <title>Product Form</title>
+</head>
+<body>
+    <p>Follow <a href="/">here</a> to go to the homepage</p>
+    <h1>Product Form</h1>
+    <div>
+        <h3>Submit a Product</h3>
+        <hr>
+        <form method="post" action="/save">
+            <span>
+                <label>Product Name: </label>
+                <input type="text" name="name"><br>
+            </span>
+            
+            <span>
+                Product Category: 
+                <select name="category" id="category">
+                    <option>Cosmetics & Beauty</option>
+                    <option>Music</option>
+                    <option>Games</option>
+                    <option>Technology</option>
+                    <option>Business</option>
+                    <option>Health</option>
+                    <option>Travel</option>
+                </select>
+            </span>
+            <span>
+               Product Freshness: 
+                <input type="radio" name="fresh" id="fresh" value="Brand New">Brand New</input>
+                <input type="radio" name="fresh" id="fresh1" value="Second Hand">Second Hand</input>
+                <input type="radio" name="fresh" id="fresh2" value="Refurbished">Refurbished</input> 
+            </span>
+            <input type="file" name="myImage" accept="image/png, image/gif, image/jpeg" />
+            <span>
+                Description:
+                <input type="text" name="description" id="description">
+            </span>
+            <span>
+                Price:
+                <input type="number" name="price" id="price">
+            </span>
+            
+            
+
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>
