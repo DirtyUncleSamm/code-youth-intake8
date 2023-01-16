@@ -11,36 +11,26 @@
 <body>
   
     <main>
-        <!-- <div id="topBanner">
-            <h1 id="fn">Sammantha</h1>
-            <h1 id="ln">Preston</h1>
-        </div> -->
-      
         <div id="largeCard">
-            
-            <nav>
-                <img src="/img/proPic.jpg"> <!--I want to take another picture-->
-                
-                <span id="pageSelection">
-                    <button value="About" onclick="aboutPage()">About</button>
-                    <button value="Projects" onclick="projectPage()">Projects</button>
-                    <button value="Resume" onclick="resumePage()">Resume</button>
-                    <button value="Contact" onclick="contactPage()">Contact</button>
-                </span>
-                
-            </nav> 
-            <script src="/js/mainContent.js"></script>
-            <div id="profileCard">
+            <div id="titleCard">
                 <h1>Sammantha Preston</h1>
                 <h3>Web Developer</h3>
                 <h3>UI / UX Designer</h3>
-                <div id="mainContent"></div> <!--This will contain 4 .ejs files: About, Projects Resume, Contact-->
             </div>
+            <div id="contentCard">
+                <nav>
+                    <img src="/img/proPic.jpg"> <!--I want to take another picture-->
+                    <span id="pageSelection">
+                        <button value="About" onclick="aboutPage()">About</button>
+                        <button value="Projects" onclick="projectPage()">Projects</button>
+                        <button value="Resume" onclick="resumePage()">Resume</button>
+                        <button value="Contact" onclick="contactPage()">Contact</button>
+                    </span>
+                </nav> 
+                <div id="retroScreen"></div> <!--This will contain 4 functions that pull up content: About, Projects Resume, Contact-->
             
-            
+            </div> 
         </div>
-        
-        
     </main>
     <footer></footer>
 </body>

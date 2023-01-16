@@ -1,19 +1,22 @@
 /* --  * containers need dimentions changed to be responsive: text (vw or rem), image and div (%) */
 body{
-    background-color: rgb(3, 3, 62);
+    background-color: #000033;
 }
 #largeCard{
     margin: 50px;
     padding: 0px 30px;
     height: 900px;
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-content: center;
     box-shadow: 0 0 20px rgb(44, 31, 122);
-    background-color: rgb(4, 4, 78);
+    background-color:#000033;
     border-radius: 10px;
 }
-
+#titleCard>h3{
+    margin: 10px;
+    font-size: 40px;
+}
 nav{
     margin-right: 50px;
     
@@ -25,7 +28,7 @@ nav{
 img{
     margin: 10px;
     padding: 25px;
-    width:20vw;
+    width: 20vw;
     border: 1px solid white;
     border-radius: 50%;
 }
@@ -60,7 +63,8 @@ img{
     text-align: center;
     contain: content;
 }
-#profileCard>h1{
+#titleCard>h1{
+    color: #cc7a00;
     margin-top: 50px;
     font-size: 60px;
     /* font-family: 'Amatic SC', cursive; */
@@ -69,11 +73,8 @@ img{
     /* font-family: 'Orbitron', sans-serif; */
     /* font-family: 'Space Grotesk', sans-serif; */
 }
-#profileCard>h3{
-    margin: 10px;
-    font-size: 40px;
-}
-#mainContent{
+
+#retroScreen{
     /* -- size should be static regardless of the page loaded */
     margin: 80px 50px 0px 50px;
     height: 55%;
