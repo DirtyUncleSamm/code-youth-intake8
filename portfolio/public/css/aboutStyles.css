@@ -6,20 +6,38 @@ body{
     margin: 50px;
     padding: 0px 30px;
     height: 900px;
-    display: flex;
+    display:flex;
     flex-direction: row;
-    align-content: center;
     box-shadow: 0 0 20px rgb(44, 31, 122);
     background-color:#000033;
     border-radius: 10px;
 }
+#titleCard{
+    width: 100%;
+    text-align: center;
+}
+#titleCard>h1{
+    color: #cc7a00;
+    margin-top: 50px;
+    font-size: 60px;
+    /* font-family: 'Amatic SC', cursive; */
+    font-family: 'Chakra Petch', sans-serif;
+    /* font-family: 'Nunito', sans-serif; */
+    /* font-family: 'Orbitron', sans-serif; */
+    /* font-family: 'Space Grotesk', sans-serif; */
+}
 #titleCard>h3{
     margin: 10px;
     font-size: 40px;
+    color:white;
+}
+#contentCard {
+    display:flex;
+    flex-direction:row;
+    justify-content: ;
 }
 nav{
     margin-right: 50px;
-    
     display:flex;
     flex-direction: column;
     justify-content:flex-end;
@@ -28,7 +46,7 @@ nav{
 img{
     margin: 10px;
     padding: 25px;
-    width: 20vw;
+    width: 15vw;
     border: 1px solid white;
     border-radius: 50%;
 }
@@ -52,34 +70,18 @@ img{
     background-color:rgb(3, 3, 62);
 }
 #pageSelection>button:visited{
-    background-color:rgb(3, 3, 62);
+    background-color:rgb(158, 158, 193);
     box-shadow: 0 0 20px rgb(3, 3, 62);
 }
 
-#profileCard{  
-    padding: 20px;
-    width: 100%;
-    color: white;
-    text-align: center;
-    contain: content;
-}
-#titleCard>h1{
-    color: #cc7a00;
-    margin-top: 50px;
-    font-size: 60px;
-    /* font-family: 'Amatic SC', cursive; */
-    font-family: 'Chakra Petch', sans-serif;
-    /* font-family: 'Nunito', sans-serif; */
-    /* font-family: 'Orbitron', sans-serif; */
-    /* font-family: 'Space Grotesk', sans-serif; */
-}
+
+
 
 #retroScreen{
     /* -- size should be static regardless of the page loaded */
     margin: 80px 50px 0px 50px;
     height: 55%;
     background-color:#37689D;
-    /*bc is the windows 2000 ui*/
     align-self: center;
     border: 15px inset rgb(9, 9, 82);
 }
