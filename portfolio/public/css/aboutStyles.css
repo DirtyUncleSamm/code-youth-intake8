@@ -56,7 +56,7 @@ img{
     flex-direction: column;
     /* border: 1px solid wheat; */
 }
-#pageSelection>button{
+.navButt{
     margin: 25px 0px;
     padding: 15px 20px;
     font-size: 30px;
@@ -66,17 +66,15 @@ img{
     box-shadow: 0 0 20px rgb(38, 26, 103);
     border-radius: 10px;
 }
-#pageSelection>button:hover{
+.navButt:hover{
     background-color:rgb(3, 3, 62);
 }
-#pageSelection>button:visited{
+.navButt:active{
     background-color:rgb(158, 158, 193);
     box-shadow: 0 0 20px rgb(3, 3, 62);
 }
 
-
-
-
+/*dynamic screen*/
 #retroScreen{
     /* -- size should be static regardless of the page loaded */
     margin: 80px 50px 0px 50px;
@@ -84,6 +82,19 @@ img{
     background-color:#37689D;
     align-self: center;
     border: 15px inset rgb(9, 9, 82);
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+#bioContainer{
+    padding: 20px;
+    width: 90%;
+    background-color: #5a8cc3;
+    
+   
+}
+#bio{
+    background-color:rgb(45, 45, 119); 
 }
 
 

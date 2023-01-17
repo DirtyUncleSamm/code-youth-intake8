@@ -29,75 +29,11 @@
                 <h1>Sammantha Preston</h1>
                 <h3>Web Developer</h3>
                 <h3>UI / UX Designer</h3>
-                <div id="retroScreen"></div> <!--Have a magnifying option-->
+                <div id="retroScreen"></div>
+                 <!--Insert magnify glass icon when clicked will open retScrn to fill page-->
             </div>
         </div>
-        <script>
-        let buttons = document.getElementsByClassName("navButt");
-        let retScrn = document.getElementById("retroScreen");
-
-        Array.from(buttons).forEach(function(button) {
-            button.addEventListener('click', function(){
-                console.log("function test");
-                retScrn.innerHTML = '';
-                if(button.innerText === 'about'){
-                    const title = document.createElement('h3');
-                    title.textContent = 'About Us';
-                    console.log("function test about");
-                    
-                    const div = document.createElement('div');
-                    div.classList.add('about');
-          
-                    const content = document.createElement('p');
-                    content.textContent = 'Learn more about our company';
-          
-                    div.appendChild(title);
-                    div.appendChild(content);
-                    retScrn.appendChild(div);
-                } else if(button.textContent === 'portfolio'){
-                    const title = document.createElement('h3');
-                    title.textContent = 'Our Portfolio';
-          
-                    const div = document.createElement('div');
-                    div.classList.add('portfolio');
-          
-                    const content = document.createElement('p');
-                    content.textContent = 'Check out some of our work';
-          
-                    div.appendChild(title);
-                    div.appendChild(content);
-                    retScrn.appendChild(div);
-                } else if(button.textContent === 'resume'){
-                    const title = document.createElement('h3');
-                    title.textContent = 'Our Resume';
-                
-                    const div = document.createElement('div');
-                    div.classList.add('resume');
-          
-                    const content = document.createElement('p');
-                    content.textContent = 'View our qualifications';
-          
-                    div.appendChild(title);
-                    div.appendChild(content);
-                    retScrn.appendChild(div);
-                } else if(button.textContent === 'contact'){
-                    const title = document.createElement('h3');
-                    title.textContent = 'Contact Us';
-                
-                    const div = document.createElement('div');
-                    div.classList.add('contact');
-          
-                    const content = document.createElement('p');
-                    content.textContent = 'Get in touch with us';
-          
-                    div.appendChild(title);
-                    div.appendChild(content);
-                    retScrn.appendChild(div);
-                }
-            });
-        });
-
-        </script>
+        <script src="/js/mainContent.js"></script>
     </main>
    
 </body>
