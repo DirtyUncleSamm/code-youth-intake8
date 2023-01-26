@@ -4,13 +4,14 @@ body{
 }
 #largeCard{
     margin: 50px;
-    padding: 0px 30px;
-    height: 900px;
+    padding: 40px 30px;
+    height: 950px;
     display:flex;
     flex-direction: row;
     box-shadow: 0 0 20px rgb(44, 31, 122);
     background-color:#000033;
     border-radius: 10px;
+    contain: content;
 }
 #titleCard{
     width: 100%;
@@ -44,14 +45,18 @@ nav{
     /* border: 1px solid wheat; */
 }
 img{
-    margin: 10px;
+    margin-top: 50px;
     padding: 25px;
-    width: 15vw;
+    width: 22vw;
     border: 1px solid white;
     border-radius: 50%;
+    position: relative;
+    bottom: 40px;
+   
+
 }
 #pageSelection{
-    margin-top: 70px;
+    margin-top: 15px;
     display:flex;
     flex-direction: column;
     /* border: 1px solid wheat; */
@@ -69,22 +74,20 @@ img{
 .navButt:hover{
     background-color:rgb(3, 3, 62);
 }
-.navButt:active{
-    background-color:rgb(158, 158, 193);
-    box-shadow: 0 0 20px rgb(3, 3, 62);
-}
 
 /*dynamic screen*/
 #retroScreen{
     /* -- size should be static regardless of the page loaded */
     margin: 80px 50px 0px 50px;
-    height: 55%;
+    height: 65%;
     background-color:#37689D;
     align-self: center;
     border: 15px inset rgb(9, 9, 82);
     display:flex;
     flex-direction:column;
     align-items: center;
+    position: relative;
+    bottom: 30px;
 }
 #bioContainer{
     padding: 20px;
@@ -94,7 +97,11 @@ img{
    
 }
 #bio{
-    background-color:rgb(45, 45, 119); 
+   
+}
+.change{
+    background-color:rgb(3, 3, 62);
+    box-shadow: 0px 0px 20px  #6600cc; 
 }
 
 

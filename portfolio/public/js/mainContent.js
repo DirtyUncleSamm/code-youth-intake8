@@ -2,17 +2,19 @@ let buttons = document.getElementsByClassName("navButt");
 let retScrn = document.getElementById("retroScreen");
 
 Array.from(buttons).forEach(function(button) {
-    button.addEventListener('click', function(){
+    button.addEventListener('click', (event)=>{
+        if(document.querySelectorAll('.change').length!==0){
+        document.querySelectorAll('.change')[0].className='navButt';
+    }
+        event.target.className+=' change';
+        
+        
         retScrn.innerHTML='';
-        button.style.cssText=`
-            background-color:white;
-        `
+       
         console.log("funtest");
         if(button.innerHTML === 'About'){
             console.log("aboutPage");
-            button.style.cssText=`
-                background-color: rgb(45, 45, 119);
-            `
+            
             const title =  document.createElement('h1');
                 title.innerHTML="About Me!";
             retScrn.appendChild(title);
@@ -41,5 +43,6 @@ Array.from(buttons).forEach(function(button) {
                 title3.innerHTML="Contact Me";
             retScrn.appendChild(title3);
         }
+        button.classList.remove("focus"); 
     })
 })
