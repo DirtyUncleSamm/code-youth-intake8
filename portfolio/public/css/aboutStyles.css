@@ -8,7 +8,7 @@ body{
     height: 950px;
     display:flex;
     flex-direction: row;
-    box-shadow: 0 0 20px rgb(44, 31, 122);
+    box-shadow: 0 0 20px rgb(0, 0, 0);
     background-color:#000033;
     border-radius: 10px;
     contain: content;
@@ -35,7 +35,7 @@ body{
 #contentCard {
     display:flex;
     flex-direction:row;
-    justify-content: ;
+    
 }
 nav{
     margin-right: 50px;
@@ -68,7 +68,7 @@ img{
     background-color:rgb(4, 4, 78);
     color: white;
     border: 1px solid rgb(4, 4, 49);
-    box-shadow: 0 0 20px rgb(38, 26, 103);
+    box-shadow: 0 0 20px rgb(4, 6, 33);
     border-radius: 10px;
 }
 .navButt:hover{
