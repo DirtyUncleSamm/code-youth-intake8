@@ -1,10 +1,10 @@
 * {
-    
+     padding:0px;
     box-sizing: border-box;
 }
 body{
     margin:auto;
-    padding:0px;
+   
     display:flex;
     flex-direction:column;
   }
@@ -15,6 +15,7 @@ header{
     height: 4rem;
     display:flex;
     flex-direction:row;
+    position:fixed;
 }
 nav{
     margin-top:4rem;
@@ -34,15 +35,17 @@ nav ul{
 }
 
 nav a{
-    margin: 0px 8px;
-    font-size: 14px;
+   
+    padding:18px 10px;
+    font-size: 15px;
     font-family:sans-serif;
     color:white;
     text-decoration: none;
     text-transform: uppercase;
+   
 }
 nav a:hover{
-    padding: 15px 8px;
+    padding:18px 10px;
     background-color:rgb(8, 11, 10);
 }
 main{
@@ -57,9 +60,10 @@ main{
 #columInd {
    padding: 4rem .5rem; 
    width: 15%;
-   height: 10000px;
+   
    background-color: rgb(168, 201, 209);
    display:flex;
+   overflow: scroll;
 }
 #columMain {
     padding: 4rem; 
