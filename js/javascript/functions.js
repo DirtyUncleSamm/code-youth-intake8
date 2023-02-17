@@ -10,9 +10,10 @@ function message(){
 
 
 // -- Below is an example of a function declaration --
-function name_of_function(param1, param2,..){
+// function name_of_function(param1, param2){
     //code
-}
+// }
+
 
 function display(firstName){
     console.log(firstName);
