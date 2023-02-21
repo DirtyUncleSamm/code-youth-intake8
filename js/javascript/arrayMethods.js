@@ -11,7 +11,7 @@ for(let item of colors){
 }// -- this displays the elements in the array
 
 // -- below is a callback function 
-// - a call back function is a functiuon passed into another function as an argument
+// .. a call back function is a functiuon passed into another function as an argument
 colors.forEach((ele)=> console.log("item", ele));
 colors.forEach(print);
 function print(ele){

@@ -1,12 +1,16 @@
+// -- open calculator.html in live view
+// .. Enter two number prompts and one operator
+// ** I would like to extend this function to work on a static calc ui **
+
 function calculator( val1, val2, operator){
     if(operator == "+"){
-        let result = val1 + val2;
+        var result = val1 + val2;
     }else if(operator == "-"){
-        let result = val1 - val2;
+        var result = val1 - val2;
     }else if(operator == "*"){
-        let result = val1 * val2;
+        var result = val1 * val2;
     }else if (operator == "/"){
-        let result = val1/val2;
+        var result = val1/val2;
     }else{
         console.log("invalid")
     }

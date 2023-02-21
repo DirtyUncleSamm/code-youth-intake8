@@ -1,4 +1,8 @@
-let a = prompt("input number to find the day of the week");
+// -- Open 'dayNumber.html' in live view. 
+// .. The browser will give two prompts:
+// .. * input a number to return corresponding day
+// .. * input day to return corresponding number
+let num = prompt("input number to find the day of the week");
 if(num==1){
     alert("your day is Monday");
 }
