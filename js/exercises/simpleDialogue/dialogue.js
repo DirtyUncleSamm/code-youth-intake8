@@ -1,7 +1,7 @@
 
 // -- from carters challenges --  this was previously linked to an html file but is currently a free standing document
 //--- Print user input to console.log ---
-// --- I need to console.log a different term for each 'answer'
+// --- prompt is incorrect, this program does not work
 const pc = ["red", "blue", "yellow"]
 let answer = prompt("what is your favourite colour?");
 if(answer === pc[0]){
