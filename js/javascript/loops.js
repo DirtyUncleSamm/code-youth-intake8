@@ -16,27 +16,6 @@
 // }this code displays numbers from 20 to 1
 
 
-// let sum = 0;
-// for(let i=1; i<=10;i++){
-//     sum = sum+i;
-//     console.log(sum);
-// } this code displays the sum of the proceeding numbers i.e. fibonocci sequence
-
-
-//---------popMilk--------------
-// let num = prompt("write an num");
-//     if (num % 3 == 0 && num% !5 == 0){
-//         console.log("milk");
-//     }else if (num % 5 == 0 && num% !3 == 0){
-//         console.log("pop");
-//     }else if (num%3 == 0 && num%5 == 0){
-//         console.log("popMilk")
-//     }else{console.log("not divisible by three or five")}
-
-
-
-
-
 // ----sum of 10 prompts---
 // let sum = 0;
 // for(let i=1; i<=10;i++){
