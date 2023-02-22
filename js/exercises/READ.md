@@ -20,12 +20,12 @@
 9. Find the greater of three numbers
 10. If number is divisible by 3, return three. If number is divisible by 5, return five. If number is divisible by both, return threeFive
 11. Read temperature in celsius and display a suitable message according to temerature state below: 
-    Temp    Description
-    <0      Freezing
-    0-10    Very Cold
-    20-30   Normal
-    30-40   Hot
-    >=40    Very Hot
+>    Temp    Description
+>    <0      Freezing
+>    0-10    Very Cold
+>    20-30   Normal
+>    30-40   Hot
+>    .>=40   Very Hot
 
 12. Create a function that takes two number prompts from a user, and compare one number with the other. Return the value of the greater number.
 
