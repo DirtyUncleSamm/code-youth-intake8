@@ -41,3 +41,6 @@ Percentage less than 40% : Grade F
 4. Write a program that displays the cube of a number upto a given integer. 
 5. Write a program that displays a Fibonacci series
 6. Write a program that determins if a user input is a prime number. If input is prime, return "this is a prime number". Else, return "not a prime number"
+
+## Functions
+
