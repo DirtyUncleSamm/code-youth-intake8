@@ -44,3 +44,24 @@ Percentage less than 40% : Grade F
 
 ## Functions
 
+1. Cube: Find cube using functions
+2. Circle: Diameter & area of circle using functions   pi=3.142
+3. swap two numbers using function
+4. program to find the value of one number raised to the power of another using functions. 
+5. Functions to perform various arithmetic operations.
+6. isEven: Write a function that tests if a number is even or odd. Use a 'return' statement and call two numbers to test the program
+
+### arrow functions
+1. return greater of 2 numbers
+2. return average of 4 numbers
+3. check if leap year or not , return true/false
+
+## Ararys
+1. Colours: Create an array of colors. Display the first, fourth and last element of the array. Display the size and finally the complete array
+2. read n number of values in an array and display it in reverse order.
+3. sum and average of marks
+4. to count total number of even and odd elements in an array.
+5. to print all negative elements in an array.
+6. search an element in array
+7. copy the elements of one array into another array. 
+8. find the smallest element in an array.

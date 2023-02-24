@@ -5,7 +5,7 @@ function calculateCircle(radius) {
     
     console.log(`Diameter: ${diameter}`);
     console.log(`Area: ${area}`);
-  }
+}
   
 
 calculateCircle(5); 
