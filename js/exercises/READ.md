@@ -57,11 +57,11 @@ Percentage less than 40% : Grade F
 3. check if leap year or not , return true/false
 
 ## Ararys
-1. Colours: Create an array of colors. Display the first, fourth and last element of the array. Display the size and finally the complete array
-2. read n number of values in an array and display it in reverse order.
-3. sum and average of marks
-4. to count total number of even and odd elements in an array.
-5. to print all negative elements in an array.
-6. search an element in array
-7. copy the elements of one array into another array. 
-8. find the smallest element in an array.
+1. ***Colours:*** Create an array of colors. Display the first, fourth and last element of the array. Display the size and finally the complete array
+2. ***reverse:*** read n number of values in an array and display it in reverse order.
+3. ***sumAv:*** sum and average of marks
+4. ***evenOdd:*** to count total number of even and odd elements in an array.
+5. ***printNeg:*** to print all negative elements in an array.
+6. ***searchEle:*** search an element in array
+7. ***copyEle:*** copy the elements of one array into another array. 
+8. ***smallEle:*** find the smallest element in an array.
