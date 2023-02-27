@@ -1,7 +1,8 @@
+
 let arr = [23, 54, 12, 25, 346, 55];
 let sum = 0;
 for(i = 0; i<arr.length; i++){
-sum += arr[i];
+    sum += arr[i];
 }
 console.log("the sum is:", sum);
 

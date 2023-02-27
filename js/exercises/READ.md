@@ -39,17 +39,17 @@ Percentage less than 40% : Grade F
 2. Write a program that prompts the user to input a positive integer and returns the multiplication table of the input
 3. Write a program that prompts the user to input 10 integers. The function should check the value of the inputs and displays them in order from negative to positive
 4. Write a program that displays the cube of a number upto a given integer. 
-5. Write a program that displays a Fibonacci series
+5. ***fibonacci:*** Write a program that displays a Fibonacci series
 6. Write a program that determins if a user input is a prime number. If input is prime, return "this is a prime number". Else, return "not a prime number"
 
 ## Functions
 
-1. Cube: Find cube using functions
-2. Circle: Diameter & area of circle using functions   pi=3.142
+1. ***cube:*** Find cube using functions
+2. ***circle:*** Diameter & area of circle using functions   pi=3.142
 3. swap two numbers using function
 4. program to find the value of one number raised to the power of another using functions. 
 5. Functions to perform various arithmetic operations.
-6. isEven: Write a function that tests if a number is even or odd. Use a 'return' statement and call two numbers to test the program
+6. ***isEven:*** Write a function that tests if a number is even or odd. Use a 'return' statement and call two numbers to test the program
 
 ### arrow functions
 1. return greater of 2 numbers
