@@ -30,15 +30,23 @@ console.log(color[0]);
 console.log(color[3]);
 console.log(color[color.length-1]);
 
-// --
-
+// -- This function takes each element in the array and multiply's it by 2
 for(let i =0;i<=a.length; i++){
     console.log(a[i]*2);
 }
 
+// -- This function displays all even numbers in an array
+// .. This was written when I was first doing arrays. So as a reminder it is bad practice to use the same name for my for loop parameter as the array constructor
 let n = [1,2,3,4,5,6,7,8,9,10];
 for(let n=0; n<=n.length; n++){
     if(n % 2 == 0){
-            console.log(n);
+            console.log(n[n]);
+    }
+}
+
+// -- This function displays all odd numbers in an array
+for(let i = 0; i < n.length; i++){
+    if(n % 2 !== 0){
+        console.log(n[i]);
     }
 }

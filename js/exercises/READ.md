@@ -65,3 +65,62 @@ Percentage less than 40% : Grade F
 6. ***searchEle:*** search an element in array
 7. ***copyEle:*** copy the elements of one array into another array. 
 8. ***smallEle:*** find the smallest element in an array.
+9. ***copyEle:*** copy the elements from one array into another array
+
+### Methods
+1. ***loopInt:*** Declare an empty array. Using a for loop add the number 0-10 to the array
+2. ***banList:*** Add everyone from toBeAdded to the banList array then empty the toBeAdded Array *Hint: look up 'js how to empty an array'
+3. ***daySort*** Using only pop(), push(), unshift(), and shift() make weekDays start at monday and end at sunday in the correct order
+4. ***randInt:*** Add 50 random whole numbers between 0 and 100 to myNumbers. console.log(myNumbers), after all 50 numbers are added. Split the numbers into 'even' and 'odd'. Find the average of myNumbers. Find the median of myNumbers. 
+5. ***cleanNames:*** Using the .map() and .trim() methods define a function called cleanNames that accepts an array of strings containing additional space characters at the beginning and end. 
+6. ***mapforEachUpperCase:*** Captialize every word in array  let arr = ['red','green','blue','gray','black'];  ['RED','GREEN'...]
+7. ***.join:*** Given an array of movies, iterate over them using the forEach method of the array type and console.log every movie in the array preceded by an ascending number. e.g. 
+    1. Titanic  
+    2. Avatar
+8. ***foreEachLength:*** find length of each word of array [3, 5,4,4,5]
+9. ***mathFloorCeil:*** round an array of numbers [10.5, 23.5]   Math.floor   Math.ceil
+10. ***displayOdd:*** display only odd numbers from an array
+11. ***productOfOddNumbers:*** find the product of odd elements in an array
+12. ***sumOfSquared:*** find the sum of squares of an array
+13. ***capFirstLetterOfEle:*** Capitalize first letter of each word in an array
+
+## Objects
+1. ***singleObject:*** create an object student with properties:
+id,
+name,
+address,  another object
+email,
+phone
+marks --array 
+course:
+hobbies-array
+
+* In string form display:
+student John with id(1) and country(US) got (45) marks in first subject and is interested in these things
+2. ***arrayOfObjects:*** display an array of multiple objects
+
+3. ***recipes:***
+* Create an object to hold information on your favorite recipe. 
+* It should have properties for title (a string), servings (a number), and ingredients (an array of strings).
+* On separate lines (one console.log statement for each), log the recipe information so it looks like:
+Mole
+Serves: 2
+Ingredients:
+cinnamon
+cumin
+cocoa
+
+4. ***readingList:***
+Keep track of which books you read and which books you want to read!
+
+* Create an array of objects, where each object describes a book and has properties for the title (a string), author (a string), and alreadyRead (a boolean indicating if you read it yet).
+
+* Iterate through the array of books. For each book, log the book title and book author like so: "The Hobbit by J.R.R. Tolkien".
+
+* Now use an if/else statement to change the output depending on whether you read it yet or not. If you read it, log a string like 'You already read "The Hobbit" by J.R.R. Tolkien', and if not, log a string like 'You still need to read "The Lord of the Rings" by J.R.R. Tolkien.'
+
+
+5. ***characters:***
+* Get characters with mass greater than 100
+* Get characters with height less than 200
+* Get all male characters
