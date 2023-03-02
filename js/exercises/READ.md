@@ -121,6 +121,37 @@ Keep track of which books you read and which books you want to read!
 
 
 5. ***characters:***
+
+const characters = [
+    {
+      name: "Luke Skywalker",
+      height: 172,
+      mass: 77,
+      eye_color: "blue",
+      gender: "male",
+    },
+    {
+      name: "Darth Vader",
+      height: 202,
+      mass: 136,
+      eye_color: "yellow",
+      gender: "male",
+    },
+    {
+      name: "Leia Organa",
+      height: 150,
+      mass: 49,
+      eye_color: "brown",
+      gender: "female",
+    },
+    {
+      name: "Anakin Skywalker",
+      height: 188,
+      mass: 84,
+      eye_color: "blue",
+      gender: "male",
+    },
+  ];
 * Get characters with mass greater than 100
 * Get characters with height less than 200
 * Get all male characters

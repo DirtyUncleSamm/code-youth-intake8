@@ -13,7 +13,8 @@ const library = [
                     title: 'Mockingjay',
                     author: 'Suzanne Collins',
                     readingStatus: false
-                }];
+                }
+            ];
 
 library.forEach((ele) => console.log("Book Title:",ele.title, "   Author:", ele.author, "   Have Read:", ele.readingStatus))
 
