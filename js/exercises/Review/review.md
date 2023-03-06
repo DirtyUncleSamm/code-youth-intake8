@@ -11,24 +11,24 @@ Sum of largest and smallest number inn array
 
 
 
-// 3. count the number of vowels that appear in a given string
+3. ***vowelsInString:*** count the number of vowels that appear in a given string
 
-// 4.  Define a function called range
-//   The function takes 3 integer parameters: start, end, and step.
-//   The function should return an array of numbers from start to end counting by step.
-// For example:
-// codeoutputrange(0, 10, 2);[ 0, 2, 4, 6, 8, 10 ]range(10, 30, 5);[ 10, 15, 20, 25, 30 ]range(-5, 2, 3);[ -5, -2, 1 ]
-// The function should return an empty array [] if given incorrect parameters, such as:
-//   start, end, or step being undefined
-//   start being greater than end
-// step being 0, or negative
-
-
+4.  Define a function called range
+     The function takes 3 integer parameters: start, end, and step.
+     The function should return an array of numbers from start to end counting by step.
+For example:
+    codeoutputrange(0, 10, 2);[ 0, 2, 4, 6, 8, 10 ]range(10, 30, 5);[ 10, 15, 20, 25, 30 ]range(-5, 2, 3);[ -5, -2, 1 ]
+    The function should return an empty array [] if given incorrect parameters, such as:
+    start, end, or step being undefined
+    start being greater than end
+    step being 0, or negative
 
 
-// 5.  Given an array of objects representing TV Shows, we want to create new arrays:
-// 1. One including only the titles of the shows
-// 2. One including objects that include only the title and the rating properties
+
+
+5.  Given an array of objects representing TV Shows, we want to create new arrays:
+* One including only the titles of the shows
+* One including objects that include only the title and the rating properties
 // 3. One including only the titles of the shows, but:
 //   If the rating is greater or equal to 9, we put the title in upper case.
 //   Else, we make the title lower case.
