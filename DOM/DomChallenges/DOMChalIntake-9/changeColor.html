@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>changeColor</title>
+</head>
+<body>
+    <ul>
+        <li id="red">red</li>
+        <li id="green">green</li>
+        <li id="blue">blue</li>
+    </ul>
+    <button onclick="change()">change</button>
+    <script>
+        function change(){
+            const red = document.getElementById('red');
+            red.style.color='red';
+            const blue = document.getElementById('blue');
+            blue.style.color='blue';
+            const green = document.getElementById('green');
+            green.style.color='green';
+        }
+    </script>
+</body>
+</html>
