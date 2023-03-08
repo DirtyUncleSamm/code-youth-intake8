@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+	<form name="form1" onsubmit="showMsg(event)">
+		<input type="text" name="data" id="data1" onchange="modify()"/>
+		<input type="submit" value="check"/>
+        <div id="welcomeMessage"></div>
+		<!-- <button onclick = "showMsg()">show</button> -->
+	</form>
+		<script>
+			function showMsg(e){
+				e.preventDefault();
+                // -- Get value of input field
+				const form = document.getElementById('data1');
+                const name = form.value;
+        
+				const welcomeMessage = document.getElementById('welcomeMessage');
+                if(name.length < 3){
+                    alert("Name must be at least 3 characters in length")
+                }
+                    const para = document.createElement('p');
+                    para.textContent = "Welcome " + name + "! Thank you for signing up.";
+                    welcomeMessage.appendChild(para);
+			}
+			function modify(){
+				document.getElementById('data1').style.backgroundColor="yellow";
+			}
+		</script>
+
+</body>
+</html>
+
+
+<!-- Ex: Create a page welcome message :
+Get the user name in the input field
+When the button is pressed add an event that get the user name and creates a welcome message on the page
+Add a check to ensure the length of the input is larger than 3 characters long -->
