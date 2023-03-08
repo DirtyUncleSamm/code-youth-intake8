@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .imgDiv{
+            width: 10vh;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        #purchases{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="product">
+        <div class="imgDiv">
+            <img src="https://m.media-amazon.com/images/I/61jR700-izL._SL1391_.jpg" alt="">
+        </div>
+        <p class="productDetails"><span class="name">Skateboard</span> $<span class="price">5.99</span></p>
+        <button class="addToCart" onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="cart">
+        <h1>Cart</h1>
+        <div id="purchases"></div>
+    </div>
+
+
+    <script>
+        
+        const cart = document.getElementById('purchases');
+        function addToCart(){
+            console.log("funTest")
+            const item = document.createElement('image');
+            item.src="https://m.media-amazon.com/images/I/61jR700-izL._SL1391_.jpg";
+            cart.appendChild(item); 
+        }
+    </script>
+</body>
+</html>
