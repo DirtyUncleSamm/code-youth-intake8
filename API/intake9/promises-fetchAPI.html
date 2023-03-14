@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul></ul>
+     <!-- overview of promises
+ -- Place holder for future value or action. You are telling js engine to promis a specific action and to notify when it is either completed or failed
+ .. For this class we will focus on the fetch method -->
+ <script>
+    const url = "http://universities.hipolabs.com/search?country=Canada"; // -- define variable with url
+    fetch(url) // .. Promis that pulls data from url
+    .then((res) => res.json()) // .. display url to consol.log in json format
+    .then((data) => {
+        // -- call ul element
+        const list = document.querySelector('ul')
+        // .. loop through json
+        for (let i = 0; i<10; i++){
+            console.log(data[i].name);
+            // -- create list element
+            const li = document.createElement('li');
+            // .. define contect in list 
+            li.innerHTML = data[i]["state-province"];
+            // .. append list element to document
+            list.append(li);
+
+        }
+    }) // .. chaining response 
+    .catch((err) => console.log("error")) // .. displays error if program failes
+ </script>
+</body>
+</html>

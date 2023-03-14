@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: aliceblue;
+            display: flex;
+            justify-content: center;
+        }
+        #display-recipe{
+            margin: 3vh;
+            padding: 3vh;
+            width: 80%;
+            background-color: white;
+            border:1px solid gray;
+
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        h3{
+            font-size: 3em;
+            padding: 3vh;
+        }
+        .img{
+            width: 30vh;
+            padding: 2vh;
+            border: 1px solid gray;
+            align-self: center;
+        }
+        p{
+            padding: 4vh;
+        }
+        h4{
+            padding-top: 2.5vh;
+            font-size: 1.5em;
+        }
+        ul{
+            width: 60%;
+            align-self: center;
+        }
+        li{
+            padding: .5vh;
+            list-style-type: none;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="display-recipe"></div>
+
+    <script>
+        const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita";
+        fetch(url)
+        .then((res) =>res.json())
+        .then((data) =>{
+            const disp = document.querySelector('div');
+            const navBar = document.createElement('div');
+            navBar.id = 'navBar';
+            
+            for(let i = 0; i < data.drinks.length; i++){
+                const nav = document.createElement('button');
+                nav.innerHTML = data.drinks[i]["strDrink"];
+                disp.append(nav);
+            }
+                console.log(data.drinks[0])
+                const recipeTitle = document.createElement('h3');
+                recipeTitle.innerHTML = data.drinks[0]["strDrink"];
+                disp.append(recipeTitle);
+
+                const recipeImg = document.createElement('img');
+                recipeImg.src = data.drinks[0]["strDrinkThumb"];
+                recipeImg.className='img';
+                disp.append(recipeImg);
+
+                const recInsTit = document.createElement('h4');
+                recInsTit.innerHTML = "Instructions";
+                disp.append(recInsTit);
+
+                const recipeDesc = document.createElement('p');
+                recipeDesc.innerHTML = data.drinks[0]["strInstructions"];
+                disp.append(recipeDesc);
+
+                const recIngTit = document.createElement('h4');
+                recIngTit.innerHTML = "Ingredients";
+                disp.append(recIngTit);
+
+                const recIngList = document.createElement('ul');
+                disp.append(recIngList);
+
+                const ing1 = document.createElement('li');
+                ing1.innerHTML = data.drinks[0]["strIngredient1"];
+                recIngList.append(ing1);
+
+                const ing2 = document.createElement('li');
+                ing2.innerHTML = data.drinks[0]["strIngredient2"];
+                recIngList.append(ing2);
+
+                const ing3 = document.createElement('li');
+                ing3.innerHTML = data.drinks[0]["strIngredient3"];
+                recIngList.append(ing3);
+
+                const ing4 = document.createElement('li');
+                ing4.innerHTML = data.drinks[0]["strIngredient4"];
+                recIngList.append(ing4);
+
+            
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const newdata = {
+            title: 'foo',
+            body: 'bar',
+            userId: 1,
+        }
+        // -- Post to web server
+        fetch('http://jsonplaceholder.typicode.com/posts', {
+            method:'post',
+            body: JSON.stringify(newdata),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8'
+            },
+        })
+        // -- Require fs module
+        const fs = require("fs");
+
+        // .. Storing the json format data in myObject
+        var data =fs.readFileSync("data.json");
+        var myObject = JSON.parse(data);
+
+        // .. Defining new data to be added
+        let newData = {
+            city: "England"
+        };
+
+        // .. Adding new Data too 
+    </script>
+</body>
+</html>

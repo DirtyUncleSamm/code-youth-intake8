@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Bob",
+        "country": "US"
+    },
+    {
+        "id": 2 ,
+        "name": "Sherry",
+        "country": "UK"
+    },
+    {
+        "id": 3,
+        "name": "Kenvin",
+        "country": "Canada"
+    },
+    {
+        "id": 4,
+        "name": "Dave",
+        "country": "Germany"
+    }
+]

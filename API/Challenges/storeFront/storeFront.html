@@ -49,10 +49,15 @@
                             <img src=${ele.thumbnail} alt="photo" height="150" width="125">
                             <div class="txtBx">
                                 <p class="title"><b>${ele.title}</b></p>
-                                <p class="subTitl"><b>Price:</b></p>
-                                <p class="value">$${ele.price}</p>
-                                <p class="subTitl"><b>Description:</b></p>
-                                <p class="value">${ele.description}</p>
+                                <div class="priceDiv">
+                                    <p class="subTitl"><b>Price:</b></p>
+                                    <p class="value">${ele.price}</p>
+                                </div>
+                                <div class="descriptionDiv">
+                                    <p class="subTitl"><b>Description:</b></p>
+                                    <p class="value">${ele.description}</p>
+                                </div>
+                                
                             </div>
                             <button class="button" onclick="addtocart(this)">Add to cart</button>
                         </div>`

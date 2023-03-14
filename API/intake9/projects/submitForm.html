@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Form</title>
+    <style>
+        body{
+            display:flex;
+            justify-content: center;
+        }
+        form{
+            padding: 4vh;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        span{
+            padding: 3vh;
+            align-self: center;
+        }
+        input{
+            width: 50%;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="/submit-form" method="POST">
+        <span>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required>
+        </span>
+        <span>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required>
+        </span>
+        <button type="sunmit">Submit</button>
+    </form>
+    <script>
+       // -- Require file system module
+        const fs = require('fs');
+
+        // store json format data
+        var data = fs.readFileSync("data.json");
+        
+
+        
+      
+    </script>
+</body>
+</html>
