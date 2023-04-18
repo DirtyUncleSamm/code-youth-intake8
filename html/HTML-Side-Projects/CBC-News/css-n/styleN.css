@@ -10,10 +10,10 @@ nav{
     background-color: rgb(130, 0, 0); 
 }
 nav ul {
-    list-style-type:none;
-    display:flex;
-    flex-direction:row;
-    justify-content:space-evenly;   
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;   
 }
 nav a{
     margin: 0px 8px;

@@ -149,7 +149,7 @@ INSERT INTO customers(first_name, last_name, age, country) VALUES('Betty', 'Doe'
 \d tablename;
 
 8. insert data into table
-
+INSERT INTO tabel_name (prop1, prop2, prop3) VALUES ('string', 2, TRUE)
 
 9. view data in a table
 SELECT * FROM users;
