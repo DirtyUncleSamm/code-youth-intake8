@@ -11,8 +11,11 @@ if(d<a){
 else if(d>a){
     prompt("your value is greater then a. Try again!");
 }
-else{
+else if (d = a) {
     alert("Your value is equal to a!");
+}
+else {
+    alert("Incorrect Input, enter a number!")
 }
 
 

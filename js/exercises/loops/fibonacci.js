@@ -1,5 +1,5 @@
 // length of the sequence
-const length = 5;
+const length = 20;
 
 // Initialize variables for the first two numbers in the sequence
 let a = 0;
