@@ -1,4 +1,4 @@
-# JavaScript Exercises
+# JavaScript: Master Question Document
 ***Exercises***
 ## If Statements
 1. ***weekDay:*** write a program that takes user input as a number from 1 to 7 and returns the day of the week
