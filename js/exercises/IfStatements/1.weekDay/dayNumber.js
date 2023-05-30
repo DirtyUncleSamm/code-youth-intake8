@@ -3,7 +3,7 @@
 // .. * input a number to return corresponding day
 // .. * input day to return corresponding number
 let num = prompt("input number to find the day of the week");
-if(num==1){
+if(num ==1){
     alert("your day is Monday");
 }
 else if(num==2){
