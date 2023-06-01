@@ -1,9 +1,9 @@
-12-16-2022
-#Format Fetch With CSS Grid
+# 12-16-2022
+## Format Fetch With CSS Grid
     Ref
     https://css-tricks.com/introduction-fr-css-unit/
 
-#Method Element.closest()
+## Method Element.closest()
     Returns entire element with contents inside. When calling on a class that class must hav a '.'
     Will's Snippet: 
         console.log(document.getElementsByClassName(example-class')[0].closest('.ancestor-class-name'));
@@ -17,7 +17,7 @@
 COMMENT:
 > Must re-root the fetch(file) to the right folder
 
-#Challenges
+## Challenges
 Raninder
 1. Fetch data from json file ("https://dummyjson.com/products")
     Format into a webstore page
@@ -27,22 +27,22 @@ Raninder
 
 12-15-2022:
 
-#Fetch API
+## Fetch API
     an interface between apps that pulls data from one server and delivers it to another
     Ref
     https://www.digitalocean.com/community/tutorials/how-to-use-the-javascript-fetch-api-to-get-data
 
 
 
-#What is Synchronous Programming
+## What is Synchronous Programming
     Tasks Performed one at a time
-#What is Asynchronous Programming
+## What is Asynchronous Programming
     will run multiple programs at a time, holds attributes to time programs to run at certain times
     Ref
     https://www.outsystems.com/blog/posts/asynchronous-vs-synchronous-programming/
 
 
-#Promise and Promise Chaining
+## Promise and Promise Chaining
     A promise is a JavaScript object that calls a function
         i.e writing a program to fetch an API
     Ref
@@ -50,27 +50,27 @@ Raninder
         This example breaks down the ryhme Jack and Jill into the steps of Promise chaining
     https://www.programiz.com/javascript/promise
 
-#What is JSON?
+## What is JSON?
     A file that holds and array of objects to call with jquery
 
-#Fetch Requests
+## Fetch Requests
 
-#Post Requests
+## Post Requests
     Posting data to an json file
     The method key will have the value 'POST'. body will be set equal to the JSON.stringify() format of the data object that was just created. headers will have the value of 'Content-Type': 'application/json; charset=UTF-8'.
 
-    Ref
+    Ref 
     https://www.w3schools.com/js/js_json_intro.asp
-#Document Fragments
+## Document Fragments
     const list - document.createDocumentFragment();
-#Assignment:
+### Assignment:
 -- Think about 2 project ideas
 1. Dynamic Nav Bar:
     - Drop down panel with pernament highlight over selected tabs
 2. Text Adventure
     - Using radio buttons to allow the player navigate the path of the story using 'if else' statements
 
-#Challenges:
+## Challenges:
 
 Raninder
 

@@ -11,14 +11,17 @@
         }
         #div{
             margin: 30px;
+            padding: 20px;
             background-color:gray;
             color:white;
+            text-align: center;
         }
         #h1{
             text-align: center;
         }
         .list{
             text-align:center;
+            list-style: none;
         }
     </style>
 </head>
@@ -27,24 +30,37 @@
 <ul>
 <li>Math
 <li>english -->
-<button onclick="add()">Add animals</button>
-<button onclick="sub()">Subtrack the pokemon</button>
+<!-- <button onclick="add()">Add animals</button> -->
+<!-- <button onclick="sub()">Subtrack the pokemon</button> -->
 
 <script>
+
+    // Create Div
     const div = document.createElement("div");
     div.id="div";
     document.body.appendChild(div);
     console.log(div);
 
+    // Create Header
     const h1 = document.createElement("h1");
     h1.innerHTML="This list was created in JavaScript";
     h1.id="h1";
     div.appendChild(h1);
 
-    // document.querySelectorAll("button");
-    // div.appendChild(button);
+    // Create Buttons
+    const addAnimals = document.createElement('button');
+    addAnimals.addEventListener('click', add);
+    addAnimals.innerHTML="ADD";
+    div.appendChild(addAnimals)
 
+    const subPokemon = document.createElement('button');
+    subPokemon.addEventListener('click', sub);
+    subPokemon.innerHTML="SUB";
+    div.appendChild(subPokemon)
+    
+    // Holding container for array list
     let unOlist = document.createElement("ul");
+    unOlist.id="listContainer";
     div.appendChild(unOlist);
 
     let arr = ["dog", "monkey", "tiger", "elephant", "charizard", "pikachu", "bulbasaur"];
@@ -52,16 +68,19 @@
         for(let i=0; i<arr.length;i++){
         const list = document.createElement("li");
         list.innerHTML = arr[i];
-        document.querySelectorAll('.unOlist')[0].appendChild(li);// --  Carters edits, there seems to be an issue with .appendChild
-        // unOlist.appendChild(list);
+        list.className='list';
+        console.log(list);
+        document.getElementById('listContainer').appendChild(list);// --  Carters edits, there seems to be an issue with .appendChild
+        
         }  
     } 
     function sub(){
-        for(let i=0;i<2;i++){
-            let unOlistLi = document.querySelectorAll('.unOlist li')
-            unOlistLi[unOlist.length - 1].remove();
+        for(let i=arr.length;i>3;i--){
+            removeEle = arr[arr.length-1];
+            console.log(removeEle)
+            // removeEle[removeEle.length - 1];
         }
-        // unOlist.removeChile(arr[4])
+        removeEle.removeChild(arr[4])
     }
 </script>
 
