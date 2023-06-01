@@ -1,12 +1,12 @@
 // -- fix functions on this document by putting them into a temporary document --
 
 
-let colors = ['red', 'green', 'blue', 'yellow', 'pink'];
-for(let i = 0; i<colors.length; i++){
-    console.log(i, colors[i]); // -- this will put the position of the element in the array, along with its value
+let colours = ['red', 'green', 'blue', 'yellow', 'pink'];
+for(let i = 0; i<colours.length; i++){
+    console.log(i, colours[i]); // -- this will put the position of the element in the array, along with its value
 }
 
-for(let item of colors){
+for(let item of colours){
     console.log(item);
 }// -- this displays the elements in the array
 

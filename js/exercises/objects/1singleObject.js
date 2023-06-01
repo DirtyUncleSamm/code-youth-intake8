@@ -1,4 +1,7 @@
 // -- This is an example of a single object that console.logs: student name, id, country, course, marks and hobbies
+// - - Create a single object for a student with an id, name, a nested object named address that has (country, province and city), email, phone number, and an array of marks.
+// - - After you have created an object console log a sentence that displays the students name, id and address. 
+
 
 let students = {
     id: 1,
