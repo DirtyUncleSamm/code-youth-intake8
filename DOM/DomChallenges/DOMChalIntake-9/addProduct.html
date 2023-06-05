@@ -23,7 +23,7 @@
 <body>
     <div class="product">
         <div class="imgDiv">
-            <img src="https://m.media-amazon.com/images/I/61jR700-izL._SL1391_.jpg" alt="">
+            <img src="https://m.media-amazon.com/images/I/61jR700-izL._SL1391_.jpg" alt=""/>
         </div>
         <p class="productDetails"><span class="name">Skateboard</span> $<span class="price">5.99</span></p>
         <button class="addToCart" onclick="addToCart()">Add to Cart</button>
@@ -40,7 +40,7 @@
         const cart = document.getElementById('purchases');
         function addToCart(){
             console.log("funTest")
-            const item = document.createElement('image');
+            const item = document.createElement('img');
             item.src="https://m.media-amazon.com/images/I/61jR700-izL._SL1391_.jpg";
             cart.appendChild(item); 
         }

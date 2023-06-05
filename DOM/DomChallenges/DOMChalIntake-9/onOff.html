@@ -9,9 +9,11 @@
        body{
         text-align: center;
        }
+
+  
     </style>
 </head>
-<body>
+<body id="body">
     <h1 id="change">ON</h1>
     <div>
         <button onclick="off()" >Off</button>
@@ -20,14 +22,18 @@
     
     <script>
         function off(){
-            const body = document.getElementsByTagName('body');
-            body.style.background-color='black'; 
             const heading = document.getElementById('change').innerHTML="OFF";
+            const body = document.getElementById('body');
+            body.style.backgroundColor='black'; 
+            body.style.color='white';
             
           
         }
-        function on(){
+        function on() {
             const head1 = document.getElementById('change').innerHTML="ON";
+            const body = document.getElementById('body');
+            body.style.backgroundColor='white'; 
+            body.style.color='black';
         }
     </script>
 </body>
