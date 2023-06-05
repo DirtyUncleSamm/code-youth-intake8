@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- 1. Change the image from google's logo to Bing logo using DOM -->
+
+<img id='img' src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+<button id="button" onClick="imgChange()">Change Image</button>
+<script>
+
+    function imgChange(){
+        console.log("funtest");
+       let img = document.getElementById('img');
+       img.src ="/bing.png"; 
+    }
+    
+
+
+</script>    
+
+
+</body>
+</html>

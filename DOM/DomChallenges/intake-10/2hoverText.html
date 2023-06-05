@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <!-- 2. Using .addEventListener have each word change its color when you mouse over it -->
+    <p id="red" class="revert">Red</p>
+    <p id="green" class="revert">Green</p>
+    <p id="yellow" class="revert">Yellow</p>
+    <p id="blue" class="revert">Blue</p>
+
+    <script>
+        let red = document.getElementById('red')
+        red.addEventListener('mouseover', function() {
+            red.style.color='red';
+        })
+        red.addEventListener('mouseout', function() {
+            red.style.color='black';
+        })
+        let green = document.getElementById('green')
+        green.addEventListener('mouseover', function() {
+            green.style.color='green';
+        })
+        green.addEventListener('mouseout', function() {
+            green.style.color='black';
+        })
+        let yellow = document.getElementById('yellow')
+        yellow.addEventListener('mouseover', function() {
+            yellow.style.color='yellow';
+        })
+        yellow.addEventListener('mouseout', function() {
+            yellow.style.color='black';
+        })
+        let blue = document.getElementById('blue')
+        blue.addEventListener('mouseover', function() {
+            blue.style.color='blue';
+        })
+        blue.addEventListener('mouseout', function() {
+            blue.style.color='black';
+        })
+        // let arr = document.getElementsByClassName('revert');
+        // console.log(arr);
+        // for(i=0; i<=arr.length;i++) {
+        //     console.log(arr[i])
+        //     arr[i].addEventListener('mouseout', function() {
+        //         arr[i].style.color('black');
+        //     })
+            
+        // }
+
+    </script>
+</body>
+</html>

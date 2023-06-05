@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #container {
+        border: 1px solid black;
+    }
+    .newQuote {
+        margin: 10px;
+        padding: .5vw;
+        background-color: antiquewhite;
+        text-align: center;
+    }
+</style>
+
+</head>
+<body>
+    <!-- Use the https://type.fit/api/quotes API to display random quotes on a page -->
+<div id="container"></div>
+<script>
+
+
+
+    // create variable and assign .json file
+    const url = "https://type.fit/api/quotes";
+    // fetch data
+    fetch(url)
+
+    // assign results of .json to variable data
+    .then((res)=>{
+        return res.json()
+    })
+    .then((data)=>{
+        // console.log(data);
+
+        // Create empty array to store 10 objects
+        let arr = []
+        // iterate 10 times
+        for(i = 0; i<10; i++) {
+            // get random number
+            const randomIndex = Math.floor(Math.random() * data.length);
+            // assign random number to an object
+            const randomObject = data[randomIndex];
+            // store random object in array
+            arr.push(randomObject);
+        }
+        // console.log(arr)
+
+        // Create temporary variable to store random array values
+        let temp = "";
+        const main = document.getElementById('container');
+        arr.forEach((ele)=>{
+            temp+=`
+                <div class='newQuote'>
+                    <p>${ele.text}</p>
+                    <p><strong>${ele.author}</strong></p>
+                </div>
+            `
+        })
+        // append empty array to main div
+        main.innerHTML=temp;
+    })
+</script>
+
+
+</body>
+</html>

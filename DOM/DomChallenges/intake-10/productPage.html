@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+</head>
+<body>
+    <style>
+        body {
+            text-align: center;
+        }
+        #productBox {
+            max-width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            
+        }
+        .productContent {
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid black;
+        }
+    </style>
+
+    <h1>Products</h1>
+    <h2>Buy Some Sticks</h2>
+
+    <div id="productBox">
+        <div class="productContent" id="skewer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Wooden_skewers.jpg/800px-Wooden_skewers.jpg" alt="wooden skewers" width="80%">
+            <h3>Wooden Skewers</h3>
+        </div>
+        <div class="productContent" id="hickory">
+            <img src="https://i5.walmartimages.com/asr/a3cf47f0-a0d5-496b-8ed0-8f6dd81892bc.877566fe9ab36b0769a15c0d6a1ac1f4.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff" width="60%">
+            <h3>Hickory Sticks</h3>
+        </div>
+    </div>
+
+
+
+    <script>
+        // Write a function that 'highlights' each of the productBoxes when users mouse is hovering over the div
+        let productContainer = document.getElementsByClassName('productContent');
+        
+            for(i=0; i<=productContainer.legnth; i++) {
+                productContainer.addEventListener('click', fucntion() {  
+                    productContainer.style.border=
+                
+                })
+            }
+       
+
+        // Create buttons inside each of the product content divs that sends the user to the product page (HINT: Eash product should have it's own HTML document)
+
+    </script>
+</body>
+</html>

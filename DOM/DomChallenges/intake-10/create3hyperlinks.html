@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 3. Create three hyperlinks using DOM and append them to the list -->
+<ul id="linkList">
+
+</ul>
+
+<script>
+    // Get unordered list
+    let ul = document.getElementById("linkList");
+
+    // create list elements
+    let li1 = document.createElement('li');
+    let li2 = document.createElement('li');
+    let li3 = document.createElement('li');
+
+    // create hyperlink elements
+
+    let a1 = document.createElement('a');
+    let a2 = document.createElement('a');
+    let a3 = document.createElement('a');
+
+    // define values of hyperlinks
+
+    a1.innerHTML="linkOne";
+    a1.href="https://en.wikipedia.org/wiki/Ada_Lovelace#/media/File:Ada_Byron_daguerreotype_by_Antoine_Claudet_1843_or_1850.jpg";
+
+    a2.innerHTML="linkTwo";
+    a2.href="https://www.w3schools.com/js/js_htmldom_html.asp";
+
+    a3.innerHTML="linkThree";
+    a3.href="https://github.com/raninder/code-youth-intake10/tree/main/m1_fundamentals/DOM";
+
+    // append elements
+
+    ul.appendChild(li1);
+    ul.appendChild(li2);
+    ul.appendChild(li3);
+
+    li1.appendChild(a1);
+    li2.appendChild(a2);
+    li3.appendChild(a3);
+
+
+
+</script>
+</body>
+</html>

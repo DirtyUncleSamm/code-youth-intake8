@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- 4. Using DOM create a table with name and address,2-3 rows data -->
+<script>
+    // Create Table
+    let table = document.createElement('table');
+    // Create Table Rows
+    let trh = document.createElement('tr');
+    let tr1 = document.createElement('tr');
+    let tr2 = document.createElement('tr');
+    // let tr3 = document.createElement('tr');
+
+    // Create Table Header
+    let th = document.createElement('th');
+    let th1 = document.createElement('th');
+
+    // Create Table Data
+    let td = document.createElement('td');
+    let td1 = document.createElement('td');
+    let td2 = document.createElement('td');
+    let td3 = document.createElement('td');
+    // let td3 = document.createElement('td');
+
+    // add Labels to Table Headers
+    th.innerHTML="Name";
+    th1.innerHTML="Address";
+
+    // add data to Table Data
+    td.innerHTML="Bob";
+    td1.innerHTML="An Address";
+
+    td2.innerHTML="Lynn";
+    td3.innerHTML="Another Address";
+
+    // Append Elements
+
+    // Append Table to body
+    document.body.appendChild(table);
+    
+    // Append Rows to Table
+    table.appendChild(trh)
+    table.appendChild(tr1)
+    table.appendChild(tr2)
+
+    // Append Table Headers to Table Header Row
+    trh.appendChild(th);
+    trh.appendChild(th1);
+
+    // Append Table Data to Table Rows
+    tr1.appendChild(td);
+    tr1.appendChild(td1);
+
+    tr2.appendChild(td2);
+    tr2.appendChild(td3);
+    
+</script>
+
+</body>
+</html>
+

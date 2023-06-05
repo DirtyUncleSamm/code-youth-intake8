@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Catchphrases</title>
+</head>
+<body>
+<!-- 2. Using this link https://jsonplaceholder.typicode.com/users console.log the name, email, company name, and company catch phrase for everyone in the array --> 
+
+    <script>
+        const url = "https://jsonplaceholder.typicode.com/users ";
+
+        fetch(url)
+
+        .then((res)=> {return res.json()})
+
+        .then((data)=>{
+            // console.log(data);
+        
+            data.forEach((ele)=>{
+                console.log("NAME:", ele.name, " EMAIL:", ele.email, " COMPANY:", ele.company.name, " CATCHPHRASE:", ele.company.catchPhrase);
+                console.log()
+            })
+        })
+
+        .catch((err) => console.log('error'))
+</script>  
+</body>
+</html>
