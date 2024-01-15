@@ -3,7 +3,7 @@ const multiply = (val1, val2) => {
    return output;
 }
 console.log(multiply(3,6));
-705-919-6357 -- Raj Kumar
+
 
 //-- displays area with two lines of code
 const c = (r) => {
