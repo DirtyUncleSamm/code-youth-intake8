@@ -1,5 +1,5 @@
 // 5. threeFive: Create a function that checks
-// .. to see if a number is divisible by 5 or 11
+// .. to see if a number is divisible by 5 or 3
 let num = parseInt(prompt("write an num"));
     if (num % 3 == 0 && num % !5 == 0){
         console.log("three");
